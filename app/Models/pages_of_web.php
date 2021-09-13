@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class pages_of_web extends Model
 {
-    use HasFactory;
+    protected $table = 'pages_of_web';
 }

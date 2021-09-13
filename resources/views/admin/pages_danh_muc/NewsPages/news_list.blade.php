@@ -4,81 +4,136 @@
 @section('content')
     <section class="content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <h1 style="text-align:center"> Danh sách tin tức</h1> <br> <br>
-
-                    <a href="{{route('news.create')}}" class="btn btn-primary">Thêm bài tin mới</a>
-                    <br><br>
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" style="border=18" name="keywordsearch_news" value="{{request()->input('keywordsearch_news')}}" class="form-control" id="" placeholder="Nhập thứ bạn muốn tìm kiếm"> <br> 
-                            </div>
-                            <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary ">Tìm kiếm bài viết</button>
-                            </div>
-                        </div>
-                    </form>
-                         <br> <br>
+            <h1 style="text-align:center"> Danh sách tin tức - bài viết</h1> 
+            <br>
+            <div class="block-header" style="margin-left: -15px;">
+                <a href="{{route('news.create')}}" class="btn btn-primary">Thêm bài viết mới</a> <br>
+            </div>
+            
+            <div class="row clearfix">
+                <div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding-left">
+                    <ul class="dashboard-stat-list1">
+                        <li class="all">
+                            <a href="#">Tất cả</a>
+                            <span>|</span>
+                        </li>
+                        <li class="publish">
+                            <a href="#">Đã thêm</a>
+                            <span>|</span>
+                        </li>
                         
-                   <table class="table table-striped table-dark">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th class="col-md-1"> id </th>
-                                <th class="col-md-1"> Loại tin tức </th>
-                                <th class="col-md-2"> Tên bài viết </th>
-                                <th class="col-md-2"> Mô tả bài viết </th>
-                                <th class="col-md-4"> Nội dung bài viết </th>
-                                <th class="col-md-2"> Ảnh </th>
-                                <th class="col-md-1"> Trạng thái </th>
-                                <th class="col-md-2"> created_at </th>
-                                <th class="col-md-2"> updated_at </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($news as $addnew)
-                            <tr>
-                                <td> {{$addnew->id}} </td>
-                                <td> 
-                                    @if($addnew->news_category)
-                                        {{$addnew->news_category->name}}
-                                    @endif
-                                </td>
-                                <td> {{$addnew->title}} </td>
-                                <td> {{$addnew->description}} </td>
-                                <td> {{$addnew->content}} </td>
-                                <td class="thumb column-thumb" data-colname="Ảnh"><a href="#"><img width="150" height="150" src="{{'$addnew->image'}}" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy"  sizes="(max-width: 150px) 100vw, 150px"></a>
-                                </td>                                
-                                <td> {{$addnew->status}} </td>
-                                <td> {{$addnew->created_at}} </td>
-                                <td> {{$addnew->updated_at}} </td>
-
-                                <td> 
-                                    <a href="{{route('news.edit', $addnew->id)}}" class="btn btn-primary">Edit</a> 
-                                    <form class="" action="{{route('news.destroy', $addnew->id)}}" method="POST">
-                                        @csrf
-                                        @method('delete')
-                                        <button class="btn btn-danger btn-delete" type="submit">Delete</button>
-                                    </form>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                        </table>
-
-                    <div style="text-align:center">
-						{{$news->appends($_GET)}}      
-					</div>
+                    </ul>
+                </div>
+                <div class ="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                    <div class="form-line">
+                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right;">Tìm các bài viết</button>
+                        <input type="text" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
+                    </div>
                 </div>
             </div>
+ 
+            <div class="row clearfix">
+                <div class="col-md-12 col-lg-12 hidden-xs hidden-sm nopadding-left">
+                    
+                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                        <select class="form-control show-tick">
+                            <option>Tất cả các ngày</option>
+                            <option>Tháng 10 năm 2021</option>
+                            <option>Tháng 11 năm 2021</option>
+                            <option>Tháng 12 năm 2021</option>
+                        </select>
+                    </div>
+                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                        <select class="form-control show-tick">
+                            <option>Tất cả chuyên mục</option>
+                            <option>Chưa được phân loại</option>
+                            <option>Tin tức</option>
+                        </select>
+                    </div>
+                    
+                    <div style="display: inline-block;">
+                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Lọc</button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row clearfix">
+                <div class="card" style="margin-top: -20px;">
+                    <div class="header">
+                        <ul class="header-dropdown m-r--5">
+                            
+                        </ul>
+                    </div>
+                    <div class="body table-responsive" style="border: 1px solid #9E9E9E;">
+                        <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tiêu đề</th>
+                                    <th>Tác giả</th>
+                                    <th>Chuyên mục</th>
+                                    <th>Thẻ</th>
+                                    <th>Ảnh</th>
+                                    <th>Thời gian</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><a href="#">Mr.Robot</a></td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                    <td>none</td>
+                                    <td>
+                                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Sửa</button>
+                                        <br>
+                                        <button type="button" class="btn bg-red btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Xóa</button>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row clearfix">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopadding-left">
+                    <div style="display: inline-block;max-width: fit-content">
+                        <select class="form-control show-tick">
+                            <option>Hành động</option>
+                            <option>Chỉnh sửa</option>
+                            <option>Bỏ vào thùng rác</option>
+                        </select>
+                    </div>
+                    <div style="display: inline-block;">
+                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Áp dụng</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class ="col-xs-12 col-sm-12 hidden-lg hidden-md">
+                    <div class="form-line">
+                        <input type="text" class="form-control" style="background-color: white;margin-left: -15px;margin-top: 10px;">
+                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin:6px 0 10px -15px;">Tìm kiếm bài viết</button>
+                        
+                    </div>
+                </div>
+            </div> 
+
+            <div style="text-align:center">
+				{{$news->appends($_GET)}}      
+             </div>
         </div>
-        
-            <!-- Latest compiled and minified CSS & JS -->
-            <script src="//code.jquery.com/jquery.js"></script>
-            <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
-            <script>
+    </section>
+        <!-- Latest compiled and minified CSS & JS -->
+        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
+        <script>
                 $(document).ready(function () {
                     $('.btn-delete').click(function () {
                         event.preventDefault();
@@ -88,9 +143,7 @@
                         }
                     });
                 })
-            </script>
-            
-    </section>
-  
+         </script>
+        {{-- // Bootstrap 3 --}}
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 @stop
-          

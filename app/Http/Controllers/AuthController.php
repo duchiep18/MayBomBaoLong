@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\user;
 use Validator;
 use Auth;
+use Session;
+
 
 
 class AuthController extends Controller
@@ -81,5 +83,12 @@ class AuthController extends Controller
         Auth::logout();
         return redirect()->route('login.get');
     }
+
+    public function getGallery(){
+        return view('admin.gallery.add_gallery');
+    }
+
+
+
 }
 

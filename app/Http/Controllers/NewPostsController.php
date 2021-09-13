@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Session;
 use Illuminate\Http\Request;
 use App\Models\news_post;
 use App\Models\news_post_categories;
@@ -28,7 +29,7 @@ class NewPostsController extends Controller
     //phân trang quản lý tin tức
     public function getNews(Request $request){
         $query =news_post::query();
-        $news = $query->paginate(5);
+        $news = $query->paginate(10);
         // $news = posts::paginate(4);
         return view('admin.pages_danh_muc.NewsPages.news_list', compact('news'));
     }
@@ -41,7 +42,7 @@ class NewPostsController extends Controller
           {
               $newsQuery->where('title', 'like', "%{$keywordnews}%");
           } 
-          $new = $newsQuery->paginate();
+          $new = $newsQuery->paginate(10);
           return view('admin.pages_danh_muc.NewsPages.news_list', compact('new'));
       }
     //tạo chuyên mục tin tức
@@ -49,11 +50,13 @@ class NewPostsController extends Controller
         $id = $request ->input('id');
         $name = $request ->input ('tendanhmuc');
         $description = $request ->input('motadanhmuc');
+        $news_categories_type = $request -> input('loaidanhmuc');        
         
         $news_catgr = new news_post_categories;
         $news_catgr->id = $id;
-        $news_catgr->name = $name; 
-        $news_catgr->description = $description;
+        $news_catgr->news_categories_name = $name; 
+        $news_catgr->news_categories_desc = $description;
+        $news_catgr->news_categories_type = $news_categories_type;
         $news_catgr->save(); 
 
         return redirect()->route('news.create');
@@ -62,16 +65,15 @@ class NewPostsController extends Controller
     //tạo bai viết
     public function storeData(Request $request){
         $id = $request -> input('id');
-        $category_id = $request -> input('loaitintuc');
         $title = $request -> input('tenbaiviet');
+        $category_news_id = $request -> input('loaitintuc');
         $description = $request -> input('motabaiviet');
         $content = $request -> input('noidungbaiviet');
-        $image = $request -> input('anhbaiviet');
         $status = $request -> input('trang_thai');
         $new = new news_post;
         $new->id = $id;
         $new->title = $title;
-        $new->category_news_id = $category_id;
+        $new->category_news_id = $category_news_id;
         $new->description = $description;
         $new->content = $content;
         $new->status = $status;

@@ -20,9 +20,21 @@ Route::middleware(['auth'])->group(function () {
     Route::get('BaoLong_admin', function(){
         return view('admin.layout.home_admin');
     });
+    // Route Users
+    Route::get('all_users', 'AdminController@getAllUsers')->name('all_users');
+    Route::get('create_user', 'AdminController@createUser')->name('create_user');
+    Route::get('profile_user', 'AdminController@profileUser')->name('profile_user');
+    // Route thư viện
+    Route::get('add_gallery', 'AuthController@getGallery')->name('add_gallery');
+    //Route Allpages
+    Route::get('all_pages', 'AdminController@getAllPages')->name('all_pages');
+    Route::get('create_page', 'AdminController@getCreatePage')->name('create_page');
+    // Route đơn hàng
+    Route::get('all_orders', 'AdminController@getAllOrders')->name('all_orders');
+    // Route phản hồi bình luận
+    Route::get('all_comments', 'AdminController@getAllComments')->name('all_comments');
 
-    //Route NewS
-
+    
     //route get về trang danh sách tin tức
     Route::get ('/news.index', 'NewPostsController@getNews')->name('news.index');
     //route tạo bài viết mới
@@ -41,6 +53,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/news.catgr','NewPostsController@storeCategories')->name('news.storeCategories');
     //route nhóm các bài viết và sản phẩm có cùng category
     Route::get('categories/{id}/news','CategoryController@news');
+    
 
     //Route Product
 
@@ -50,7 +63,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('/products.catgr', 'ProductController@productCategories')->name('products.storeCategories');
 
-    Route::get ('/products.create','ProductController@create')->name('products.create');
+    Route::get ('/products.create','ProductController@create_prd')->name('products.create');
 
     Route::post('/products', 'ProductController@storeData')->name('products.storeData');
 
@@ -65,13 +78,13 @@ Route::middleware(['auth'])->group(function () {
 //End Route Admin
 //===============================================//
 //Middleware phân quyền cho các Route
-Route::middleware(['auth'])->group(function () {
+// Route::middleware(['auth'])->group(function () {
     
     // Route::get('homeLogin', function() {
     //     return view('client.page.homeLogin');
     // });
     // Route::get('homeLogin', 'ProductController@getProduct_Login');
-});     
+// });     
 
 
 //Route Home page Client

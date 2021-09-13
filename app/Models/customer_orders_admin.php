@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class customer_orders_admin extends Model
 {
-    use HasFactory;
+    protected $table = 'customer_orders_admin';
 }

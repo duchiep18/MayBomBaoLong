@@ -1,0 +1,29 @@
+			<tbody>
+                            @foreach ($news as $addnew)
+                            <tr>
+                                <td> {{$addnew->id}} </td>
+                                <td> 
+                                    @if($addnew->news_category)
+                                        {{$addnew->news_category->news_categories_name}}
+                                    @endif
+                                </td>
+                                <td> {{$addnew->title}} </td>
+                                <td> {{$addnew->description}} </td>
+                                <td> {{$addnew->content}} </td>
+                                <td class="thumb column-thumb" data-colname="Ảnh"><a href="#"><img width="150" height="150" src="{{'$addnew->image'}}" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy"  sizes="(max-width: 150px) 100vw, 150px"></a>
+                                </td>                                
+                                <td> {{$addnew->status}} </td>
+                                <td> {{$addnew->created_at}} </td>
+                                <td> {{$addnew->updated_at}} </td>
+
+                                <td> 
+                                    <a href="{{route('news.edit', $addnew->id)}}" class="btn btn-primary">Edit</a> 
+                                    <form class="" action="{{route('news.destroy', $addnew->id)}}" method="POST">
+                                        @csrf
+                                        @method('delete')
+                                        <button class="btn btn-danger btn-delete" type="submit">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>

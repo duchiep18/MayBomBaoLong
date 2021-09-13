@@ -2,73 +2,105 @@
 
 
 @section('content')
-
     <section class="content">
-            
     <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-
                     <h1 style="text-align:center"> Danh sách Sản phẩm</h1> 
                     <br> <br>
-
-                    <a href="{{route('products.create')}}" class="btn btn-primary">Thêm sản phẩm mới</a> <br>
+                        
+                    <div class="block-header" style="margin-left: -15px;">
+                        <a href="{{route('products.create')}}" class="btn btn-primary">Thêm sản phẩm mới</a> <br>
+                    </div>                    
                     <br> 
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6">
-                                    <input type="text" style="border=18" name="keywordsearch_products" value="{{request()->input('keywordsearch_products')}}" class="form-control" id="" placeholder="Nhập sản phẩm muốn tìm kiếm"> <br> 
-                            </div>
-                            <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary ">Tìm kiếm sản phẩm</button>
+                    <div class="row clearfix">
+                        <div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding-left">
+                            <ul class="dashboard-stat-list1">
+                                <li class="all">
+                                    <a href="#">Tất cả</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="publish">
+                                    <a href="#">Đã xuất</a>
+                                    <span>|</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class ="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                            <div class="form-line">
+                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right;">Tìm các sản phẩm</button>
+                                <input type="text" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
                             </div>
                         </div>
-                    </form>
-                    <br> 
-                   <table class="table table-striped table-dark">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th> id </th>
-                                <th> Tên sản phẩm </th>
-                                <th> Tên danh mục sản phẩm <th>
-                                <th> Thông tin sản phẩm </th>
-                                <th> Giá sản phẩm </th>
-                                <th> Ảnh sản phẩm </th>
-                                <th> Trạng thái </th>
-                                <th> created_at </th>
-                                <th> updated_at </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($product as $addproduct)
-                            <tr>
-                                <td> {{$addproduct->id}} </td>
-                                <td> {{$addproduct->tensanpham}} </td>
-                                <td> 
-                                    @if($addproduct->product_category)
-                                        {{$addproduct->product_category->tendanhmucsp}}
-                                    @endif
-                                </td>
-                                <td> {{$addproduct->thongtinsanpham}} </td>
-                                <td> {{$addproduct->giasanpham}} </td>
-                                <td class="thumb column-thumb" data-colname="Ảnh"><a href="#"><img width="150" height="150" src="{{'$addproduct->image'}}" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy"  sizes="(max-width: 150px) 100vw, 150px"></a>
-                                </td>                                
-                                <td> {{$addproduct->trang_thai}} </td>
-                                <td> {{$addproduct->created_at}} </td>
-                                <td> {{$addproduct->updated_at}} </td>
-                                <td> 
-                                <a href="{{route('products.edit', $addproduct->id)}}" class="btn btn-primary">Edit</a> 
-                                <form action="{{route('products.destroy', $addproduct->id)}}" method="POST">
-                                    @csrf
-                                    @method('delete')
-                                    <button class="btn btn-danger btn-delete" type="button">Delete</button>
-                                </form>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                        </table>
-                   
+                    </div>
+         
+                    <div class="row clearfix">
+                        <div class="col-md-12 col-lg-12 hidden-xs hidden-sm nopadding-left">
+                            
+                            <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                                <select class="form-control show-tick">
+                                    <option>Tất cả các ngày</option>
+                                    <option>Tháng 10 năm 2021</option>
+                                    <option>Tháng 11 năm 2021</option>
+                                    <option>Tháng 12 năm 2021</option>
+                                </select>
+                            </div>
+                            <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                                <select class="form-control show-tick">
+                                    <option>Tất cả chuyên mục</option>
+                                    <option>Chưa được phân loại</option>
+                                    <option>Tin tức</option>
+                                </select>
+                            </div>
+                            
+                            <div style="display: inline-block;">
+                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Lọc</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row clearfix">
+                        <div class="card" style="margin-top: -20px;">
+                            <div class="header">
+                                <ul class="header-dropdown m-r--5">
+                                    
+                                </ul>
+                            </div>
+                            <div class="body table-responsive" style="border: 1px solid #9E9E9E;">
+                                <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Tiêu đề</th>
+                                            <th>Tác giả</th>
+                                            <th>Chuyên mục</th>
+                                            <th>Thẻ</th>
+                                            <th>Ảnh</th>
+                                            <th>Thời gian</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td><a href="#">Mr.Robot</a></td>
+                                            <td>none</td>
+                                            <td>none</td>
+                                            <td>none</td>
+                                            <td>none</td>
+                                            <td>none</td>
+                                            <td>
+                                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Sửa</button>
+                                                <br>
+                                                <button type="button" class="btn btn-delete bg-red btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Xóa</button>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div style="text-align:center">
 							{{$product->appends($_GET)}}      
 					</div>
