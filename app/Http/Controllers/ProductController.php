@@ -12,10 +12,10 @@ class ProductController extends Controller
 
     //chuyển trang tạo sản phẩm
     public function create_prd(){
-        $categories_prd = products_categories::all(); 
+        $categories_prd = products_categories::all();
         return view('admin.pages_danh_muc.ProductPages.createProducts', compact('categories_prd'));
     }
-    //chuyển trang tạo danh mục 
+    //chuyển trang tạo danh mục
     public function create_prd_catgr(){
         return view('admin.pages_danh_muc.ProductPages.createProductsCategories');
     }
@@ -34,16 +34,16 @@ class ProductController extends Controller
     //tìm kiếm, đổ dl ra trang qly
      public function getProduct_admin(Request $request){
         $query = products::query();
-        $product = $query->paginate(6);
+        $products = $query->paginate(5);
         // $preoduct = products::paginate(4);
-        return view('admin.pages_danh_muc.ProductPages.products_list', compact('product'));
+        return view('admin.pages_danh_muc.ProductPages.products_list', compact('products'));
     }
     //đổ dl ra trang Home
     public function getProduct(Request $request){
         $query = products::query();
-        $product = $query->paginate(6);
+        $products = $query->paginate(6);
         // $product = products::paginate(4);
-        return view('client.page.home', compact('product'));
+        return view('client.page.home', compact('products'));
     }
     //đổ dl ra trang Home sau khi Login
     // public function getProduct_Login(Request $request){
@@ -60,10 +60,10 @@ class ProductController extends Controller
         $prd_categories_type = $request -> input('loaidanhmucsp');
 
         $product_catgr = new products_categories;
-        $product_catgr->id = $id; 
+        $product_catgr->id = $id;
         $product_catgr->product_categories_name = $prd_categories_name;
-        $product_catgr->product_categories_desc = $prd_categories_desc; 
-        $product_catgr->product_categories_type = $prd_categories_type; 
+        $product_catgr->product_categories_desc = $prd_categories_desc;
+        $product_catgr->product_categories_type = $prd_categories_type;
         $product_catgr->save();
         return redirect()->route('products.create_catgr');
     }
@@ -76,21 +76,30 @@ class ProductController extends Controller
         $prd_desc = $request->input('description');
         $prd_price = $request->input('price');
         $prd_price_sale= $request->input('price_sale');
+        $image = str_replace(url('responsive_filemanager/source').'/', '', $request->image);
+        $prd_tags = $request->input('tags_prd');
+        $prd_url =$request->input('url_prd');
         $prd_status = $request->input('status');
-        
+
         $product = new products;
         $product->products_name =  $prd_name ;
-        $product->categories_prd_id = $categories_prd_id ;
-        $product->products_description =  $prd_desc ;
+        $product->categories_prd_id = $categories_prd_id;
+        $product->products_content =  $prd_content ;
+        $product->products_description = $prd_desc ;
+        $product->products_content = $prd_content;
         $product->price =  $prd_price ;
+        $product->sale_price =  $prd_price_sale ;
+        $product->image_product = $image;
+        $product->url_prd = $prd_url;
+        $product->tags = $prd_tags;
         $product->status = $prd_status ;
         $product->save();
-        return redirect()->route('products.index');   
+        return redirect()->route('products.index');
 
      }
      //chuyển đến trang edit sản phẩm
      public function edit($id){
-        $categories_prd = products_categories::all(); 
+        $categories_prd = products_categories::all();
         $product = products::find($id);
         return view ('admin.pages_danh_muc.ProductPages.editProduct',compact('product','categories_prd'));
     }
@@ -116,7 +125,7 @@ class ProductController extends Controller
         $product->created_at = $created_at;
         $product->updated_at = $updated_at;
         $product->save();
-        
+
         return redirect()->route('products.index');
     }
     //hàm hủy sản phẩm
@@ -126,6 +135,6 @@ class ProductController extends Controller
 
         return redirect()->route('products.index');
     }
-    
-    
+
+
 }

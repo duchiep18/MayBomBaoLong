@@ -1,12 +1,17 @@
 @extends('admin.layout.admin_master')
 
+@push('css')
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="{{asset('admin-frontend/plugins/jQuery-tagEditor-master/jquery.tag-editor.css')}}" rel="stylesheet">
+@endpush
+
 @section('content')
 
 <section class="content">
         <div class="container-fluid">
             <h1 style="text-align:center">Tạo sản phẩm mới</h1> <br><br>
                     <form action="{{route('products.storeData')}}" method="POST" role="form">
-                        @csrf 
+                        @csrf
                         @method('post')
                         {{-- Left Side --}}
                     <div class="row">
@@ -15,24 +20,24 @@
                             <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px;">
                                 <input type="text" class="form-control" name="name_products" id="name" onkeyup="ChangeToSlug();" placeholder="Tên sản phẩm" style="width: 100%; height: 40px; background-color:white">
                             </div>
-                            
+
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0; padding-top:20px">
                                 <div class="card">
                                     <div class="header">
                                         <h2>
-                                            Thông số chi tiết 
+                                            Thông số chi tiết
                                         </h2>
                                         <ul class="header-dropdown m-r--5">
-                                            
+
                                         </ul>
                                     </div>
                                     <div class="body">
                                         <textarea id="content_post" name="content">
-                                            
+
                                         </textarea>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0;">
                                 <div class="card">
                                     <div class="header">
@@ -40,17 +45,17 @@
                                             Mô tả sản phẩm
                                         </h2>
                                         <ul class="header-dropdown m-r--5">
-                                            
+
                                         </ul>
                                 </div>
                                 <div class="body">
                                     <textarea id="content_post" name="description" rows="20">
-                                        
+
                                     </textarea>
                                 </div>
                             </div>
-                        </div>  
-                            <!-- #END# CKEditor --> 
+                        </div>
+                            <!-- #END# CKEditor -->
                             <br>
                             {{-- Product Price --}}
                             <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5"  style="padding-left:0" >
@@ -69,43 +74,52 @@
                                     <p>Url sản phẩm:</p>
                                     <input type="text" name="url_prd" id="slug" class="form-control" style="background-color: white;margin-top: -10px;">
                                 </div>
-                            </div> 
+                            </div>
                             <br>
                             <!--Ảnh đại diện-->
                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top: 25px; padding: 0px 16px 6px 0px;">
                                 <div class="card" style="border: 1px solid #9E9E9E; border-radius: 10px">
                                     <div class="header bg-cyan" style="border-radius: 10px 10px 0px 0px">
                                         <h2>
-                                            Ảnh sản phẩm
+                                            Ảnh đại diện
                                         </h2>
-                                        <ul class="header-dropdown m-r--5">
-                                            
-                                        </ul>
                                     </div>
-                                    <div class="body" style="height: 55px">
-                                        <div style="margin:10px;">
-                                            <a href="#"><u>Thêm ảnh thư viện sản phẩm</u></a>
+                                    <div class="body" style="height:fit-content">
+                                        <div style="">
+                                            <input type="text" class="form-control" name="image" id="image">
+                                            <br>
+                                            <img src="" alt="" id="show_image" style="height:250px; width:250px; margin-bottom: 10px">
+                                            <br>
+                                            <span>
+                                                <a href="#modal-file" data-toggle="modal" class="btn btn-primary">Chọn ảnh</a>
+                                            </span>
                                         </div>
+                                        <br> <br><br>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="card" style="border: 1px solid #9E9E9E; border-radius: 10px">
                                     <div class="header bg-cyan" style="border-radius: 10px 10px 0px 0px">
                                         <h2>
-                                            Album hình ảnh sản phẩm
+                                            List ảnh sản phẩm
                                         </h2>
-                                        <ul class="header-dropdown m-r--5">
-                                            
-                                        </ul>
                                     </div>
-                                    <div class="body" style="height: 55px">
-                                        <div style="margin:10px;">
-                                            <a href="#"><u>Thêm ảnh thư viện sản phẩm</u></a>
+                                    <div class="body" style="height:fit-content">
+                                        <div style="">
+                                            <input type="text" class="form-control" name="image_list" id="image_list">
+                                            <br>
+                                            <div class="row" id="show_image_list">
+
+                                            </div>
+                                            <span>
+                                                <a href="#modal-list-image" data-toggle="modal" class="btn btn-primary">Chọn ảnh</a>
+                                            </span>
                                         </div>
+                                        <br> <br><br>
                                     </div>
                                 </div>
-                                <br> 
-                            </div>  
+                                <br>
+                            </div>
                         </div>
                         {{-- End Image --}}
                         {{-- Right SIde --}}
@@ -119,7 +133,7 @@
                                             Đăng
                                         </h2>
                                         <ul class="header-dropdown m-r--5">
-                                            
+
                                         </ul>
                                     </div>
                                     <div class="body" style="height:280px ">
@@ -128,8 +142,8 @@
                                         </div>
                                         <br>
                                         <div style="margin: 40px 10px 10px 10px">
-                                            <p style="margin: 25px 0 10px">Hiển thị : <strong></strong> 
-                                            <p style="margin: 25px 0 10px">Đăng : <strong></strong> 
+                                            <p style="margin: 25px 0 10px">Hiển thị : <strong></strong>
+                                            <p style="margin: 25px 0 10px">Đăng : <strong></strong>
                                         </div>
                                         <div>
                                             <hr style="height:2px;border-width:0;color:gray;background-color:gray; margin-top: 35px;">
@@ -145,29 +159,27 @@
                                     <h2>
                                             Danh mục sản phẩm
                                     </h2>
-                                    <ul class="header-dropdown m-r--5">
-                                        
-                                    </ul>
+
                                 </div>
                                 <div class="body">
-                                    
+
                                     <ul class="nav nav-tabs tab-nav-right" role="tablist" style="margin-left: 3px; margin-top: -2px;">
-                                        <li role="presentation" class="active"><a href="#home" data-toggle="tab">Tất cả chuyên mục</a></li>
+                                        <li role="presentation" class="active"><a href="#home" data-toggle="tab">Tất cả danh mục</a></li>
                                     </ul>
-                                    
+
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane fade in active" id="home">
                                             <div style="margin:0 10px 10px 10px;">
                                                 <br>
-                                                <input type="checkbox" name="categories_prd" id="basic_checkbox_3" class="filled-in" />
-                                                <label for="basic_checkbox_3">#</label>
+                                                <select name="categories_prd" id="input" class="form-control" required="required">
+                                                    <option value="category_prd_id">Chọn danh mục</option>
+                                                    @foreach($categories_prd as $category_prd)
+                                                        <option value="{{$category_prd->id}}">{{$category_prd->product_categories_name}}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
-                                    
-                                        <hr style="height:2px;border-width:0;color:gray;background-color:gray;">
-                                        <div style="margin-left: 10px; margin-top: -10px;">
-                                            <a href="chuyenmuc.html"><u>+ Thêm danh mục</u></a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -179,66 +191,137 @@
                                     <h2>
                                         Từ khóa sản phẩm
                                     </h2>
-                                    <ul class="header-dropdown m-r--5">
-                                        
-                                    </ul>
+
                                 </div>
                             <div class="body">
                                 <div style="margin: 10px">
-                                    <input type="text" name="tags_prd" class="form-control">
-                                    <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 7px 0 6px 0;">Thêm</button>
+                                    <input type="text" id="tags" name="tags_prd" class="form-control">
+                                    <br>
                                     <p>Phân cách các thẻ bằng dấu phẩy (,).</p>
                                 </div>
                             </div>
                         </div>
                         <br>
                         <!--Chuyên mục-->
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px; padding: 0px 16px 6px 0px;">
-                            <div class="card" style="border: 1px solid #9E9E9E; border-radius: 10px">
-                                <div class="header bg-cyan" style="border-radius: 10px 10px 0px 0px">
-                                    <h2>
-                                            Trạng thái hàng
-                                    </h2>
-                                    <ul class="header-dropdown m-r--5">
-                                    </ul>
-                                </div>
-                            <div class="body">
-                                <ul class="nav nav-tabs tab-nav-right" role="tablist" style="margin-left: 3px; margin-top: -2px;">
-                                    <li role="presentation" class="active"><a href="#home" data-toggle="tab">Tất cả chuyên mục</a></li>
-                                </ul>
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                    <div style="margin:0 10px 10px 10px;">
-                                        <input type="checkbox" name="status" id="basic_checkbox_2" class="filled-in"  />
-                                        <label for="basic_checkbox_2">#</label>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                 style="margin-top: -25px; padding: 0px 16px 6px 0px;">
+                                <div class="card" style="border: 1px solid #9E9E9E; border-radius: 10px">
+                                    <div class="header bg-cyan" style="border-radius: 10px 10px 0px 0px">
+                                        <h2>
+                                            Trạng thái
+                                        </h2>
+                                    </div>
+                                    <div class="body">
+
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                                <div style="margin:0 10px 10px 10px;">
+                                                    <input type="checkbox" name="status" value="Còn hàng"
+                                                           id="basic_checkbox_1" class="filled-in"/>
+                                                    <label for="basic_checkbox_1">Còn hàng</label>
+                                                </div>
+                                                <div style="margin:0 10px 10px 10px;">
+                                                    <input type="checkbox" name="status" value="Hết hàng"
+                                                           id="basic_checkbox_2" class="filled-in"/>
+                                                    <label for="basic_checkbox_2">Hết hàng</label>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
                                     </div>
                                 </div>
-                                <hr style="height:2px;border-width:0;color:gray;background-color:gray;">
-                                <div style="margin-left: 10px; margin-top: -10px;">
-                                    <a href="chuyenmuc.html"><u>+ Thêm trạng thái</u></a>
-                                </div>
                             </div>
-                        </div>
-                </div>
-            </div>
         </form>
     </div>
+
 </section>
-  
+
 @stop()
 
 @section('js')
+
+    <!-- Bootstrap Tags Input Plugin Js -->
+    <script src="{{asset('admin-frontend/plugins/jQuery-tagEditor-master/jquery.tag-editor.min.js')}}"></script>
+    <script>
+        $('#tags').tagEditor({ initialTags: $(this).attr("data-json"),
+            placeholder: 'Enter tags ...' });
+    </script>
+
+    <!-- Modal Ava -->
+    <div class="modal fade" id="modal-file" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+         aria-hidden="true">
+        <div class="modal-dialog" style="width:80%" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thư viện ảnh</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="http://localhost:8000/responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=&field_id=image"
+                        frameborder="18" style="width:100%; height:900px; "></iframe>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal List  img -->
+    <div class="modal fade" id="modal-list-image" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+         aria-hidden="true">
+        <div class="modal-dialog" style="width:80%" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thư viện ảnh</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="http://localhost:8000/responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=&field_id=image_list"
+                        frameborder="18" style="width:100%; height:900px; "></iframe>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('#modal-file').on('hide.bs.modal', function () {
+            var _img = $('input#image').val();
+            $('img#show_image').attr('src', _img);
+        });
+
+        $('#modal-list-image').on('hide.bs.modal', function () {
+            var _imgs = $('input#image_list').val();
+            var img_list = $.parseJSON(_imgs);
+            var _html='';
+            for (var i = 0; i < img_list.length; i++) {
+                _html += '<div class="col-md-3 thumbnail">';
+                    _html += '<img src="'+img_list[i]+'" alt="">';
+                _html += '</div>';
+            }
+            $('#show_image_list').html(_html);
+        });
+    </script>
+
 <script>
 function ChangeToSlug()
 {
     var name, slug;
- 
-    //Lấy text từ thẻ input title 
+
+    //Lấy text từ thẻ input title
     name = document.getElementById("name").value;
- 
+
     //Đổi chữ hoa thành chữ thường
     slug = name.toLowerCase();
- 
+
     //Đổi ký tự có dấu thành không dấu
     slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
     slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
@@ -263,5 +346,5 @@ function ChangeToSlug()
     //In slug ra textbox có id “slug”
     document.getElementById('slug').value = slug;
 }
-</script>    
+</script>
 @stop()

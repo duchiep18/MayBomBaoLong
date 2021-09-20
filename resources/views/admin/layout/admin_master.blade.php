@@ -2,41 +2,36 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>May Bom Bao Long - Admin Dashboard</title>
+    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+
     <!-- Favicon-->
-    <link rel="icon" href="{{ asset('../admin-frontend/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="{{ asset('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext')}}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('https://fonts.googleapis.com/icon?family=Material+Icons')}}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="{{ asset('../admin-frontend/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('admin-frontend/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="{{ asset('../admin-frontend/plugins/node-waves/waves.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/plugins/node-waves/waves.css')}}" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="{{ asset('../admin-frontend/plugins/animate-css/animate.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/plugins/animate-css/animate.css')}}" rel="stylesheet" />
 
-    <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="{{ asset('../admin-frontend/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')}}" rel="stylesheet" />
-
-    <!-- Bootstrap DatePicker Css -->
-    <link href="{{ asset('../admin-frontend/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css')}}" rel="stylesheet" />
-
-    <!-- Wait Me Css -->
-    <link href="{{ asset('../admin-frontend/plugins/waitme/waitMe.css')}}" rel="stylesheet" />
-
-    <!-- Bootstrap Select Css -->
-    <link href="{{ asset('../admin-frontend/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
+    <!-- Morris Chart Css-->
+    <link href="{{asset('admin-frontend/plugins/morrisjs/morris.css')}}" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="{{ asset('../admin-frontend/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('admin-frontend/css/style.css')}}" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="{{ asset('../admin-frontend/css/themes/all-themes.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/css/themes/all-themes.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
+
     @stack('css')
 
     <style>
@@ -46,7 +41,7 @@
             padding-left: 0;
             float: left }
             .dashboard-stat-list1 li {
-                padding: 16px 0 0 0; 
+                padding: 16px 0 0 0;
                 display: inline-block;}
                 .dashboard-stat-list1 a {
                 text-decoration: none;
@@ -132,6 +127,7 @@
                 <a href="#" class="bars"></a>
                 <a class="navbar-brand" href="#">Máy bơm Bảo Long - Quản lý trang Web</a>
             </div>
+
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Call Search -->
@@ -368,7 +364,7 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">Danh mục quản lý</li>
-                   
+
                     <li>
                         <a href="BaoLong_admin">
                             <i class="material-icons">assessment</i>
@@ -385,7 +381,7 @@
                                 <a href="{{route('add_gallery')}}" alt="">
                                     <span>Thư viện</span>
                                 </a>
-                               
+
                             </li>
                                                    </ul>
                     </li>
@@ -399,19 +395,19 @@
                                 <a href="{{route('news.index')}}" alt="">
                                     <span>Tất cả bài viết</span>
                                 </a>
-                               
+
                             </li>
                             <li>
                                 <a href="{{route('news.create')}}" alt="">
                                     <span>Viết bài mới </span>
                                 </a>
-                               
+
                             </li>
                             <li>
                                 <a href="{{route('news.create_catgr')}}" alt="">
                                     <span>Chuyên mục tin tức </span>
                                 </a>
-                               
+
                             </li>
 
                         </ul>
@@ -429,12 +425,12 @@
                             <li>
                                 <a href="create_page">Thêm Trang Mới</a>
                             </li>
-                            
+
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="menu-toggle">
-                        <span class="material-icons">inventory</span> 
+                        <span class="material-icons">inventory</span>
                         <span>Sản phẩm</span>
                         </a>
                         <ul class="ml-menu">
@@ -446,7 +442,7 @@
                             </li>
                             <li>
                                 <a href="{{route('products.create_catgr')}}">Danh mục sản phẩm</a>
-                            </li>  
+                            </li>
 
                             <li>
                                 <a href="">Từ khóa</a>
@@ -462,7 +458,7 @@
                             <span>Quản lý đơn hàng</span>
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">people</i>
@@ -474,7 +470,7 @@
                                 <a href="create_user">Thêm thành viên</a>
                                 <a href="profile_user">Hồ sơ</a>
                             </li>
-                          
+
                         </ul>
                     </li>
                     <li>
@@ -510,7 +506,7 @@
                             </li>
                         </ul>
                     </li>
-                 
+
                     <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">pie_chart</i>
@@ -563,7 +559,7 @@
                             </li>
                         </ul>
                     </li>
-                   
+
                     <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">trending_down</i>
@@ -792,6 +788,8 @@
         <!-- End Header -->
 
 @yield('content')
+
+
 <!-- Jquery Core Js -->
 <script src="{{asset('admin-frontend/plugins/jquery/jquery.min.js')}}"></script>
 
@@ -830,18 +828,30 @@
 <!-- Custom Js -->
 <script src="{{asset('admin-frontend/js/admin.js')}}"></script>
 <script src="{{asset('admin-frontend/js/pages/index.js')}}"></script>
-<script src="{{asset('admin-frontend/js/pages/forms/editors.js')}}"></script>
 
+<!-- Demo Js -->
+<script src="{{asset('admin-frontend/js/demo.js')}}"></script>
 
 {{-- CKEditor --}}
-<script src="{{asset('admin-frontend/plugins/ckeditor/ckeditor.js')}}"></script>
+<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 <script>
- 
-    CKEDITOR.replace( 'content' );
-    CKEDITOR.replace( 'description' );
+    var content_post = document.getElementById('content')
+    CKEDITOR.replace('content',{
+	filebrowserBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserUploadUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserImageBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
+});
+var description_post = document.getElementById('description')
 
-</script>    
+    CKEDITOR.replace('description',{
+	filebrowserBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserUploadUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserImageBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
+});
+</script>
+        <script src="{{asset('admin-frontend/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}"></script>
+
+
 @yield('js')
- 
 </body>
 </html>

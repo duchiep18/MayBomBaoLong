@@ -1,5 +1,9 @@
 @extends('admin.layout.admin_master')
 
+<!-- Bootstrap Select Css -->
+@push('css')
+ <link href="../admin-frontend/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+@endpush
 
 @section('content')
     <section class="content">
@@ -141,9 +145,7 @@
              </div>
         </div>
     </section>
-        <!-- Latest compiled and minified CSS & JS -->
-        <script src="//code.jquery.com/jquery.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
+       
         <script>
                 $(document).ready(function () {
                     $('.btn-delete').click(function () {
@@ -155,6 +157,5 @@
                     });
                 })
          </script>
-        {{-- // Bootstrap 3 --}}
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
 @stop
