@@ -366,7 +366,7 @@
                     <li class="header">Danh mục quản lý</li>
 
                     <li>
-                        <a href="BaoLong_admin">
+                        <a href="home_admin">
                             <i class="material-icons">assessment</i>
                             <span>Bảng tin</span>
                         </a>

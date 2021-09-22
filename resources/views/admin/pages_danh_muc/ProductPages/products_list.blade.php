@@ -95,8 +95,8 @@
                                             <td> {{$product->status}} </td>
                                             <td> {{$product->price}} </td>
                                             <td>
-                                                @if($product->news_category)
-                                                    {{$product->news_category->news_categories_name}}
+                                                @if($product->products_category)
+                                                    {{$product->products_category->product_categories_name}}
                                                 @endif
                                             </td>
                                             <td> {{$product->tags}} </td>

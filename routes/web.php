@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 //Route Admin Dashboard
 
 Route::middleware(['auth'])->group(function () {
-   
-    Route::get('BaoLong_admin', function(){
+
+    Route::get('home_admin', function(){
         return view('admin.layout.home_admin');
     });
     // Route Users
@@ -34,7 +34,7 @@ Route::middleware(['auth'])->group(function () {
     // Route phản hồi bình luận
     Route::get('all_comments', 'AdminController@getAllComments')->name('all_comments');
 
-    
+
     //route get về trang danh sách tin tức
     Route::get ('/news.index', 'NewPostsController@getNews')->name('news.index');
     //route tạo bài viết mới
@@ -53,7 +53,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/news.catgr','NewPostsController@storeCategories')->name('news.storeCategories');
     //route nhóm các bài viết và sản phẩm có cùng category
     Route::get('categories/{id}/news','CategoryController@news');
-    
+
 
     //Route Product
 
@@ -74,17 +74,17 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/products/{id}', 'ProductController@destroy')->name('products.destroy');
 
     Route::get('categories/{id}/products', 'CategoryController@products');
-}); 
+});
 //End Route Admin
 //===============================================//
 //Middleware phân quyền cho các Route
 // Route::middleware(['auth'])->group(function () {
-    
+
     // Route::get('homeLogin', function() {
     //     return view('client.page.homeLogin');
     // });
     // Route::get('homeLogin', 'ProductController@getProduct_Login');
-// });     
+// });
 
 
 //Route Home page Client
@@ -93,7 +93,7 @@ Route::get('home', function() {
 });
 
 //Route Login, SignUp
-Route::get('login', 'AuthController@geptFormLogin')->name('login.get');
+Route::get('BaoLong_admin', 'AuthController@geptFormLogin')->name('login.get');
 Route::post('login', 'AuthController@submitFormLogin')->name('login.submit');
 Route::get('register', 'AuthController@getFormRegister')->name('register.get');
 Route::post('register', 'AuthController@submitFormRegister')->name('register.submit');
@@ -113,7 +113,7 @@ Route::get('cart',function(){
 });
 
 Route::get('checkout',function(){
-    return view('client.cart-payment.checkout'); 
+    return view('client.cart-payment.checkout');
 });
 Route::get('contact_us',function(){
     return view('client.page.contactus');
@@ -128,11 +128,11 @@ Route::post('/calculator','CalculatorController@storeDataFormCalculate')->name('
 
 //Route fake dữ liệu news
 Route::get('fake_du_lieu_news', function(){
-    for ($i=0; $i < 113 ; $i++) { 
+    for ($i=0; $i < 113 ; $i++) {
         $new = new \App\Models\News;
         $new->title = 'Tất tần tật về siêu phẩm Intel thế hệ thứ 10';
         $new->description = 'Review siêu phẩm Intel Core i3 10100f';
-        $new->content = 'Intel Core i3 thế hệ thứ 8 có thông số 4 nhân 4 luồng, cho tốc độ xung nhịp lên tới 4GHz, giúp máy tính của bạn làm được nhiều việc, xử lý nhiều tác vụ cùng một lúc, Cùng với 8MB Smart cache đã góp phần nâng cao sức mạnh xử lý. 
+        $new->content = 'Intel Core i3 thế hệ thứ 8 có thông số 4 nhân 4 luồng, cho tốc độ xung nhịp lên tới 4GHz, giúp máy tính của bạn làm được nhiều việc, xử lý nhiều tác vụ cùng một lúc, Cùng với 8MB Smart cache đã góp phần nâng cao sức mạnh xử lý.
         Ngoài ra một số phiên bản Core i3 thế hệ thứ 8 còn được trang bị công nghệ Intel Turbo Boost thường thấy ở các dòng i5, i7 (ở tác vụ thông thường sẽ chạy tốc độ thấp để tiết kiệm pin và tăng xung nhịp xử lý ở các tác vụ nặng).
         Và đặc biệt, trong lần ra mắt gần đây, Intel đã cho thấy những bộ vi xử lý Core I3 của họ có khả năng tạo nên nhiều sự khác biệt. Core i3 thế hệ thứ 10 sẽ có 4 nhân 8 luồng tương đương sức mạnh của dòng Core i7 thế hệ thứ 7. Các vi xử lý mới đạt
         tốc độ xung nhịp cao hơn hờ các công nghệ mới như Turbo Boost 3.0, siêu phân luồng HyperThreading và Thermal Velocity Boost giúp CPU đạt được mức xung nhịp vô cùng ấn tượng nếu điều kiện cho phép.';
@@ -140,7 +140,7 @@ Route::get('fake_du_lieu_news', function(){
         $new->updated_at;
         $new->save();
     }
-    
+
 });
 //Route fake dl profile người dùng
 Route::get('fake-profile', function(){
@@ -150,18 +150,18 @@ Route::get('fake-profile', function(){
     $profile->address = '113, ngõ 97 Thái Thịnh, Đống Đa - HN';
     $profile->gender = 1;
     $profile->id_user = 1;
-    
+
     $profile->save();
-    
+
 });
 //Route demo quan hệ 1-1
 Route::get('relationship/one-to-one', function(){
     $user = \App\Models\User::find(1);
-    
+
     echo "Username: {$user->username} <br> ";
     echo "Địa chỉ: {$user->profile->address} <br> ";
-    
-}); 
+
+});
 
 //demo và các thứ muốn thử
 Route::get('/posts', function () {

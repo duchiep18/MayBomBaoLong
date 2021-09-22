@@ -246,7 +246,7 @@
     <script src="{{asset('admin-frontend/plugins/jQuery-tagEditor-master/jquery.tag-editor.min.js')}}"></script>
     <script>
         $('#tags').tagEditor({ initialTags: $(this).attr("data-json"),
-            placeholder: 'Enter tags ...' });
+            placeholder: 'Thêm từ khóa' });
     </script>
 
     <!-- Modal Ava -->
