@@ -2,41 +2,89 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>May Bom Bao Long - Admin Dashboard</title>
+    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+
     <!-- Favicon-->
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link href="{{ asset('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext')}}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('https://fonts.googleapis.com/icon?family=Material+Icons')}}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="{{ asset('admin-frontend/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('admin-frontend/plugins/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="{{ asset('admin-frontend/plugins/node-waves/waves.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/plugins/node-waves/waves.css')}}" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="{{ asset('admin-frontend/plugins/animate-css/animate.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/plugins/animate-css/animate.css')}}" rel="stylesheet" />
 
-    <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="{{ asset('admin-frontend/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')}}" rel="stylesheet" />
-
-    <!-- Bootstrap DatePicker Css -->
-    <link href="{{ asset('admin-frontend/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css')}}" rel="stylesheet" />
-
-    <!-- Wait Me Css -->
-    <link href="{{ asset('admin-frontend/plugins/waitme/waitMe.css')}}" rel="stylesheet" />
-
-    <!-- Bootstrap Select Css -->
-    <link href="{{ asset('admin-frontend/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
+    <!-- Morris Chart Css-->
+    <link href="{{asset('admin-frontend/plugins/morrisjs/morris.css')}}" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="{{ asset('admin-frontend/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('admin-frontend/css/style.css')}}" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="{{ asset('admin-frontend/css/themes/all-themes.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/css/themes/all-themes.css')}}" rel="stylesheet" />
+    <link href="{{asset('admin-frontend/plugins/bootstrap-select/css/bootstrap-select.css')}}" rel="stylesheet" />
+
+    @stack('css')
+
+    <style>
+        /* CSS createPost */
+        .dashboard-stat-list1 {
+            list-style: none;
+            padding-left: 0;
+            float: left }
+            .dashboard-stat-list1 li {
+                padding: 16px 0 0 0;
+                display: inline-block;}
+                .dashboard-stat-list1 a {
+                text-decoration: none;
+                }
+                .dashboard-stat-list1 span {
+                padding: 0 10px 0 10px;
+                }
+                .dashboard-stat-list1 li small {
+                font-size: 8px; }
+
+        .nopadding-left {
+            padding-left: 0!important;
+        }
+
+        .bootstrap-select.btn-group .dropdown-toggle .caret {
+            right: -6px;
+        }
+        .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="col-"] {
+            border-radius: 3px;
+        }
+        .btn:not(.btn-link):not(.btn-circle) {
+            border-radius: 7px;
+            border: 1px solid #9E9E9E;
+        }
+        .form-control {
+            background-color: unset;
+        }
+
+        /* CSS postCategories */
+        .bootstrap-select.btn-group .dropdown-toggle .caret {
+            right: -6px;
+        }
+        .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="col-"] {
+            border-radius: 3px;
+        }
+        .btn:not(.btn-link):not(.btn-circle) {
+            border-radius: 7px;
+            border: 1px solid #9E9E9E;
+        }
+        .form-control {
+            background-color: unset;
+        }
+    </style>
 </head>
 
 <body class="theme-red">
@@ -77,8 +125,9 @@
             <div class="navbar-header">
                 <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="#" class="bars"></a>
-                <a class="navbar-brand" href="xuepc_admin">Máy bơm Bảo Long - Quản lý trang Web</a>
+                <a class="navbar-brand" href="#">Máy bơm Bảo Long - Quản lý trang Web</a>
             </div>
+
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Call Search -->
@@ -315,37 +364,26 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">Danh mục quản lý</li>
+
                     <li>
-                        <a href="BaoLong_admin">
-                            <i class="material-icons">home</i>
-                            <span>Trang chủ</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="BaoLong_admin">
+                        <a href="home_admin">
                             <i class="material-icons">assessment</i>
                             <span>Bảng tin</span>
                         </a>
                     </li>
-                                        <li>
+                    <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">image</i>
                             <span>Media</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="#" alt="">
+                                <a href="{{route('add_gallery')}}" alt="">
                                     <span>Thư viện</span>
                                 </a>
-                               
+
                             </li>
-                            <li>
-                                <a href="#" alt="">
-                                    <span>Tải lên </span>
-                                </a>
-                               
-                            </li>
-                        </ul>
+                                                   </ul>
                     </li>
                     <li>
                         <a href="#" class="menu-toggle">
@@ -357,19 +395,19 @@
                                 <a href="{{route('news.index')}}" alt="">
                                     <span>Tất cả bài viết</span>
                                 </a>
-                               
+
                             </li>
                             <li>
                                 <a href="{{route('news.create')}}" alt="">
                                     <span>Viết bài mới </span>
                                 </a>
-                               
+
                             </li>
                             <li>
                                 <a href="{{route('news.create_catgr')}}" alt="">
                                     <span>Chuyên mục tin tức </span>
                                 </a>
-                               
+
                             </li>
 
                         </ul>
@@ -382,17 +420,17 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="/admin-frontend/pages/ui/alerts.html">Danh sách các trang</a>
+                                <a href="all_pages">Danh sách các trang</a>
                             </li>
                             <li>
-                                <a href="/admin-frontend/pages/ui/animations.html">Thêm Trang Mới</a>
+                                <a href="create_page">Thêm Trang Mới</a>
                             </li>
-                            
+
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="menu-toggle">
-                        <span class="material-icons">inventory </span> 
+                        <span class="material-icons">inventory</span>
                         <span>Sản phẩm</span>
                         </a>
                         <ul class="ml-menu">
@@ -404,7 +442,7 @@
                             </li>
                             <li>
                                 <a href="{{route('products.create_catgr')}}">Danh mục sản phẩm</a>
-                            </li>  
+                            </li>
 
                             <li>
                                 <a href="">Từ khóa</a>
@@ -415,19 +453,33 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="all_orders">
+                            <i class="material-icons">description</i>
+                            <span>Quản lý đơn hàng</span>
+                        </a>
+                    </li>
+
+                    <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">people</i>
                             <span>Thành viên</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="/admin-frontend/pages/medias/image-gallery.html">Danh sách người dùng</a>
-                                <a href="/admin-frontend/pages/medias/image-gallery.html">Thêm thành viên</a>
-                                <a href="/admin-frontend/pages/medias/image-gallery.html">Hồ sơ</a>
+                                <a href="all_users">Danh sách người dùng</a>
+                                <a href="create_user">Thêm thành viên</a>
+                                <a href="profile_user">Hồ sơ</a>
                             </li>
-                          
+
                         </ul>
                     </li>
+                    <li>
+                        <a href="all_comments">
+                            <i class="material-icons">chat_bubble</i>
+                            <span>Phản hồi - Bình luận</span>
+                        </a>
+                    </li>
+                {{-- End Menu --}}
                     {{-- <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">assignment</i>
@@ -454,7 +506,7 @@
                             </li>
                         </ul>
                     </li>
-                 
+
                     <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">pie_chart</i>
@@ -507,7 +559,7 @@
                             </li>
                         </ul>
                     </li>
-                   
+
                     <li>
                         <a href="#" class="menu-toggle">
                             <i class="material-icons">trending_down</i>
@@ -550,12 +602,12 @@
                             </li>
                         </ul>
                     </li> --}}
-                    <li>
+                    {{-- <li>
                         <a href="/admin-frontend/pages/changelogs.html">
                             <i class="material-icons">update</i>
                             <span>Changelogs</span>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="header">LABELS</li>
                     <li>
                         <a href="#">
@@ -736,9 +788,10 @@
         <!-- End Header -->
 
 @yield('content')
+
+
 <!-- Jquery Core Js -->
 <script src="{{asset('admin-frontend/plugins/jquery/jquery.min.js')}}"></script>
-
 
 <!-- Bootstrap Core Js -->
 <script src="{{asset('admin-frontend/plugins/bootstrap/js/bootstrap.js')}}"></script>
@@ -779,5 +832,26 @@
 <!-- Demo Js -->
 <script src="{{asset('admin-frontend/js/demo.js')}}"></script>
 
+{{-- CKEditor --}}
+<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+<script>
+    var content_post = document.getElementById('content')
+    CKEDITOR.replace('content',{
+	filebrowserBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserUploadUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserImageBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
+});
+var description_post = document.getElementById('description')
+
+    CKEDITOR.replace('description',{
+	filebrowserBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserUploadUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserImageBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
+});
+</script>
+        <script src="{{asset('admin-frontend/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}"></script>
+
+
+@yield('js')
 </body>
 </html>

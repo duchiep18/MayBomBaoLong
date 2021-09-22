@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\user;
 use Validator;
 use Auth;
+use Session;
+
 
 
 class AuthController extends Controller
@@ -14,31 +16,31 @@ class AuthController extends Controller
         return view ('client.page.login');
 
     }
-    
+
     public function submitFormLogin (Request $request){
         $email = $request->input('email');
         $username = $request->input('username');
         $password = $request->input('password');
-        
-        
+
+
         if(Auth::attempt(['email' => $email,
                           'username' => $username,
                           'password' => $password]))
         {
             $user =user::where('email', $email)->first();
             Auth::login($user);
-            return redirect('/BaoLong_admin');
+            return redirect('/home_admin');
         }
     }
 
     public function getFormRegister() {
         return view ('client.page.signUp');
     }
-    
+
     public function submitFormRegister(Request $request) {
 
             $request->validate([
-            'email' => 'required|email|unique:users,email', 
+            'email' => 'required|email|unique:users,email',
             'username' => 'required|unique:users,username',
             'password' => 'required|min:8',
             'address' => '',
@@ -54,7 +56,7 @@ class AuthController extends Controller
             'password.min' => 'Password cần có tối thiểu 8 kí tự',
             'phonenumber.required' => 'Số điện thoại là trường bắt buộc',
             'phonenumber.max' => 'Số điện thoại không hợp lệ',
-            'gender.numeric' => 'Giới tính không hợp lê',    
+            'gender.numeric' => 'Giới tính không hợp lê',
         ]);
 
             // if($validator->fails()){
@@ -75,11 +77,18 @@ class AuthController extends Controller
         $user->phone_number = $phonenumber;
         $user->save();
         return redirect()->route('login.get');
-        
+
     }
     public function logout(){
         Auth::logout();
         return redirect()->route('login.get');
     }
+
+    public function getGallery(){
+        return view('admin.gallery.add_gallery');
+    }
+
+
+
 }
 

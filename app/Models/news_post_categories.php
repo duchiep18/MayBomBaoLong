@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class news_post_categories extends Model
 {
-    use HasFactory;
+    protected $table = 'news_post_categories';
 }
