@@ -202,6 +202,44 @@
 		.haha:hover {
 			background: #999!important;
 		}
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #FE980F;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+    
 	</style>
 </head><!--/head-->
 
@@ -313,56 +351,153 @@
 					
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-right" style="padding-right: 15px;">
 						<div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc; padding-bottom: 15px;"><!--Sản phẩm nổi bật-->
-							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                                <table style="width: 100%; margin-top: 30px;">
+							<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="padding: 20px;">
+                                <img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" >
+                                <h2 class="title" style="margin-bottom: unset;">Bảng giá máy thổi khí Taiko Kikai Nhật Bản</h2>
+								<h2 class="title" style="margin-top: 0px; font-size: 30px;">1.000.000.000 đ</h2>
+                                <div style="margin: 30px 0 0 15px;">
+                                    <p><strong>Tình trạng:</strong> Còn hàng</p>
+                                    <p><strong>Xuất xứ:</strong> Nhật Bản</p>
+                                    <p><strong>Bảo hành:</strong> 12 tháng</p>
+                                    <p><strong>Nhà sản xuất:</strong> Taiko</p>
+                                    <p><strong>Thương hiệu:</strong> Máy thổi khí Taiko</p>
+                                    <p>Máy thổi khí Taiko</p>
+                                    <p>Chưa VAT 10%</p>
+                                    <p>Bảo hành 12 tháng</p>
+
+                                    <br>
+
+                                    <hr>
+
+                                    <div style="margin-bottom: 15px;">
+										<button type="button" style="border: 2px solid #FE980F;background:#FE980F; color: white; display: inline-block">-</button>
+										<input style="width: 50px; margin: 0 -5px 0 -5px;" type="text" id="count" name="count">
+										<button type="button" style="border: 2px solid #FE980F;background:#FE980F; color: white; display: inline-block">+</button>                                        
+										<button class="tada" type="button" style="margin-left: 15px; border-radius: 5px; background:#fe960fcc; color: white; display: inline-block; border: 2px solid #FE980F;">Thêm vào giỏ hàng</button>
+                                    </div>
+                                    <div style="color: #FE980F">
+                                        <p>Cam kết chất lượng</p>
+                                        <p>Giao hàng nhanh chóng</p>
+                                        <p>Thanh toán tại nhà</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--Giới thiệu-->
+					</div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-right" style="padding-right: 15px; margin-top: 30px;">
+						<div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc;"><!--Sản phẩm nổi bật-->
+							<div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Mô tả</button>
+                                <button class="tablinks" onclick="openCity(event, 'Paris')">Đánh giá</button>
+                            </div>
+                              
+                              <!-- Tab content -->
+                            <div id="London" class="tabcontent">
+                                <h3 style="color:#FE980F">Thông số kỹ thuật</h3>
+                                <table style="width: 100%; margin-top: 30px; margin-bottom: 30px;">
                                     <tr>
-                                      <th>Sản phẩm</th>
-                                      <th>Giá</th>
-                                      <th>Số lượng</th>
-                                      <th>Tạm tính</th>
-                                      <th></th>
+                                      <th>STT</th>
+                                      <th>SẢN PHẨM</th>
+                                      <th>TÊN LINH KIỆN</th>
+                                      <th>BẢO HÀNG</th>
                                     </tr>
                                     <tr>
-                                      <td><a href="#">none</a></td>
-                                      <td><strong>none</strong></td>
-                                      <td>
-                                          <button type="button" style="border: 2px solid #FE980F;background:#FE980F; color: white; display: inline-block">-</button>
-                                          <input style="width: 34px; margin: 0 -5px 0 -5px;" type="text" id="count" name="count">
-                                          <button type="button" style="border: 2px solid #FE980F;background:#FE980F; color: white; display: inline-block">+</button>
-                                     </td>
-                                      <td><strong>none</strong></td>
-                                      <td ><button type="button" class="tada" style="border-radius: 5px; border: 2px solid #FE980F;background:#fe960fcc; color: white;">Xóa</button></td>
+                                      <td>none</td>
+                                      <td>none</td>
+                                      <td>none</td>
+                                      <td>none</td>
                                     </tr>
                                     
                                 </table>
-                                <br>
-                                <button class="continue" type="button" style="border-radius: 5px;display: inline-block">Tiếp tục xem sản phẩm</button>
-                                <button class="tada" type="button" style="border-radius: 5px; background:#fe960fcc; color: white; display: inline-block; border: 2px solid #FE980F;">Cập nhật giỏ hàng</button>
                             </div>
-                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="margin-top: 45px;">
-                                <p><strong>Cộng giỏ hàng</strong></p>
+                              
+                            <div id="Paris" class="tabcontent">
+                                <h3 style="color:#FE980F">Đánh giá</h3>
+                                <p>Chưa có đánh giá nào.</p>
+                                <p>Hãy là người đầu tiên nhận xét “Bảng giá máy thổi khí Taiko Kikai Nhật Bản”</p>
+                                <p>Thư điện tử của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</p>
+                                <p><strong>Nhận xét của bạn *</strong></p>
+								<textarea id="comment" name="comment" rows="4" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+								<div style="margin-top: 15px;"></div>
+                                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4" style="padding-left: 0px;">
+                                    <p><strong>Tên *</strong></p>
+                                    <textarea id="nameU" name="nameU" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                                    <p><strong>Thư điện tử *</strong></p>
+                                    <textarea id="mail" name="mail" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+                                </div>
+                                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                                    <p><strong>Trang web *</strong></p>
+                                    <textarea id="web" name="web" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+                                </div>
                                 <br>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline; padding-left: unset;">
-                                    <p><small>Tạm tính</small></p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline;">
-                                    <p class="pull-right"><small><strong>none</strong></small></p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline; padding-left: unset;">
-                                    <p><small>Tổng</small></p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline;">
-                                    <p class="pull-right"><small><strong>none</strong></small></p>
-                                </div>
-
-                                <button class="tada" type="button" style="border-radius: 5px; background:#fe960fcc; color: white; display: inline-block; border: 2px solid #FE980F; width: 100%; margin-top: 15px; padding: 5px 0 5px 0;"><a style="color: white;" href="pay.html">Tiến hành thanh toán</a></button>
-
-                                <p style="margin-top: 20px;"><small><strong>Phiếu ưu đãi</strong></small></p>
-                                <input type="text" id="uudai" name="uudai" style="width: 100%;">
-                                <button class="haha" type="button" style="border-radius: 5px; background:#ccc; color: white; display: inline-block; border: 2px solid #ccc; width: 100%; margin-top: 15px; padding: 5px 0 5px 0;">Áp dụng</button>
-
-
+                                <button class="btn btn-rounded btn-sm my-0 ml-sm-2" type="submit" style="background-color: #FE980F; margin: 15px 15px 15px 0px;">Gửi đi</button>
                             </div>
+                        </div><!--Giới thiệu-->
+					</div>
+
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-right" style="padding-right: 15px; margin-top: 30px;">
+						<div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc; padding-bottom: 15px;"><!--Sản phẩm nổi bật-->
+							<h2 class="title pull-left top-item">Sản phẩm tương tự</h2>
+
+							<div class="item" style="padding-left: unset;">	
+                                <div class="col-sm-3 col-lg-3 col-xs-3 col-md-3">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend1.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-xs-3 col-md-3">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend2.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-xs-3 col-md-3">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend3.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-3 col-xs-3 col-md-3">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/recommend3.jpg" alt="" />
+                                                <h2>$56</h2>
+                                                <p>Easy Polo Black Edition</p>
+                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
                         </div><!--Giới thiệu-->
 					</div>
 				</div>
@@ -432,6 +567,7 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
 	<script src="stickjs.js"></script>
+    <script src="tab.js"></script>
 </body>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\products;
+use App\Models\products_categories;
 use Illuminate\Http\Request;
 use Session;
 
@@ -17,7 +19,7 @@ class AdminController extends Controller
     {
         return view('admin.pages_danh_muc.PagesOfWeb.allpages');
     }
-    
+
     public function getCreatePage()
     {
         return view ('admin.pages_danh_muc.PagesOfWeb.createPage');
@@ -43,7 +45,16 @@ class AdminController extends Controller
     {
         return view('admin.pages_danh_muc.all_comments');
     }
+//    Đổ dl product ra home
+//đổ dl ra trang Home
+    public function getDatatHome(Request $request){
+        $query = products::query();
+        $products = $query->paginate(5);
 
+        $categories_prd = products_categories::all();
+        // $product = products::paginate(4);
+        return view('client.page.home', compact('products','categories_prd'));
 
+    }
 
 }

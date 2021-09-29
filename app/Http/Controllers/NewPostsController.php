@@ -37,28 +37,8 @@ class NewPostsController extends Controller
           $new = $newsQuery->paginate(10);
           return view('admin.pages_danh_muc.NewsPages.news_list', compact('new'));
       }
-    //truy cập trang tạo danh mục cùng Categories đã tạo
-    public function create_catgr(){
-        $categories = news_post_categories::all();
-        return view('admin.pages_danh_muc.NewsPages.createNewsCategories', compact('categories'));
-    }
 
-    //tạo chuyên mục tin tức
-    public function storeCategories(Request $request) {
-        $name = $request ->input ('name_categories');
-        $url_cat = $request -> input('url_cat');
-        $description = $request ->input('desc_cat');
-        $news_categories_type = $request -> input('type_cat');
 
-        $news_catgr = new news_post_categories;
-        $news_catgr->news_categories_name = $name;
-        $news_catgr->news_categories_desc = $description;
-        $news_catgr->news_categories_type = $news_categories_type;
-        $news_catgr->url_cat = $url_cat;
-        $news_catgr->save();
-
-        return redirect()->route('news.create_catgr');
-    }
 
     //tạo bai viết
     public function storeData(Request $request){
@@ -67,7 +47,7 @@ class NewPostsController extends Controller
         $content = $request -> input('content');
         $description = $request -> input('description');
         $url_post = $request->input('url_post');
-        $image = str_replace(url('responsive_filemanager/source').'/', '', $request->image);
+        $image = str_replace(url('responsive_filemanager/source').'/', '', $request->image_post);
         $tags_post = $request->input('tags_post');
         $status = $request -> input('status');
 

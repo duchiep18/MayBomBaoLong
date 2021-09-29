@@ -35,7 +35,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('all_comments', 'AdminController@getAllComments')->name('all_comments');
 
 
-    //route get về trang danh sách tin tức
+    //route Tin tức
     Route::get ('/news.index', 'NewPostsController@getNews')->name('news.index');
     //route tạo bài viết mới
     Route::get('/news.create', 'NewPostsController@create')->name('news.create');
@@ -47,21 +47,14 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/news/{id}', 'NewPostsController@update')->name('news.update');
     //route xóa bài viết theo id
     Route::delete('/news/{id}', 'NewPostsController@destroy')->name('news.destroy');
-    //Route tạo categories cho các bài viết
-    Route::get('/news.create_catgr','NewPostsController@create_catgr')->name('news.create_catgr');
-    //Lưu categories vào csdl
-    Route::post('/news.catgr','NewPostsController@storeCategories')->name('news.storeCategories');
-    //route nhóm các bài viết và sản phẩm có cùng category
-    Route::get('categories/{id}/news','CategoryController@news');
+
 
 
     //Route Product
 
     Route::get ('/products.index', 'ProductController@getProduct_admin')->name('products.index');
 
-    Route::get('/products.create_catgr', 'ProductController@create_prd_catgr')->name('products.create_catgr');
 
-    Route::post('/products.catgr', 'ProductController@productCategories')->name('products.storeCategories');
 
     Route::get ('/products.create','ProductController@create_prd')->name('products.create');
 
@@ -74,7 +67,33 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/products/{id}', 'ProductController@destroy')->name('products.destroy');
 
     Route::get('categories/{id}/products', 'CategoryController@products');
-});
+
+    Route::get('/products/keywords', 'ProductController@getEditProductCategories')->name('product.keywors');
+
+    //Route Categories Admin
+    //Route tạo categories cho các bài viết
+    Route::get('/news.create_catgr','CategoriesController@createNewCats')->name('news.create_catgr');
+    //Lưu categories vào csdl
+    Route::post('/news.catgr','CategoriesController@storeNewCategories')->name('news.storeCategories');
+    //Route edit new cats
+    Route::get('/news.catgr/{id}/edit', 'CategoriesController@editCat')->name('news.catgr.edit');
+    //Route update news categories
+    Route::put('/news.catgr/{id}', 'CategoriesController@updateCat')->name('news.catgr.update');
+    //Route xóa news categories
+    Route::delete('/news.catgr/{id}', 'CategoriesController@destroyNewsCat')->name('news.catgr.destroy');
+    //route nhóm các bài viết và sản phẩm có cùng category
+    Route::get('categories/{id}/news','CategoryController@news');});
+
+    //Route tạo categories Product
+    Route::get('/products.create_catgr', 'CategoriesController@create_prd_catgr')->name('products.create_catgr');
+    //route lưu product cate vào csdl
+    Route::post('/products.catgr', 'CategoriesController@storeProductCategories')->name('products.storeCategories');
+    //Route edit new cats
+    Route::get('/prd.catgr/{id}/edit', 'CategoriesController@editProductCats')->name('products.catgr.edit');
+    //Route update news categories
+    Route::put('/prd.catgr/{id}', 'CategoriesController@updateProductCats')->name('products.catgr.update');
+    //Route xóa news categories
+    Route::delete('/prd.catgr/{id}', 'CategoriesController@destroyProductCats')->name('products.catgr.destroy');
 //End Route Admin
 //===============================================//
 //Middleware phân quyền cho các Route
@@ -99,11 +118,12 @@ Route::get('register', 'AuthController@getFormRegister')->name('register.get');
 Route::post('register', 'AuthController@submitFormRegister')->name('register.submit');
 Route::post('logout', 'AuthController@logout')->name('logout');
 
-//Route Product
-Route::get('home', 'ProductController@getProduct');
+//Route get Product đến Home
+Route::get('home', 'AdminController@getDatatHome');
+
 
 //Route Shop
-Route::get('/shop',function(){
+Route::get('shop',function(){
     return view('client.products.ShopProducts');
 });
 
@@ -114,9 +134,14 @@ Route::get('cart',function(){
 
 Route::get('checkout',function(){
     return view('client.cart-payment.checkout');
+
 });
 Route::get('contact_us',function(){
     return view('client.page.contactus');
+});
+
+Route::get('introduce',function(){
+    return view('client.page.introduce');
 });
 
 //Route tính toán đại số ở đây

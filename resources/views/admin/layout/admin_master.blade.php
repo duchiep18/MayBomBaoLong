@@ -445,7 +445,7 @@
                             </li>
 
                             <li>
-                                <a href="">Từ khóa</a>
+                                <a href="{{route('product.keywors')}}">Từ khóa</a>
                             </li>
                             <li>
                                 <a href="">Thuộc tính</a>

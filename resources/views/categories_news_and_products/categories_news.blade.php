@@ -3,7 +3,6 @@
 
 @section('content')
     <section class="content">
-        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
 
@@ -14,7 +13,7 @@
                     <form action="">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" style="border=18" name="keywordsearch_news" value="{{request()->input('keywordsearch_news')}}" class="form-control" id="" placeholder="Nhập thứ bạn muốn tìm kiếm"> <br> 
+                                <input type="text" style="border=18" name="keywordsearch_news" value="{{request()->input('keywordsearch_news')}}" class="form-control" id="" placeholder="Nhập thứ bạn muốn tìm kiếm"> <br>
                             </div>
                             <div class="col-md-6">
                             <button type="submit" class="btn btn-primary ">Tìm kiếm bài viết</button>
@@ -22,7 +21,7 @@
                         </div>
                     </form>
                          <br> <br>
-                        
+
                    <table class="table table-striped table-dark">
                         <thead class="thead-dark">
                             <tr>
@@ -41,22 +40,22 @@
                             @foreach ($news as $addnew)
                             <tr>
                                 <td> {{$addnew->id}} </td>
-                                <td> 
+                                <td>
                                     @if($addnew->news_category)
                                         {{$addnew->news_category->name}}
                                     @endif
-                                </td>        
+                                </td>
                                 <td> {{$addnew->title}} </td>
                                 <td> {{$addnew->description}} </td>
                                 <td> {{$addnew->content}} </td>
                                 <td class="thumb column-thumb" data-colname="Ảnh"><a href="#"><img width="150" height="150" src="{{'$addnew->image'}}" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy"  sizes="(max-width: 150px) 100vw, 150px"></a>
-                                </td>                                
+                                </td>
                                 <td> {{$addnew->status}} </td>
                                 <td> {{$addnew->created_at}} </td>
                                 <td> {{$addnew->updated_at}} </td>
 
-                                <td> 
-                                    <a href="{{route('news.edit', $addnew->id)}}" class="btn btn-primary">Edit</a> 
+                                <td>
+                                    <a href="{{route('news.edit', $addnew->id)}}" class="btn btn-primary">Edit</a>
                                     <form class="" action="{{route('news.destroy', $addnew->id)}}" method="POST">
                                         @csrf
                                         @method('delete')
@@ -69,15 +68,15 @@
                         </table>
 
                     <div style="text-align:center">
-						{{$news->appends($_GET)}}      
+						{{$news->appends($_GET)}}
 					</div>
-                </div>
+                </div>bbbb
             </div>
         </div>
-        
+
             <!-- Latest compiled and minified CSS & JS -->
             <script src="//code.jquery.com/jquery.js"></script>
-            <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
             <script>
                 $(document).ready(function () {
                     $('.btn-delete').click(function () {
@@ -89,8 +88,7 @@
                     });
                 })
             </script>
-            
+
     </section>
-  
+
 @stop
-          

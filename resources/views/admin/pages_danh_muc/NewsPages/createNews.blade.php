@@ -66,6 +66,29 @@
                                        style="background-color: white;margin-top: -10px;">
                             </div>
                         </div>
+                        <!--Ảnh đại diện-->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top: 25px; padding: 0px 16px 6px 0px;">
+                            <div class="card" style="border: 1px solid #9E9E9E; border-radius: 10px">
+                                <div class="header bg-cyan" style="border-radius: 10px 10px 0px 0px">
+                                    <h2>
+                                        Ảnh đại diện
+                                    </h2>
+                                </div>
+                                <div class="body" style="height:fit-content">
+                                    <div style="">
+                                        <input type="text" class="form-control" name="image_post" id="image">
+                                        <br>
+                                        <img src="" alt="" id="show_image" style="height:250px; width:250px; margin-bottom: 10px">
+                                        <br>
+                                        <span>
+                                                <a href="#modal-file" data-toggle="modal" class="btn btn-primary">Chọn ảnh</a>
+                                            </span>
+                                    </div>
+                                    <br> <br><br>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
                     </div>
                 {{-- Right SIde --}}
                 {{-- <div class="col-md-4"> --}}
@@ -199,7 +222,33 @@
     </section>
 @stop
 @section('js')
+<!-- Modal Ava -->
+<div class="modal fade" id="modal-file" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+     aria-hidden="true">
+    <div class="modal-dialog" style="width:80%" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thư viện ảnh</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe
+                    src="http://localhost:8000/responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=&field_id=image"
+                    frameborder="18" style="width:100%; height:900px; "></iframe>
 
+            </div>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#modal-file').on('hide.bs.modal', function () {
+        var _img = $('input#image').val();
+        $('img#show_image').attr('src', _img);
+    });
+</script>
 {{-- Bootstrap Tags Input Plugin Js -->--}}
     <script src="{{asset('admin-frontend/plugins/jQuery-tagEditor-master/jquery.tag-editor.min.js')}}"></script>
     <script>

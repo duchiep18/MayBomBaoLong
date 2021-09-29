@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Giỏ hàng | Bảo long</title>
+    <title>Hướng dẫn sử dụng | Bảo long</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -172,36 +172,14 @@
 			padding-bottom: 68px;
 		}
 
-		.papa {
+        .papa {
             color: unset;
         }
 
         .papa:hover {
             color: blue;
         }
-
-        th, td {
-            padding: 15px;
-        }
-
-        .continue {
-            border: 2px solid #FE980F;
-            background: white;
-            color: #FE980F;
-        }
-
-        .continue:hover {
-            background: #FE980F;
-            color: white;
-        }
 		
-		.tada:hover {
-			background: #FE980F!important;
-		}
-
-		.haha:hover {
-			background: #999!important;
-		}
 	</style>
 </head><!--/head-->
 
@@ -309,61 +287,180 @@
 		<section style="padding-top: 30px;">
 			<div class="container">
 				<div class="row" style="padding-bottom: 30px;">
+					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+						<div class="left-sidebar">
+							<div class="leftbox" style="background-color: #FE980F;">
+								<h2 class="title">Danh mục</h2>
+								<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+													<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+													Máy bơm nước
+												</a>
+											</h4>
+										</div>
+										<div id="sportswear" class="panel-collapse collapse">
+											<div class="panel-body">
+												<ul>
+													<li><a href="#">Nike </a></li>
+													<li><a href="#">Under Armour </a></li>
+													<li><a href="#">Adidas </a></li>
+													<li><a href="#">Puma</a></li>
+													<li><a href="#">ASICS </a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+													<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+													Động cơ điện
+												</a>
+											</h4>
+										</div>
+										<div id="mens" class="panel-collapse collapse">
+											<div class="panel-body">
+												<ul>
+													<li><a href="#">Fendi</a></li>
+													<li><a href="#">Guess</a></li>
+													<li><a href="#">Valentino</a></li>
+													<li><a href="#">Dior</a></li>
+													<li><a href="#">Versace</a></li>
+													<li><a href="#">Armani</a></li>
+													<li><a href="#">Prada</a></li>
+													<li><a href="#">Dolce and Gabbana</a></li>
+													<li><a href="#">Chanel</a></li>
+													<li><a href="#">Gucci</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div><!--/category-products-->
+							</div>
+						
+
+							<div class="leftbox" style="background-color: #FE980F;">
+								<div class="brands_products"><!--brands_products-->
+									<h2 class="title">Sản phẩm mới</h2>
+									<div class="brands-name">
+										<ul class="nav nav-pills nav-stacked">
+											<li><a href="#"> <span class="pull-right">(50)</span>Acne</a></li>
+											<li><a href="#"> <span class="pull-right">(56)</span>Grüne Erde</a></li>
+											
+										</ul>
+									</div>
+								</div><!--/brands_products-->
+							</div>
+							
+							<div class="leftbox" style="background-color: #FE980F;">
+								<div class="price-range"><!--price-range-->
+									<h2 class="title" style="padding-top: unset; margin-top: -12px;">Price Range</h2>
+									<div class="well text-center">
+										<input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+										<b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
+									</div>
+								</div><!--/price-range-->
+							</div>
+							
+							<div class="shipping text-center"><!--shipping-->
+								<img src="images/home/shipping.jpg" alt="" />
+							</div><!--/shipping-->
+						</div>
+					</div>
 					
-					
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-right" style="padding-right: 15px;">
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 padding-right" style="padding-right: 15px;">
 						<div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc; padding-bottom: 15px;"><!--Sản phẩm nổi bật-->
-							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                                <table style="width: 100%; margin-top: 30px;">
-                                    <tr>
-                                      <th>Sản phẩm</th>
-                                      <th>Giá</th>
-                                      <th>Số lượng</th>
-                                      <th>Tạm tính</th>
-                                      <th></th>
-                                    </tr>
-                                    <tr>
-                                      <td><a href="#">none</a></td>
-                                      <td><strong>none</strong></td>
-                                      <td>
-                                          <button type="button" style="border: 2px solid #FE980F;background:#FE980F; color: white; display: inline-block">-</button>
-                                          <input style="width: 34px; margin: 0 -5px 0 -5px;" type="text" id="count" name="count">
-                                          <button type="button" style="border: 2px solid #FE980F;background:#FE980F; color: white; display: inline-block">+</button>
-                                     </td>
-                                      <td><strong>none</strong></td>
-                                      <td ><button type="button" class="tada" style="border-radius: 5px; border: 2px solid #FE980F;background:#fe960fcc; color: white;">Xóa</button></td>
-                                    </tr>
-                                    
-                                </table>
-                                <br>
-                                <button class="continue" type="button" style="border-radius: 5px;display: inline-block">Tiếp tục xem sản phẩm</button>
-                                <button class="tada" type="button" style="border-radius: 5px; background:#fe960fcc; color: white; display: inline-block; border: 2px solid #FE980F;">Cập nhật giỏ hàng</button>
+							<h2 class="title text-center">Hướng dẫn sử dụng</h2>
+							<div style="margin-bottom: 30px;">
+                                <h2 class="title pull-left top-item"><a href="exampleNews.html" class="papa">Nghiên cứu kỹ để lựa chọn phương án phù hợp xử lý nước sông Tô Lịch</a></h2>
+                                <div style="margin-left:15px; margin-right: 15px;">
+                                    <p><img src="images/home/girl1.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px; float: left;">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+                                </div>
                             </div>
-                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="margin-top: 45px;">
-                                <p><strong>Cộng giỏ hàng</strong></p>
-                                <br>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline; padding-left: unset;">
-                                    <p><small>Tạm tính</small></p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline;">
-                                    <p class="pull-right"><small><strong>none</strong></small></p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline; padding-left: unset;">
-                                    <p><small>Tổng</small></p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display:inline;">
-                                    <p class="pull-right"><small><strong>none</strong></small></p>
-                                </div>
-
-                                <button class="tada" type="button" style="border-radius: 5px; background:#fe960fcc; color: white; display: inline-block; border: 2px solid #FE980F; width: 100%; margin-top: 15px; padding: 5px 0 5px 0;"><a style="color: white;" href="pay.html">Tiến hành thanh toán</a></button>
-
-                                <p style="margin-top: 20px;"><small><strong>Phiếu ưu đãi</strong></small></p>
-                                <input type="text" id="uudai" name="uudai" style="width: 100%;">
-                                <button class="haha" type="button" style="border-radius: 5px; background:#ccc; color: white; display: inline-block; border: 2px solid #ccc; width: 100%; margin-top: 15px; padding: 5px 0 5px 0;">Áp dụng</button>
-
-
-                            </div>
+                            
                         </div><!--Giới thiệu-->
+					</div>
+
+                    <div class="col-sm-12 col-xs-12 hidden-lg hidden-md" style="margin-top: 15px;">
+						<div class="left-sidebar">
+							<div class="leftbox" style="background-color: #FE980F;">
+								<h2 class="title">Danh mục</h2>
+								<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+													<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+													Máy bơm nước
+												</a>
+											</h4>
+										</div>
+										<div id="sportswear" class="panel-collapse collapse">
+											<div class="panel-body">
+												<ul>
+													<li><a href="#">Nike </a></li>
+													<li><a href="#">Under Armour </a></li>
+													<li><a href="#">Adidas </a></li>
+													<li><a href="#">Puma</a></li>
+													<li><a href="#">ASICS </a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+													<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+													Động cơ điện
+												</a>
+											</h4>
+										</div>
+										<div id="mens" class="panel-collapse collapse">
+											<div class="panel-body">
+												<ul>
+													<li><a href="#">Fendi</a></li>
+													<li><a href="#">Guess</a></li>
+													<li><a href="#">Valentino</a></li>
+													<li><a href="#">Dior</a></li>
+													<li><a href="#">Versace</a></li>
+													<li><a href="#">Armani</a></li>
+													<li><a href="#">Prada</a></li>
+													<li><a href="#">Dolce and Gabbana</a></li>
+													<li><a href="#">Chanel</a></li>
+													<li><a href="#">Gucci</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div><!--/category-products-->
+							</div>
+						
+
+							<div class="leftbox" style="background-color: #FE980F;">
+								<div class="brands_products"><!--brands_products-->
+									<h2 class="title">Sản phẩm mới</h2>
+									<div class="brands-name">
+										<ul class="nav nav-pills nav-stacked">
+											<li><a href="#"> <span class="pull-right">(50)</span>Acne</a></li>
+											<li><a href="#"> <span class="pull-right">(56)</span>Grüne Erde</a></li>
+											
+										</ul>
+									</div>
+								</div><!--/brands_products-->
+							</div>
+							
+							
+							
+							<div class="shipping text-center"><!--shipping-->
+								<img src="images/home/shipping.jpg" alt="" />
+							</div><!--/shipping-->
+						</div>
 					</div>
 				</div>
 			</div>

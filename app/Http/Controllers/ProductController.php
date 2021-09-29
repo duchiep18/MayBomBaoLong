@@ -15,10 +15,7 @@ class ProductController extends Controller
         $categories_prd = products_categories::all();
         return view('admin.pages_danh_muc.ProductPages.createProducts', compact('categories_prd'));
     }
-    //chuyển trang tạo danh mục
-    public function create_prd_catgr(){
-        return view('admin.pages_danh_muc.ProductPages.createProductsCategories');
-    }
+
     //tìm kiếm sản phẩm
      public function search_products(Request $request)
      {
@@ -38,13 +35,7 @@ class ProductController extends Controller
         // $preoduct = products::paginate(4);
         return view('admin.pages_danh_muc.ProductPages.products_list', compact('products'));
     }
-    //đổ dl ra trang Home
-    public function getProduct(Request $request){
-        $query = products::query();
-        $products = $query->paginate(6);
-        // $product = products::paginate(4);
-        return view('client.page.home', compact('products'));
-    }
+
     //đổ dl ra trang Home sau khi Login
     // public function getProduct_Login(Request $request){
     //     $query = products::query();
@@ -52,22 +43,8 @@ class ProductController extends Controller
     //     // $product = products::paginate(4);
     //     return view('client.page.homeLogin', compact('product'));
     // }
-    //hàm tạo danh mục sản phẩm
-    public function productCategories(Request $request){
-        $id = $request->input('id');
-        $prd_categories_name = $request->input('tendanhmucsp');
-        $prd_categories_desc = $request -> input('motadanhmucsp');
-        $prd_categories_type = $request -> input('loaidanhmucsp');
 
-        $product_catgr = new products_categories;
-        $product_catgr->id = $id;
-        $product_catgr->product_categories_name = $prd_categories_name;
-        $product_catgr->product_categories_desc = $prd_categories_desc;
-        $product_catgr->product_categories_type = $prd_categories_type;
-        $product_catgr->save();
-        return redirect()->route('products.create_catgr');
-    }
-    //hàm tạo sản phẩm vào csdl
+    //hàm lưu sản phẩm vào csdl
     public function storeData(Request $request){
         $prd_name = $request->input('name_products');
         $categories_prd_id = $request->input('categories_prd');
@@ -137,6 +114,7 @@ class ProductController extends Controller
         $product->save();
         return redirect()->route('products.index');
     }
+
     //hàm hủy sản phẩm
     public function destroy($id){
         $productdelete = products::find($id);
@@ -144,6 +122,10 @@ class ProductController extends Controller
 
         return redirect()->route('products.index');
     }
+    //get Form edit Từ Khóa
+    public function getEditProductCategories(Request $request){
 
+        return view('admin.pages_danh_muc.ProductPages.keywords_products');
+    }
 
 }
