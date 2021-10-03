@@ -8,8 +8,8 @@
 @section('content')
     <section class="content">
         <div class="container-fluild">
-            <h1 style="text-align:center">Sửa đổi chuyên mục bài viết</h1>
-            <form action="{{route('news.catgr.update', $news_catgr->id)}}" method="POST" role="form">
+            <h1 style="text-align:center">Sửa đổi danh mục sản phẩm</h1>
+            <form action="{{route('products.catgr.update', $prd_cat ->id)}}" method="POST" role="form">
                 @csrf
                 @method('put')
                 <div class="row clearfix" style="margin: 0 0 0 20px ">
@@ -24,7 +24,7 @@
                                 <p><small>Tên</small></p>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 15px;padding-left: 0px;">
-                                <input type="text" name="name_categories" value="{{$news_catgr->news_categories_name}}" class="form-control" id="name" onkeyup="ChangeToSlug()" style="background-color: white;margin-top: -10px;">
+                                <input type="text" name="prd_cat_name" value="{{  $prd_cat ->product_categories_name}}" class="form-control" id="name" onkeyup="ChangeToSlug()" style="background-color: white;margin-top: -10px;">
                                 <p style="margin-bottom: 16px;"><small>Tên riêng sẽ hiển thị trên trang mạng của bạn.</small></p>
                             </div>
                         </div>
@@ -34,20 +34,20 @@
                                 <p><small>Đường dẫn</small></p>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 15px; padding-left: 0px;">
-                                <input type="text" name="url_cat" value="{{$news_catgr->url_cat}}" id="slug" class="form-control" style="background-color: white;margin-top: -10px;">
+                                <input type="text" name="url_prd_cat" value="{{  $prd_cat ->url_prd_cat}}" id="slug" class="form-control" style="background-color: white;margin-top: -10px;">
                                 <p style="margin-bottom: 16px;"><small>Chuỗi cho đường dẫn tĩnh là phiên bản của tên hợp chuẩn với Đường dẫn (URL). Chuỗi này bao gồm chữ cái thường, số và dấu gạch ngang (-).</small></p>
                             </div>
                         </div>
                         <div>
                             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding-left: 0px;">
-                                <p><small>Chuyên mục cha</small></p>
+                                <p><small>Danh mục cha</small></p>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 15px; padding-left: 0px;">
                                 <div style="margin-top: -10px;">
                                     <select class="form-control show-tick" name="cat_parent">
                                         <option value="0"> -- Danh mục cha --</option>
-                                        @foreach($categories as $val)
-                                            <option value="{{$val->id}}"> {{$val->news_categories_name}}  </option>
+                                        @foreach($categories_prd as $val)
+                                            <option value="{{$val->id}}"> {{$val->product_categories_name}}  </option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -61,8 +61,8 @@
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 15px; padding-left: 0px;">
                                 <div class="form-group" style="margin-bottom: 0px;">
                                     <div class="form-line">
-                                        <textarea rows="4" name="desc_cat" class="form-control no-resize" style="background-color: white;">
-                                            {{$news_catgr->news_categories_desc}}
+                                        <textarea rows="4" name="prd_cat_desc" class="form-control no-resize" style="background-color: white;">
+                                            {{$prd_cat->product_categories_desc}}
                                         </textarea>
                                     </div>
                                 </div>
@@ -86,15 +86,15 @@
                         <br>
                         <br>
                         <br>
-{{--                        <div>--}}
-{{--                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding-left: 0px;">--}}
-{{--                                <p><small>Kiểu hiển thị</small></p>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 15px; padding-left: 0px; margin-top: 15px;">--}}
-{{--                                <img src="https://xuepc.vn/wp-content/uploads/woocommerce-placeholder-260x260.png" width="60px" height="60px" style="margin-top: -40px">--}}
-{{--                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-bottom: 40px">Tải lên/Thêm ảnh</button>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        {{--                        <div>--}}
+                        {{--                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding-left: 0px;">--}}
+                        {{--                                <p><small>Kiểu hiển thị</small></p>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 15px; padding-left: 0px; margin-top: 15px;">--}}
+                        {{--                                <img src="https://xuepc.vn/wp-content/uploads/woocommerce-placeholder-260x260.png" width="60px" height="60px" style="margin-top: -40px">--}}
+                        {{--                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-bottom: 40px">Tải lên/Thêm ảnh</button>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
 
                         <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-bottom: 40px; margin-top: -16px;">Cập nhật</button>
 

@@ -10,8 +10,10 @@ class ProductCategoryController extends Controller
     //Route Categories Products
     //chuyển trang tạo danh mục
     public function create(){
-        $categories_prd = ProductCategory::all();
-        return view('admin.pages_danh_muc.ProductPages.createProductsCategories',compact('categories_prd'));
+        $query = ProductCategory::query();
+        $categories_prd = $query->paginate(10);
+        $prd_catgr = ProductCategory::where('category_parent',0)->orderby('id','DESC')->get();
+        return view('admin.pages_danh_muc.ProductPages.createProductsCategories',compact('categories_prd','prd_catgr'));
     }
 
     //hàm tạo danh mục sản phẩm
@@ -34,7 +36,7 @@ class ProductCategoryController extends Controller
     {
         $categories_prd = ProductCategory::all();
         $prd_cat = ProductCategory::find($id);
-        return view('admin.pages_danh_muc.ProductPages.editCategories',compact('categories_prd','prd_cat'));
+        return view('admin.pages_danh_muc.ProductPages.editCategoriesPrd',compact('categories_prd','prd_cat'));
     }
     //update News Categoríe
     public function update($id, Request $request){
@@ -47,7 +49,7 @@ class ProductCategoryController extends Controller
 
         $newCatsEdit->product_categories_name = $prd_categories_name;
         $newCatsEdit->url_prd_cat = $prd_categories_url;
-        $newCatsEdit->category_post = $category_parent;
+        $newCatsEdit->category_parent = $category_parent;
         $newCatsEdit->product_categories_desc = $prd_categories_desc;
         $newCatsEdit->product_categories_type = $prd_categories_type;
         $newCatsEdit->save();

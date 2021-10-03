@@ -87,7 +87,17 @@
                                         <tr>
                                             <td> {{$category->id}} </td>
                                             <td><a href="">{{$category->news_categories_name}}</a> </td>
-                                            <td>#</td>
+                                            <td>
+                                                @if($category->category_parent==0)
+                                                    <span style="color: red"> Danh mục cha </span>
+                                                @else
+                                                    @foreach($new_catgr as $new_catgr_parent)
+                                                        @if($new_catgr_parent->id == $category->category_parent)
+                                                            <span style="color: green">{{$new_catgr_parent->news_categories_name}}</span>
+                                                        @endif
+                                                    @endforeach
+                                                @endif
+                                            </td>
                                             <td> {{$category->news_categories_desc}} </td>
                                             <td>
                                                 {{$category->url_cat}}

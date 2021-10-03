@@ -29,15 +29,15 @@
                             <input type="text" name="url_prd_cat" id="slug" class="form-control" style="background-color: white;margin-top: -10px;">
                             <p><small>Chuỗi cho đường dẫn tĩnh là phiên bản của tên hợp chuẩn với Đường dẫn(URL).Chuỗi này bao gồm chữ cái thường, số và dấu gạch ngang (-).</small></p>
 
-                            <p><small> Danh mục cha</small></p>
-                            <div style="margin-top: -10px;">
-                                <select class="form-control show-tick"  name="prd_cat_parent">
-                                    <option value="0">-- Danh mục cha --</option>
-                                    @foreach($categories_prd as $val_prd)
-                                        <option value="{{$val_prd->id}}"> {{$val_prd->product_categories_name}}  </option>
-                                    @endforeach
-                                </select>
-                            </div>
+                                <p><small>Chuyên mục cha</small></p>
+                                <div style="margin-top: -10px;">
+                                    <select class="form-control show-tick" name="cat_parent">
+                                        <option value="0"> -- Danh mục cha --</option>
+                                        @foreach($categories_prd as $val)
+                                            <option value="{{$val->id}}"> {{$val->news_categories_name}}  </option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             <p style="margin-bottom: 16px;"><small>Chuyên mục khác với thẻ,bạn có thể sử dụng nhiều cấp chuyên mục.Ví dụ:Trong chuyên mục nhạc,bạn có chuyên mục con là nhạc Pop,nhạc Jazz.Việc này hoàn toàn là tùy theo ý bạn.</small></p>
 
                             <p><small>Mô tả</small></p>
@@ -83,16 +83,26 @@
                                             <tr>
                                                 <th scope="row">{{$category_prd -> id}}</th>
                                                 <td><a href="#">{{$category_prd -> product_categories_name}}</a></td>
-                                                <td>#</td>
+                                                <td>
+                                                    @if($category_prd->category_parent==0)
+                                                        <span style="color:red">Danh mục cha</span>
+                                                    @else
+                                                        @foreach($prd_catgr as $prd_catgr_parent)
+                                                            @if($prd_catgr_parent->id == $category_prd->category_parent )
+                                                                <span style="color: green">{{$prd_catgr_parent->product_categories_name}}</span>
+                                                            @endif
+                                                        @endforeach
+                                                    @endif
+                                                </td>
                                                 <td>{{$category_prd -> product_categories_desc}}</td>
                                                 <td></td>
                                                 <td>{{$category_prd -> created_at}}</td>
                                                 <td>
-                                                    <a href="{{route('products.edit', $category_prd->id)}}" class="btn btn-primary">Edit</a>
+                                                    <a href="{{route('products.catgr.edit', $category_prd->id)}}" class="btn btn-primary">Sửa</a>
                                                     <form class="" action="{{route('products.catgr.destroy', $category_prd->id)}}" method="POST">
                                                         @csrf
                                                         @method('delete')
-                                                        <button class="btn btn-danger btn-delete" type="submit">Delete</button>
+                                                        <button class="btn btn-danger btn-delete" type="submit">Xóa</button>
                                                     </form>
                                                 </td>
                                             </tr>

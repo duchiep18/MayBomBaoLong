@@ -12,8 +12,10 @@ class NewCategoryController extends Controller
 {
     //truy cập trang tạo danh mục cùng Categories đã tạo
     public function create(){
-        $categories = PostCategory::all();
-        return view('admin.pages_danh_muc.NewsPages.createNewsCategories', compact('categories'));
+        $query = PostCategory::query();
+        $categories = $query->paginate(10);
+        $new_catgr = PostCategory::where('category_parent', 0)->orderby('id','DESC')->get();
+        return view('admin.pages_danh_muc.NewsPages.createNewsCategories', compact('categories','new_catgr'));
     }
 
     //lưu Categories News
@@ -39,8 +41,9 @@ class NewCategoryController extends Controller
     public function edit($id)
     {
         $categories = PostCategory::all();
+        $new_catgr_parent = PostCategory::where('category_parent', 0)->orderby('id','DESC')->get();
         $news_catgr = PostCategory::find($id);
-        return view('admin.pages_danh_muc.NewsPages.editCategories', compact('categories','news_catgr'));
+        return view('admin.pages_danh_muc.NewsPages.editCategories', compact('categories','news_catgr','new_catgr_parent'));
     }
     //update News Categoríe
         public function updateCat($id, Request $request)
