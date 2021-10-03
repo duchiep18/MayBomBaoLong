@@ -98,11 +98,11 @@
                                     <td> {{$addnew->updated_at}} </td>
 
                                     <td>
-                                        <a href="{{route('news.edit', $addnew->id)}}" class="btn btn-primary">Edit</a>
+                                        <a href="{{route('news.edit', $addnew->id)}}" class="btn btn-primary">Sửa</a>
                                         <form class="" action="{{route('news.destroy', $addnew->id)}}" method="POST">
                                             @csrf
                                             @method('delete')
-                                            <button class="btn btn-danger btn-delete" type="submit">Delete</button>
+                                            <button class="btn btn-danger btn-delete" type="submit">Xóa</button>
                                         </form>
                                     </td>
                                 </tr>

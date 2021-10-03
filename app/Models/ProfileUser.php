@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class products_categories extends Model
+class ProfileUser extends Model
 {
-    protected $table = 'products_categories';
+    protected $table = 'ProfileUser';
+
 }

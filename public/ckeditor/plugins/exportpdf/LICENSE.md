@@ -15,4 +15,4 @@ Where not otherwise indicated, all CKEditor 4 Export to PDF plugin content is au
 Trademarks
 ----------
 
-**CKEditor** is a trademark of [CKSource](http://cksource.com) Frederico Knabben. All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
+**CKEditor** is a trademark of [CKSource](http://cksource.com) Frederico Knabben. All other brand and Product names are trademarks, registered trademarks or service marks of their respective holders.

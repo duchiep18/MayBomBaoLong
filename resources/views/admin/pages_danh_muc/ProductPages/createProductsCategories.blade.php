@@ -6,12 +6,9 @@
         <div class="container-fluid">
             <h2 style="text-align:center">Thêm danh mục sản phẩm</h1>
 
-            <form action="{{route('products.storeCategories')}}" method="POST" role="form">
-                 @csrf
-                 @method('post')
                     {{-- Left Side --}}
                     <div class="row">
-                        <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11" style="float:left; margin-top:10px;">
+                        <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11" style="float:left; margin-top:50px;">
                             <div class="form-line hidden-sm hidden-xs" style="padding-left: 50px;">
                                 <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right">Tìm kiếm danh mục</button>
                                 <input type="text" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
@@ -19,8 +16,10 @@
                         </div>
                     </div>
                     <div class="row clearfix">
-
-                        <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5" >
+                        <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                            <form action="{{route('products.storeCategories')}}" method="POST" role="form">
+                                @csrf
+                                @method('post')
                             <p><b>Thêm danh mục</b></p>
                             <p><small>Tên danh mục</small></p>
                             <input type="text" name="prd_cat_name" class="form-control" id="name" onkeyup="ChangeToSlug();"  style="background-color: white;margin-top: -10px;">
@@ -30,12 +29,13 @@
                             <input type="text" name="url_prd_cat" id="slug" class="form-control" style="background-color: white;margin-top: -10px;">
                             <p><small>Chuỗi cho đường dẫn tĩnh là phiên bản của tên hợp chuẩn với Đường dẫn(URL).Chuỗi này bao gồm chữ cái thường, số và dấu gạch ngang (-).</small></p>
 
-                            <p><small>Kiểu danh mục</small></p>
+                            <p><small> Danh mục cha</small></p>
                             <div style="margin-top: -10px;">
-                                <select class="form-control show-tick"  name="prd_cat_type">
-                                    <option>-Trống-</option>
-                                    <option value="Sản phẩm">Sản phẩm</option>
-                                    <option value="Danh mục con">Danh mục con</option>
+                                <select class="form-control show-tick"  name="prd_cat_parent">
+                                    <option value="0">-- Danh mục cha --</option>
+                                    @foreach($categories_prd as $val_prd)
+                                        <option value="{{$val_prd->id}}"> {{$val_prd->product_categories_name}}  </option>
+                                    @endforeach
                                 </select>
                             </div>
                             <p style="margin-bottom: 16px;"><small>Chuyên mục khác với thẻ,bạn có thể sử dụng nhiều cấp chuyên mục.Ví dụ:Trong chuyên mục nhạc,bạn có chuyên mục con là nhạc Pop,nhạc Jazz.Việc này hoàn toàn là tùy theo ý bạn.</small></p>
@@ -47,13 +47,19 @@
                                 </div>
                             </div>
                             <p style="margin-bottom: 16px; margin-top: -25px;"><small>Thông thường mô tả này không được sử dụng trong các giao diện,tuy nhiên có vài giao diện có thể hiển thị mô tả này.</small></p>
-
+                            <p><small>Kiểu hiển thị</small></p>
+                            <div style="margin-top: -10px;margin-bottom: 20px">
+                                <select class="form-control show-tick" name="type_cat">
+                                    <option value="0">Hiển thị</option>
+                                    <option value="1">Ẩn</option>
+                                </select>
+                            </div>
                             <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-bottom: 40px">Thêm chuyên mục</button>
+                            </form>
                         </div>
 
                         {{-- Right Side --}}
                         <div class ="col-md-12 col-lg-12 col-md-7 col-lg-7" >
-
                             <div class="card" style="margin-top: 50px;">
                                 <div class="header">
                                     <ul class="header-dropdown m-r--5">
@@ -66,6 +72,7 @@
                                             <tr>
                                                 <th>ID</th>
                                                 <th>Tên</th>
+                                                <th>Thuộc danh mục</th>
                                                 <th>Mô tả</th>
                                                 <th>Đường dẫn</th>
                                                 <th>Thời gian</th>
@@ -76,17 +83,18 @@
                                             <tr>
                                                 <th scope="row">{{$category_prd -> id}}</th>
                                                 <td><a href="#">{{$category_prd -> product_categories_name}}</a></td>
+                                                <td>#</td>
                                                 <td>{{$category_prd -> product_categories_desc}}</td>
                                                 <td></td>
                                                 <td>{{$category_prd -> created_at}}</td>
-{{--                                                <td>--}}
-{{--                                                    <a href="{{route('products.edit', $product->id)}}" class="btn btn-primary">Edit</a>--}}
-{{--                                                    <form class="" action="{{route('products.destroy', $product->id)}}" method="POST">--}}
-{{--                                                        @csrf--}}
-{{--                                                        @method('delete')--}}
-{{--                                                        <button class="btn btn-danger btn-delete" type="submit">Delete</button>--}}
-{{--                                                    </form>--}}
-{{--                                                </td>--}}
+                                                <td>
+                                                    <a href="{{route('products.edit', $category_prd->id)}}" class="btn btn-primary">Edit</a>
+                                                    <form class="" action="{{route('products.catgr.destroy', $category_prd->id)}}" method="POST">
+                                                        @csrf
+                                                        @method('delete')
+                                                        <button class="btn btn-danger btn-delete" type="submit">Delete</button>
+                                                    </form>
+                                                </td>
                                             </tr>
                                         @endforeach
 
@@ -109,12 +117,20 @@
                             </div>
                         </div>
                     </div>
-
-            </form>
-
         </div>
-    </section>
-<script src="//code.jquery.com/jquery.js"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn-delete').click(function () {
+                event.preventDefault();
+                let isDelete = confirm('Sếp có muốn xóa bài viết này hay không?');
+                if (isDelete) {
+                    $(this).parents('form').submit();
+                }
+            });
+        })
+    </script>
+</section>
 
 <script>
     function ChangeToSlug()

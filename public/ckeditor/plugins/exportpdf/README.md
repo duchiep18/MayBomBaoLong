@@ -99,4 +99,4 @@ For more details about available licensing options please contact us at sales@ck
 
 ### Trademarks
 
-**CKEditor** is a trademark of [CKSource](http://cksource.com) Frederico Knabben. All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
+**CKEditor** is a trademark of [CKSource](http://cksource.com) Frederico Knabben. All other brand and Product names are trademarks, registered trademarks or service marks of their respective holders.

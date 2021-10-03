@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class image_gallery extends Model
+class CustomerOrderAdmin extends Model
 {
-    protected $table = 'image' ;
+    protected $table = 'customer_orders_admin';
 }

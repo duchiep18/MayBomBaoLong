@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\products;
-use App\Models\products_categories;
+use App\Models\Product;
+use App\Models\ProductCategory;
 use Session;
 
 class ProductController extends Controller
@@ -12,7 +12,7 @@ class ProductController extends Controller
 
     //chuyển trang tạo sản phẩm
     public function create_prd(){
-        $categories_prd = products_categories::all();
+        $categories_prd = ProductCategory::all();
         return view('admin.pages_danh_muc.ProductPages.createProducts', compact('categories_prd'));
     }
 
@@ -20,7 +20,7 @@ class ProductController extends Controller
      public function search_products(Request $request)
      {
          $keywordproducts = $request->input('keywordsearch_products');
-         $productsQuery = products::query();
+         $productsQuery = Product::query();
          if($keywordproducts) {
              $productsQuery->where('products_name','like', "%{$keywordproducts}%");
          }
@@ -30,7 +30,7 @@ class ProductController extends Controller
 
     //tìm kiếm, đổ dl ra trang qly
      public function getProduct_admin(Request $request){
-        $query = products::query();
+        $query = Product::query();
         $products = $query->paginate(5);
         // $preoduct = products::paginate(4);
         return view('admin.pages_danh_muc.ProductPages.products_list', compact('products'));
@@ -60,7 +60,7 @@ class ProductController extends Controller
         $prd_url =$request->input('url_prd');
         $prd_status = $request->input('status');
 
-        $product = new products;
+        $product = new Product;
         $product->products_name =  $prd_name ;
         $product->categories_prd_id = $categories_prd_id;
         $product->products_content =  $prd_content ;
@@ -79,8 +79,8 @@ class ProductController extends Controller
      }
      //chuyển đến trang edit sản phẩm
      public function edit($id){
-        $categories_prd = products_categories::all();
-        $product = products::find($id);
+        $categories_prd = ProductCategory::all();
+        $product = Product::find($id);
         return view ('admin.pages_danh_muc.ProductPages.editProduct',compact('product','categories_prd'));
     }
     //hàm cập nhật sản phẩm
@@ -98,7 +98,7 @@ class ProductController extends Controller
         $prd_url =$request->input('url_prd');
         $prd_status = $request->input('status');
 
-        $product = new products;
+        $product = new Product;
         $product->products_name =  $prd_name ;
         $product->categories_prd_id = $categories_prd_id;
         $product->products_content =  $prd_content ;
@@ -117,7 +117,7 @@ class ProductController extends Controller
 
     //hàm hủy sản phẩm
     public function destroy($id){
-        $productdelete = products::find($id);
+        $productdelete = Product::find($id);
         $productdelete->delete();
 
         return redirect()->route('products.index');

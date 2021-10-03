@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\products;
-use App\Models\products_categories;
+use App\Models\Product;
+use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 use Session;
 
@@ -48,10 +48,10 @@ class AdminController extends Controller
 //    Đổ dl product ra home
 //đổ dl ra trang Home
     public function getDatatHome(Request $request){
-        $query = products::query();
+        $query = Product::query();
         $products = $query->paginate(5);
 
-        $categories_prd = products_categories::all();
+        $categories_prd = ProductCategory::all();
         // $product = products::paginate(4);
         return view('client.page.home', compact('products','categories_prd'));
 

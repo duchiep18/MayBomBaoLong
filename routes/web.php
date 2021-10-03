@@ -36,25 +36,37 @@ Route::middleware(['auth'])->group(function () {
 
 
     //route Tin tức
-    Route::get ('/news.index', 'NewPostsController@getNews')->name('news.index');
+    Route::get ('/news.index', 'NewPostController@getNews')->name('news.index');
     //route tạo bài viết mới
-    Route::get('/news.create', 'NewPostsController@create')->name('news.create');
+    Route::get('/news.create', 'NewPostController@create')->name('news.create');
     //route lưu bài viết vào csdl
-    Route::post('/news', 'NewPostsController@storeData')->name('news.storeData');
+    Route::post('/news', 'NewPostController@storeData')->name('news.storeData');
     //route edit bài viết tìm theo id
-    Route::get('/news/{id}/edit', 'NewPostsController@edit')->name('news.edit');
+    Route::get('/news/{id}/edit', 'NewPostController@edit')->name('news.edit');
     //route update dữ liệu mới vào csdl
-    Route::put('/news/{id}', 'NewPostsController@update')->name('news.update');
+    Route::put('/news/{id}', 'NewPostController@update')->name('news.update');
     //route xóa bài viết theo id
-    Route::delete('/news/{id}', 'NewPostsController@destroy')->name('news.destroy');
+    Route::delete('/news/{id}', 'NewPostController@destroy')->name('news.destroy');
+
+
+    //Route tạo categories cho các bài viết
+    Route::get('/news.create_catgr','NewCategoryController@create')->name('news.create_catgr');
+    //Lưu categories vào csdl
+    Route::post('/news.catgr','NewCategoryController@storeCat')->name('news.storeCategories');
+    //Route edit new cats
+    Route::get('/news.catgr/{id}/edit', 'NewCategoryController@edit')->name('news.catgr.edit');
+    //Route update news categories
+    Route::put('/news.catgr/{id}', 'NewCategoryController@updateCat')->name('news.catgr.update');
+    //Route xóa news categories
+    Route::delete('/news.catgr/{id}', 'NewCategoryController@destroy')->name('news.catgr.destroy');
+    //route nhóm các bài viết và sản phẩm có cùng category
+    Route::get('categories/{id}/news','NewCategoryController@news');});
 
 
 
-    //Route Product
+//Route Product
 
     Route::get ('/products.index', 'ProductController@getProduct_admin')->name('products.index');
-
-
 
     Route::get ('/products.create','ProductController@create_prd')->name('products.create');
 
@@ -70,30 +82,19 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/products/keywords', 'ProductController@getEditProductCategories')->name('product.keywors');
 
-    //Route Categories Admin
-    //Route tạo categories cho các bài viết
-    Route::get('/news.create_catgr','CategoriesController@createNewCats')->name('news.create_catgr');
-    //Lưu categories vào csdl
-    Route::post('/news.catgr','CategoriesController@storeNewCategories')->name('news.storeCategories');
-    //Route edit new cats
-    Route::get('/news.catgr/{id}/edit', 'CategoriesController@editCat')->name('news.catgr.edit');
-    //Route update news categories
-    Route::put('/news.catgr/{id}', 'CategoriesController@updateCat')->name('news.catgr.update');
-    //Route xóa news categories
-    Route::delete('/news.catgr/{id}', 'CategoriesController@destroyNewsCat')->name('news.catgr.destroy');
-    //route nhóm các bài viết và sản phẩm có cùng category
-    Route::get('categories/{id}/news','CategoryController@news');});
-
     //Route tạo categories Product
-    Route::get('/products.create_catgr', 'CategoriesController@create_prd_catgr')->name('products.create_catgr');
+    Route::get('/products.create_catgr', 'ProductCategoryController@create')->name('products.create_catgr');
     //route lưu product cate vào csdl
-    Route::post('/products.catgr', 'CategoriesController@storeProductCategories')->name('products.storeCategories');
+    Route::post('/products.catgr', 'ProductCategoryController@storeCat')->name('products.storeCategories');
     //Route edit new cats
-    Route::get('/prd.catgr/{id}/edit', 'CategoriesController@editProductCats')->name('products.catgr.edit');
+    Route::get('/prd.catgr/{id}/edit', 'ProductCategoryController@edit')->name('products.catgr.edit');
     //Route update news categories
-    Route::put('/prd.catgr/{id}', 'CategoriesController@updateProductCats')->name('products.catgr.update');
+    Route::put('/prd.catgr/{id}', 'ProductCategoryController@update')->name('products.catgr.update');
     //Route xóa news categories
-    Route::delete('/prd.catgr/{id}', 'CategoriesController@destroyProductCats')->name('products.catgr.destroy');
+    Route::delete('/prd.catgr/{id}', 'ProductCategoryController@destroy')->name('products.catgr.destroy');
+
+
+
 //End Route Admin
 //===============================================//
 //Middleware phân quyền cho các Route
@@ -169,7 +170,7 @@ Route::get('fake_du_lieu_news', function(){
 });
 //Route fake dl profile người dùng
 Route::get('fake-profile', function(){
-    $profile = new \App\Models\Profile_Users;
+    $profile = new \App\Models\ProfileUser;
     $profile->id_code = '001088012336';
     $profile->email = 'badboyszohan@gmail.com';
     $profile->address = '113, ngõ 97 Thái Thịnh, Đống Đa - HN';

@@ -1,0 +1,30 @@
+<div class ="col-md-12 col-lg-12 col-md-7 col-lg-7">
+                            <div class="card" style="margin-top: 25px;">
+                                <div class="header">
+                                    <ul class="header-dropdown m-r--5">
+
+                                    </ul>
+                                </div>
+                                <div class="body table-responsive" style="border: 1px solid #9E9E9E;">
+                                    <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Tên</th>
+                                            <th>Mô tả</th>
+                                            <th>Đường dẫn</th>
+                                            <th>Thời gian</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <p style="margin-top: 20px;"><small>Xóa chuyên mục sẽ không xóa bài viết trong chuyên mục đó. Thay vì thế, bài viết sẽ được chuyển đến chuyên mục mặc định Chưa được phân loại. Chuyên mục mặc định không thể xóa.</small></p>
+                            <p><small>Nhóm phân loại có thể được lựa chọn chuyển đổi thành thẻ đánh dấu với <a href="#"><u>công cụ chuyển đổi nhóm phân loại và thẻ đánh dấu.</u></a></small></p>
+                        </div>
