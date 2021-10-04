@@ -31,10 +31,17 @@
 
                                 <p><small>Chuyên mục cha</small></p>
                                 <div style="margin-top: -10px;">
-                                    <select class="form-control show-tick" name="cat_parent">
-                                        <option value="0"> -- Danh mục cha --</option>
-                                        @foreach($categories_prd as $val)
-                                            <option value="{{$val->id}}"> {{$val->news_categories_name}}  </option>
+                                    <select class="form-control show-tick" name="prd_cat_parent">
+                                        <option value="0"> --------- Danh mục cha ---------</option>
+                                        @foreach($categories_prd as $val1)
+                                            @if($val1 -> category_parent==0)
+                                                <option value="{{$val1->id}}"> {{$val1->product_categories_name}}  </option>
+                                            @endif
+                                               @foreach($categories_prd as $val2)
+                                                   @if($val2 -> category_parent == $val1 -> id )
+                                                       <option value="{{$val2->id}}">--- {{$val2->product_categories_name}}</option>
+                                                   @endif
+                                               @endforeach
                                         @endforeach
                                     </select>
                                 </div>
@@ -49,7 +56,7 @@
                             <p style="margin-bottom: 16px; margin-top: -25px;"><small>Thông thường mô tả này không được sử dụng trong các giao diện,tuy nhiên có vài giao diện có thể hiển thị mô tả này.</small></p>
                             <p><small>Kiểu hiển thị</small></p>
                             <div style="margin-top: -10px;margin-bottom: 20px">
-                                <select class="form-control show-tick" name="type_cat">
+                                <select class="form-control show-tick" name="prd_cat_type">
                                     <option value="0">Hiển thị</option>
                                     <option value="1">Ẩn</option>
                                 </select>
@@ -95,7 +102,7 @@
                                                     @endif
                                                 </td>
                                                 <td>{{$category_prd -> product_categories_desc}}</td>
-                                                <td></td>
+                                                <td>{{$category_prd-> url_prd_cat}}</td>
                                                 <td>{{$category_prd -> created_at}}</td>
                                                 <td>
                                                     <a href="{{route('products.catgr.edit', $category_prd->id)}}" class="btn btn-primary">Sửa</a>

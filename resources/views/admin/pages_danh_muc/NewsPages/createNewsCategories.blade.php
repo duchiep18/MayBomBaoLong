@@ -33,9 +33,17 @@
                              <p><small>Chuyên mục cha</small></p>
                              <div style="margin-top: -10px;">
                                  <select class="form-control show-tick" name="cat_parent">
-                                     <option value="0"> -- Danh mục cha --</option>
-                                     @foreach($categories as $val)
-                                         <option value="{{$val->id}}"> {{$val->news_categories_name}}  </option>
+                                     <option value="0"> --------- Danh mục cha ---------</option>
+                                     @foreach($categories as $val1)
+                                         @if($val1 -> category_parent==0)
+                                             <option value="{{$val1->id}}">{{$val1->news_categories_name}}  </option>
+                                         @endif
+
+                                         @foreach($categories as $val2)
+                                            @if($val2 -> category_parent == $val1 -> id )
+                                              <option value="{{$val2->id}}">--- {{$val2->news_categories_name}}</option>
+                                            @endif
+                                         @endforeach
                                      @endforeach
                                  </select>
                              </div>
@@ -65,7 +73,7 @@
                     {{-- Right Side --}}
                     <div class ="col-xs-12 col-sm-12 col-md-7 col-lg-7">
                         <div class="card" style="margin-top: 110px;">
-                            <div class="header">
+                            <div class="header" style="margin-left: 0px">
                                 <ul class="header-dropdown m-r--5">
 
                                 </ul>
@@ -86,7 +94,7 @@
                                     @foreach ($categories as $category)
                                         <tr>
                                             <td> {{$category->id}} </td>
-                                            <td><a href="">{{$category->news_categories_name}}</a> </td>
+                                            <td><a href="">{{$category->news_categories_name}}</a></td>
                                             <td>
                                                 @if($category->category_parent==0)
                                                     <span style="color: red"> Danh mục cha </span>
@@ -130,7 +138,6 @@
                         <div class="form-line">
                             <input type="text" class="form-control" style="background-color: white;margin-left: -15px;margin-top: 10px;">
                             <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin:6px 0 10px -15px;">Tìm kiếm chuyên mục</button>
-
                         </div>
                     </div>
                 </div>

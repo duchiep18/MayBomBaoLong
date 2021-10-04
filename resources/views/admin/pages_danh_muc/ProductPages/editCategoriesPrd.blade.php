@@ -44,10 +44,17 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 15px; padding-left: 0px;">
                                 <div style="margin-top: -10px;">
-                                    <select class="form-control show-tick" name="cat_parent">
-                                        <option value="0"> -- Danh mục cha --</option>
-                                        @foreach($categories_prd as $val)
-                                            <option value="{{$val->id}}"> {{$val->product_categories_name}}  </option>
+                                    <select class="form-control show-tick" name="prd_cat_parent">
+                                        <option value="0"> --------- Danh mục cha ---------</option>
+                                        @foreach($categories_prd as $val1)
+                                            @if($val1 -> category_parent==0)
+                                                <option {{$val1->id == $prd_cat->id ? 'selected' : ''}} value="{{$val1->id}}"> {{$val1->product_categories_name}}  </option>
+                                            @endif
+                                            @foreach($categories_prd as $val2)
+                                                @if($val2 -> category_parent == $val1 -> id )
+                                                    <option {{$val2->id == $prd_cat->id ? 'selected' : ''}} value="{{$val2->id}}">--- {{$val2->product_categories_name}}</option>
+                                                @endif
+                                            @endforeach
                                         @endforeach
                                     </select>
                                 </div>

@@ -73,6 +73,8 @@
                                 <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
                                     <thead>
                                         <tr>
+                                            <th><input type="checkbox" id="all-check" class="filled-in" onclick="myFunction(this)"/>
+                                                <label for="all-check"></label></th>
                                             <th> <i class="material-icons col-amber">image</i> </th>
                                             <th>Tên sản phẩm</th>
                                             <th>Tình trạng</th>
@@ -84,6 +86,8 @@
                                     </thead>
                                     @foreach ($products as $product)
                                         <tr>
+                                            <th scope="row"><input type="checkbox" id="checkprd" class="filled-in"/>
+                                                <label for="checkprd"></label></th>
                                             <td>
                                                 <div class="media">
                                                     <a class="media-left" href="#">
@@ -91,7 +95,7 @@
                                                     </a>
                                                 </div>
                                             </td>
-                                            <td> {{$product->products_name}} </td>
+                                            <td><a href="">{{$product->products_name}} </a></td>
                                             <td> {{$product->status}} </td>
                                             <td> {{$product->price}} </td>
                                             <td>
@@ -135,7 +139,16 @@
                         }
                     });
                 })
-            </script>
+        </script>
+        <script>
+            function myFunction(x) {
+                if(x.checked == true) {
+                    document.getElementById("checkprd").checked = true;
+                } else {
+                    document.getElementById("checkprd").checked = false;
+                }
+            }
+        </script>
 
     </section>
 

@@ -85,7 +85,7 @@
                             @foreach ($news as $addnew)
                                 <tr>
                                     <td> {{$addnew->id}} </td>
-                                    <td> {{$addnew->title}} </td>
+                                    <td><a href=""> {{$addnew->title}} </a></td>
                                     <td>
                                         @if($addnew->news_category)
                                             {{$addnew->news_category->news_categories_name}}
