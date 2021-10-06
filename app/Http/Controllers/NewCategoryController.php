@@ -11,9 +11,13 @@ use Session;
 class NewCategoryController extends Controller
 {
     //truy cập trang tạo danh mục cùng Categories đã tạo
-    public function create(){
+    public function create(Request $request){
+        $keywordNewsCat = $request->input('keywordNewsCat');
         $query = PostCategory::query();
-        $categories = $query->paginate(10);
+            if ($keywordNewsCat){
+                $query->where('news_categories_name', 'like', "%{$keywordNewsCat}%");
+            }
+        $categories = $query->paginate(5);
         $new_catgr = PostCategory::where('category_parent', 0)->orderby('id','DESC')->get();
         return view('admin.pages_danh_muc.NewsPages.createNewsCategories', compact('categories','new_catgr'));
     }

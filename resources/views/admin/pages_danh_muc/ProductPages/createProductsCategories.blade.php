@@ -7,14 +7,16 @@
             <h2 style="text-align:center">Thêm danh mục sản phẩm</h1>
 
                     {{-- Left Side --}}
+                <form action="" method="GET">
                     <div class="row">
                         <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11" style="float:left; margin-top:50px;">
                             <div class="form-line hidden-sm hidden-xs" style="padding-left: 50px;">
-                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right">Tìm kiếm danh mục</button>
-                                <input type="text" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
+                                <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right">Tìm kiếm danh mục</button>
+                                <input type="text" name="keywordPrdCat" value="{{request()->input('keywordPrdCat')}}" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
                             </div>
                         </div>
                     </div>
+                </form>
                     <div class="row clearfix">
                         <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                             <form action="{{route('products.storeCategories')}}" method="POST" role="form">

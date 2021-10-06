@@ -29,12 +29,16 @@
 
                             </ul>
                         </div>
-                        <div class ="col-md-6 col-lg-6 hidden-xs hidden-sm">
-                            <div class="form-line">
-                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right;">Tìm các sản phẩm</button>
-                                <input type="text" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
+                        <form action="" method="GET">
+                        <div class="row">
+                            <div class ="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                                <div class="form-line">
+                                    <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right;">Tìm các sản phẩm</button>
+                                    <input type="text" name="keywordprd" value="{{request()->input('keywordprd')}}" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
+                                </div>
                             </div>
                         </div>
+                        </form>
                     </div>
 
                     <div class="row clearfix">
@@ -107,11 +111,11 @@
                                             <td> {{$product->created_at}} </td>
                                             <td> {{$product->updated_at}} </td>
                                             <td>
-                                                <a href="{{route('products.edit', $product->id)}}" class="btn btn-primary">Edit</a>
+                                                <a href="{{route('products.edit', $product->id)}}" class="btn btn-primary">Sửa</a>
                                                 <form class="" action="{{route('products.destroy', $product->id)}}" method="POST">
                                                     @csrf
                                                     @method('delete')
-                                                    <button class="btn btn-danger btn-delete" type="submit">Delete</button>
+                                                    <button class="btn btn-danger btn-delete" type="submit">Xóa</button>
                                                 </form>
                                             </td>
                                         </tr>

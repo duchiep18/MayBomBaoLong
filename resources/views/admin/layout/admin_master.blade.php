@@ -835,21 +835,24 @@
 {{-- CKEditor --}}
 <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 <script>
-    var content_post = document.getElementById('content')
-    CKEDITOR.replace('content',{
-	filebrowserBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
-	filebrowserUploadUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
-	filebrowserImageBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
-});
-var description_post = document.getElementById('description')
 
-    CKEDITOR.replace('description',{
-	filebrowserBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
-	filebrowserUploadUrl : 'responsive_filemanager/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
-	filebrowserImageBrowseUrl : 'responsive_filemanager/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
+    var content = document.getElementById('content')
+    CKEDITOR.replace('content',{
+	filebrowserBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserUploadUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserImageBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
 });
+
+    var description = document.getElementById('description')
+    CKEDITOR.replace('description',{
+	filebrowserBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserUploadUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+	filebrowserImageBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
+});
+
 </script>
-        <script src="{{asset('admin-frontend/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}"></script>
+
+<script src="{{asset('admin-frontend/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}"></script>
 
 
 @yield('js')

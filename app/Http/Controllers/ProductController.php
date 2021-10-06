@@ -7,32 +7,25 @@ use App\Models\Product;
 use App\Models\ProductCategory;
 use Session;
 
+
 class ProductController extends Controller
 {
 
-    //chuyển trang tạo sản phẩm
+    //get trang tạo sản phẩm
     public function create_prd(){
         $categories_prd = ProductCategory::all();
         return view('admin.pages_danh_muc.ProductPages.createProducts', compact('categories_prd'));
     }
 
-    //tìm kiếm sản phẩm
-     public function search_products(Request $request)
-     {
-         $keywordproducts = $request->input('keywordsearch_products');
-         $productsQuery = Product::query();
-         if($keywordproducts) {
-             $productsQuery->where('products_name','like', "%{$keywordproducts}%");
-         }
-         $product = $productsQuery->paginate(5);
-         return view('admin.pages_danh_muc.NewsPages.news_list', compact('product'));
-     }
-
     //tìm kiếm, đổ dl ra trang qly
      public function getProduct_admin(Request $request){
-        $query = Product::query();
-        $products = $query->paginate(5);
-        // $preoduct = products::paginate(4);
+         $keywordproducts = $request->input('keywordprd');
+         $query = Product::query();
+         if($keywordproducts) {
+             $query->where('products_name','like', "%{$keywordproducts}%");
+         }
+         $products = $query->paginate(5);
+
         return view('admin.pages_danh_muc.ProductPages.products_list', compact('products'));
     }
 
@@ -86,6 +79,7 @@ class ProductController extends Controller
     //hàm cập nhật sản phẩm
     public function update($id, Request $request)
     {
+        $productupdate = Product::find($id);
         $prd_name = $request->input('name_products');
         $categories_prd_id = $request->input('categories_prd');
         $prd_content = $request->input('content');
@@ -98,20 +92,18 @@ class ProductController extends Controller
         $prd_url =$request->input('url_prd');
         $prd_status = $request->input('status');
 
-        $product = new Product;
-        $product->products_name =  $prd_name ;
-        $product->categories_prd_id = $categories_prd_id;
-        $product->products_content =  $prd_content ;
-        $product->products_description = $prd_desc ;
-        $product->products_content = $prd_content;
-        $product->price =  $prd_price ;
-        $product->sale_price =  $prd_price_sale ;
-        $product->image_product = $image;
-        $product->image_list_product = $image_list;
-        $product->url_prd = $prd_url;
-        $product->tags = $prd_tags;
-        $product->status = $prd_status ;
-        $product->save();
+        $productupdate->products_name = $prd_name;
+        $productupdate->categories_prd_id = $categories_prd_id;
+        $productupdate->products_content = $prd_content;
+        $productupdate->products_description = $prd_desc;
+        $productupdate->price = $prd_price;
+        $productupdate->sale_price = $prd_price_sale;
+        $productupdate->image_product = $image;
+        $productupdate->image_list_product = $image_list;
+        $productupdate->tags = $prd_tags;
+        $productupdate->url_prd = $prd_url;
+        $productupdate->status = $prd_status;
+        $productupdate->save();
         return redirect()->route('products.index');
     }
 
@@ -123,9 +115,9 @@ class ProductController extends Controller
         return redirect()->route('products.index');
     }
     //get Form edit Từ Khóa
-    public function getEditProductCategories(Request $request){
-
-        return view('admin.pages_danh_muc.ProductPages.keywords_products');
-    }
+//    public function getEditProductCategories(Request $request){
+//
+//        return view('admin.pages_danh_muc.ProductPages.keywords_products');
+//    }
 
 }

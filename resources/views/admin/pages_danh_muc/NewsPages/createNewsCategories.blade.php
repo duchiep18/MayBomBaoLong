@@ -7,14 +7,16 @@
             <h2 style="text-align:center">Thêm chuyên mục bài viết</h1>
 
                 {{-- Left Side --}}
-                <div class="row">
-                    <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11" style="float:left; margin-top:50px;">
-                        <div class="form-line hidden-sm hidden-xs" style="padding-left: 50px;">
-                            <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right">Tìm kiếm danh mục</button>
-                            <input type="text" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
+                <form action="" method="GET">
+                    <div class="row">
+                        <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11" style="float:left; margin-top:50px;">
+                            <div class="form-line hidden-sm hidden-xs" style="padding-left: 50px;">
+                                <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right">Tìm kiếm danh mục</button>
+                                <input type="text" name="keywordNewsCat" value="{{request()->input('keywordNewsCat')}}" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
                 <div class="row clearfix">
                     <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                         <form action="{{route('news.storeCategories')}}" method="POST" role="form">
@@ -125,6 +127,10 @@
 
                                     </tbody>
                                 </table>
+                                <br><br>
+                                <div style="text-align:center">
+                                    {{$categories->appends($_GET)}}
+                                </div>
                             </div>
                         </div>
 
@@ -141,6 +147,7 @@
                         </div>
                     </div>
                 </div>
+
         </div>
         <script src="//code.jquery.com/jquery.js"></script>
         <script>

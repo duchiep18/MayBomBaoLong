@@ -92,7 +92,7 @@
                                 </div>
                                 <br>
                                 <div style="margin: 40px 10px 10px 10px">
-                                    <p style="margin: 25px 0 10px">Hiển thị :><strong></strong>
+                                    <p style="margin: 25px 0 10px">Hiển thị :<strong></strong>
                                     <p style="margin: 25px 0 10px">Đăng : <strong></strong>
                                 </div>
                                 <div>

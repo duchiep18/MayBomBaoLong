@@ -9,7 +9,7 @@
 
     <section class="content">
         <div class="container-fluid">
-            <h1 style="text-align:center">Tạo sản phẩm mới</h1> <br><br>
+            <h1 style="text-align:center">Sửa chữa sản phẩm </h1> <br><br>
             <form action="{{route('products.update', $product->id)}}" method="POST" role="form">
                 @csrf
                 @method('put')
@@ -25,14 +25,14 @@
                             <div class="card">
                                 <div class="header">
                                     <h2>
-                                        Thông số chi tiết
+                                        Thông số kỹ thuật
                                     </h2>
                                     <ul class="header-dropdown m-r--5">
 
                                     </ul>
                                 </div>
                                 <div class="body">
-                                        <textarea id="content_post" name="content">
+                                        <textarea id="content_prd" name="content">
                                             {{$product->products_content}}
                                         </textarea>
                                 </div>
@@ -49,7 +49,7 @@
                                     </ul>
                                 </div>
                                 <div class="body">
-                                    <textarea id="content_post" name="description" rows="20">
+                                    <textarea id="description_prd" name="description" rows="20">
                                             {{$product->products_description}}
                                     </textarea>
                                 </div>
@@ -88,7 +88,7 @@
                                     <div style="">
                                         <input type="text" class="form-control" name="image" id="image" value="{{$product->image_product}}">
                                         <br>
-                                        <img src="{{url('responsive_filemanager/source')}}/{{$product->image_product}}" style="width: 150px; height: 150px;margin-bottom: 20px">
+                                        <img src="{{url('responsive_filemanager/source')}}/{{$product->image_product}}" id="show_image" style="width: 150px; height: 150px;margin-bottom: 20px">
                                         <br>
                                         <span>
                                                 <a href="#modal-file" data-toggle="modal" class="btn btn-primary">Chọn ảnh</a>
@@ -117,7 +117,7 @@
 
                                                     @foreach($image_list as $images)
                                                         <div class="col-md-3 thumbnail" style="margin-left: 20px">
-                                                            <img src="{{url('responsive_filemanager/source')}}/{{$images}}" alt="" >
+                                                            <img src="{{url('responsive_filemanager/source')}}/{{$images}}" id="show_image_list" alt="" >
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -159,7 +159,7 @@
                                     </div>
                                     <div>
                                         <hr style="height:2px;border-width:0;color:gray;background-color:gray; margin-top: 35px;">
-                                        <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 5px 0 0px 10px; float: right">Thêm sản phẩm</button>
+                                        <button type="submit" name="update_product" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 5px 0 0px 10px; float: right">Sửa sản phẩm</button>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@
                                             <div style="margin:0 10px 10px 10px;">
                                                 <br>
                                                 <select name="categories_prd" id="input" class="form-control" required="required">
-                                                    <option value="category_prd_id">Chọn danh mục</option>
+                                                    <option value="0">-- Chưa phân loại --</option>
                                                     @foreach($categories_prd as $category_prd)
                                                         <option {{ $category_prd->id == $product->categories_prd_id ? 'selected' : '' }} value="{{$category_prd->id}}">{{$category_prd->product_categories_name}}</option>
                                                     @endforeach

@@ -25,7 +25,7 @@
                                 <div class="card">
                                     <div class="header">
                                         <h2>
-                                            Thông số chi tiết
+                                            Thông số kỹ thuật
                                         </h2>
                                         <ul class="header-dropdown m-r--5">
 
@@ -172,7 +172,7 @@
                                             <div style="margin:0 10px 10px 10px;">
                                                 <br>
                                                 <select name="categories_prd" id="input" class="form-control" required="required">
-                                                    <option value="category_prd_id">Chọn danh mục</option>
+                                                    <option value="0">-- Chưa phân loại --</option>
                                                     @foreach($categories_prd as $category_prd)
                                                         <option value="{{$category_prd->id}}">{{$category_prd->product_categories_name}}</option>
                                                     @endforeach

@@ -12,11 +12,17 @@ class NewPostController extends Controller
 {
     //Get tới trag Post List, phân trang quản lý tin tức
     public function getNews(Request $request){
+        $keywordnews = $request->input('keywordnews');
+
         $query =NewPost::query();
-        $news = $query->paginate(10);
-//      $news = posts::paginate(4);
+
+        if('$keywordnews'){
+            $query -> where('title', 'like', "%{$keywordnews}%" );
+        }
+      $news = $query->paginate(5);
         return view('admin.pages_danh_muc.NewsPages.news_list', compact('news'));
     }
+
 
     //Chuyền categories đến trag Create Post
     public function create()
@@ -28,8 +34,8 @@ class NewPostController extends Controller
       //tìm kiếm bài viết
       public function search_news(Request $request)
       {
-          $keywordnews = $request->input('keywordsearch_news');
           $newsQuery = NewPost::query();
+          $keywordnews = $request->input('keywordnews');
           if($keywordnews)
           {
               $newsQuery->where('title', 'like', "%{$keywordnews}%");
@@ -37,8 +43,6 @@ class NewPostController extends Controller
           $new = $newsQuery->paginate(10);
           return view('admin.pages_danh_muc.NewsPages.news_list', compact('new'));
       }
-
-
 
     //tạo bai viết
     public function storeData(Request $request){
@@ -88,6 +92,7 @@ class NewPostController extends Controller
         $newupdate->description = $description;
         $newupdate->image_post = $image;
         $newupdate->url_post = $url_post;
+        $newupdate->tags_post = $tags_post;
         $newupdate->status = $status;
         $newupdate->save();
         return redirect()->route('news.index');

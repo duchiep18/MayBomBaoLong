@@ -256,7 +256,7 @@
             placeholder: 'Thêm từ khóa ...' });
     </script>
 
-    {{-- JS Auto Slug --}}
+{{-- JS Auto Slug --}}
     <script>
         function ChangeToSlug() {
             var name, slug;

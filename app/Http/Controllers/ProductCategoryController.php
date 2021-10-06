@@ -9,9 +9,13 @@ class ProductCategoryController extends Controller
 {
     //Route Categories Products
     //chuyển trang tạo danh mục
-    public function create(){
+    public function create(Request $request){
+        $keywordPrd = $request ->input('keywordPrdCat');
         $query = ProductCategory::query();
-        $categories_prd = $query->paginate(10);
+            if ($keywordPrd){
+                $query->where('product_categories_name', 'like',"%{$keywordPrd}%");
+            }
+        $categories_prd = $query->paginate(5);
         $prd_catgr = ProductCategory::where('category_parent',0)->orderby('id','DESC')->get();
         return view('admin.pages_danh_muc.ProductPages.createProductsCategories',compact('categories_prd','prd_catgr'));
     }
