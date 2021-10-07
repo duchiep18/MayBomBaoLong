@@ -1,7 +1,6 @@
 @extends('client.layout.master')
 
 @section('content')
-
     <div class="content" style="background-color: #F0F0E9;">
         <section id="slider" style="padding-top: 30px;"><!--slider-->
             <div class="container">
@@ -74,8 +73,8 @@
                                     <div class="brands-name">
                                         <ul class="nav nav-pills nav-stacked">
                                             @foreach($products as $product)
-                                            <li style="padding: 20px 0px 0px 0px">
-                                                <div class="container">
+                                            <li style="padding: 20px 0px 0px 0px; ">
+                                                <div class="container" >
                                                 <a class="media-left" href="#">
                                                     <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 ">
                                                     <img src="{{url('responsive_filemanager/source')}}/{{$product->image_product}}" style="width: 100px; height: 100px;">
@@ -96,77 +95,19 @@
                             <div class="shipping text-center"><!--shipping-->
                                 <img src="frontend/images/home/shipping.jpg" alt="" />
                             </div><!--/shipping-->
-
                         </div>
                     </div>
 
+                    @foreach($categories_prd as $category_prd)
                     <div class="col-sm-9 padding-right" style="padding-right: 15px;">
-                        <div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc;"><!--Sản phẩm nổi bật-->
-                            @foreach($products as $product)
-                            <h2 class="title pull-left top-item">Sản phẩm nổi bật</h2>
-                            <div class="col-sm-6 col-lg-3 col-xs-6 col-md-3 piki">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
-                                            <img src="{{url('responsive_filemanager/source')}}/{{$product->image_product}}" style="width: 100px; height: 100px;">
-                                        </div>
-
-                                        <div class="product-overlay " style= opacity:70%;>
-                                            <div class="overlay-content">
-                                                <h2 style="color: black"><bold>$56</bold></h2>
-                                                <p style="color: black">Easy Polo Black Edition</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container1" style="relative;">
-                                    <p style="padding-bottom: 20px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Easy Polo Black Edition</p>
-                                    <br>
-                                    <a  style="padding-bottom: 10px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" href="#" class="btn btn-default add-to-cart"><i class="fa fa-eye"></i>Chi tiết</a>
-                                </div>
-                            </div>
-                                <div style="text-align:center ">
-                                    {{$products->appends($_GET)}}
-                                </div>
-                            <h2 class="title pull-left top-item">Máy bơm nước</h2>
-                                        <div class="col-sm-6 col-lg-3 col-xs-6 col-md-3 piki">
-                                            <div class="product-image-wrapper">
-                                                <div class="single-products">
-                                                    <div class="productinfo text-center">
-                                                        <img src="{{url('responsive_filemanager/source')}}/{{$product->image_product}}" style="width: 100px; height: 100px;">
-                                                    </div>
-
-                                                    <div class="product-overlay " style= opacity:70%;>
-                                                        <div class="overlay-content">
-                                                            <h2 style="color: black"><bold>$56</bold></h2>
-                                                            <p style="color: black">Easy Polo Black Edition</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="container1" style="relative;">
-                                                <p style="padding-bottom: 20px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Easy Polo Black Edition</p>
-                                                <br>
-                                                <a  style="padding-bottom: 10px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" href="#" class="btn btn-default add-to-cart"><i class="fa fa-eye"></i>Chi tiết</a>
-                                            </div>
-                                        </div>
-                                        <div style="text-align:center ">
-                                             {{$products->appends($_GET)}}
-                                        </div>
-
-                        </div>
-                        <h2 class="title text-center bottom-item"><a href="#"><small style="color: black;">Xem tất cả</small></a></h2>
-
-                        <br>
-
-                        <div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc;"><!--Sản phẩm nổi bật-->
-                            <h2 class="title pull-left top-item">Động cơ điện</h2>
-
-                                <div class="col-sm-6 col-lg-3 col-xs-6 col-md-3 piki">
+                        <div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc;  margin-bottom: 20px"><!--Sản phẩm nổi bật-->
+                            <h2 class="title pull-left top-item">{{$category_prd->product_categories_name}}</h2>
+                                @foreach($products as $product)
+                                <div class="col-sm-6 col-lg-2 col-xs-6 col-md-2" style="text-align: center; height: fit-content; margin: 10px 10px 0 30px; border: 8px;">
                                     <div class="product-image-wrapper">
                                         <div class="single-products">
                                             <div class="productinfo text-center">
-                                                <img src="{{url('responsive_filemanager/source')}}/{{$product->image_product}}" style="width: 100px; height: 100px;">
+                                                <img src="{{url('responsive_filemanager/source')}}/{{$product->image_product}}" style="width: 150px; height: 150px;">
                                             </div>
 
                                             <div class="product-overlay " style= opacity:70%;>
@@ -178,26 +119,27 @@
                                         </div>
                                     </div>
                                     <div class="container1" style="relative;">
-                                        <p style="padding-bottom: 20px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Easy Polo Black Edition</p>
+                                        <p style="text-align: center; font-weight: bold;top: 50%; left: 50%;">{{$product->products_name}}</p>
                                         <br>
                                         <a  style="padding-bottom: 10px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" href="#" class="btn btn-default add-to-cart"><i class="fa fa-eye"></i>Chi tiết</a>
                                     </div>
+
                                 </div>
-                            @endforeach
-                            <div style="text-align:center ">
-                                {{$products->appends($_GET)}}
-                            </div>
+{{--                                    <h2 class="title text-center bottom-item" style="margin-bottom: 0px;"><a href="#"><small style="color: black;">Xem tất cả</small></a></h2>--}}
+                                @endforeach
 
 
-                        </div>
 
-                        <h2 class="title text-center bottom-item" style="margin-bottom: 0px;"><a href="#"><small style="color: black;">Xem tất cả</small></a></h2>
-                    </div><!--Sản phẩm nổi bật-->
+                            <br><br>
 
 
                     </div>
-                </div>
+
+
+                    </div>
+                    @endforeach
             </div>
-        </section>
+    </div>
+</section>
 
 @stop

@@ -49,7 +49,7 @@ class AdminController extends Controller
 //đổ dl ra trang Home
     public function getDatatHome(Request $request){
         $query = Product::query();
-        $products = $query->paginate(5);
+        $products = $query->limit(5)->get();
 
         $categories_prd = ProductCategory::all();
         // $product = products::paginate(4);
