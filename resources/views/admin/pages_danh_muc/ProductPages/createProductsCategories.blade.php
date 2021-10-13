@@ -59,8 +59,8 @@
                             <p><small>Kiểu hiển thị</small></p>
                             <div style="margin-top: -10px;margin-bottom: 20px">
                                 <select class="form-control show-tick" name="prd_cat_type">
-                                    <option value="0">Hiển thị</option>
-                                    <option value="1">Ẩn</option>
+                                    <option value="Hiển thị">Hiển thị</option>
+                                    <option value="Ẩn">Ẩn</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-bottom: 40px">Thêm chuyên mục</button>
@@ -84,6 +84,7 @@
                                                 <th>Thuộc danh mục</th>
                                                 <th>Mô tả</th>
                                                 <th>Đường dẫn</th>
+                                                <th>Trạng thái</th>
                                                 <th>Thời gian</th>
                                             </tr>
                                         </thead>
@@ -105,6 +106,7 @@
                                                 </td>
                                                 <td>{{$category_prd -> product_categories_desc}}</td>
                                                 <td>{{$category_prd-> url_prd_cat}}</td>
+                                                <td>{{$category_prd-> product_categories_type}}</td>
                                                 <td>{{$category_prd -> created_at}}</td>
                                                 <td>
                                                     <a href="{{route('products.catgr.edit', $category_prd->id)}}" class="btn btn-primary">Sửa</a>

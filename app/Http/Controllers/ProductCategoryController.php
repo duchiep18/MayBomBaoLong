@@ -42,7 +42,7 @@ class ProductCategoryController extends Controller
         $prd_cat = ProductCategory::find($id);
         return view('admin.pages_danh_muc.ProductPages.editCategoriesPrd',compact('categories_prd','prd_cat'));
     }
-    //update News Categoríe
+    //update Product Categoríe
     public function update($id, Request $request){
         $newCatsEdit = ProductCategory::find($id);
         $prd_categories_name = $request->input('prd_cat_name');
@@ -66,10 +66,5 @@ class ProductCategoryController extends Controller
         return redirect()->route('products.create_catgr');
     }
 
-    public function products($id){
-        $category_products = ProductCategory::find($id);
-        $products = $category_products->products()->paginate(5);
-        return view('categories_news_and_products.categories_products', compact('products'));
-    }
 
 }

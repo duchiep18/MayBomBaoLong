@@ -6,6 +6,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Trang chủ | Bảo Long</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
     <link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/css/prettyPhoto.css')}}" rel="stylesheet">
@@ -282,12 +286,108 @@
         </div>
     </div><!--/header-bottom-->
 </header><!--/header-->
+{{--Left Side--}}
+<div class="content" style="background-color: #F0F0E9;">
+    <section id="slider" style="padding-top: 30px;"><!--slider-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="slider-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider-carousel" data-slide-to="1"></li>
+                            <li data-target="#slider-carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-sm-6">
+                                    <h1><span>E</span>-SHOPPER</h1>
+                                    <h2>Free E-Commerce Template</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                    <button type="button" class="btn btn-default get">Get it now</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img src="frontend/images/home/girl1.jpg" class="girl img-responsive" alt="" />
+                                    <img src="frontend/images/home/pricing.png"  class="pricing" alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section><!--/slider-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3" style="padding-left: 40px">
+                <div class="left-sidebar">
+                    <div class="leftbox" style="background-color: #FE980F;">
+                        <h2 class="title">Danh mục sản phẩm</h2>
+                        <div class="panel-group category-products" id="cat_prd"><!--category-productsr-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    @foreach($categories_prd as $category_prd)
+                                        <h3 class="panel-title cat" style="margin: 20px 0px 20px 0px;font-weight: bold;">
+                                            <a data-toggle="collapse"  href="#" style="font-size:18px;">
+                                                {{$category_prd -> product_categories_name}}
+                                            </a>
+                                        </h3>
+                                    @endforeach
+                                </div>
+
+                            </div>
+
+                        </div><!--/category-products-->
+                    </div>
 
 
+                    <div class="leftbox" style="background-color: #FE980F;">
+                        <div class="brands_products"><!--brands_products-->
+                            <h2 class="title">Sản phẩm mới</h2>
+                            <div class="brands-name">
+                                <ul class="nav nav-pills nav-stacked">
+                                    @foreach($products_new as $product_new)
+                                        <li style="padding: 20px 0px 0px 0px; ">
+                                            <div class="container">
+                                                <a class="media-left" href="#">
+                                                    <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 ">
+                                                        <img src="{{url('responsive_filemanager/source')}}/{{$product_new->image_product}}" style="width: 100px; height: 100px;">
+                                                    </div>
+                                                    <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10 media-body"  >
+                                                        <h5 style="margin: 25px 0px 0px 0px; font-weight: bold">{{$product_new -> products_name}}</h5>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div><!--/brands_products-->
+                    </div>
 
-@yield('content')
 
+                    <div class="shipping text-center"><!--shipping-->
+                        <img src="frontend/images/home/shipping.jpg" alt="" />
+                    </div><!--/shipping-->
+                </div>
+            </div>
 
+            @yield('content')
+
+        </div>
+    </div>
+</div>
 
 <footer id="footer"><!--Footer-->
     <div class="footer-top">

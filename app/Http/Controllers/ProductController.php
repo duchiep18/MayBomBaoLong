@@ -10,6 +10,17 @@ use Session;
 
 class ProductController extends Controller
 {
+     public function getProduct_admin(Request $request){
+         $keywordproducts = $request->input('keywordprd');
+         $query = Product::query();
+         if($keywordproducts) {
+             $query->where('products_name','like', "%{$keywordproducts}%");
+         }
+         $products = $query->paginate(10);
+         $categories_prd = ProductCategory::all();
+
+         return view('admin.pages_danh_muc.ProductPages.products_list', compact('products','categories_prd'));
+    }
 
     //get trang tạo sản phẩm
     public function create_prd(){
@@ -18,16 +29,6 @@ class ProductController extends Controller
     }
 
     //tìm kiếm, đổ dl ra trang qly
-     public function getProduct_admin(Request $request){
-         $keywordproducts = $request->input('keywordprd');
-         $query = Product::query();
-         if($keywordproducts) {
-             $query->where('products_name','like', "%{$keywordproducts}%");
-         }
-         $products = $query->paginate(5);
-
-        return view('admin.pages_danh_muc.ProductPages.products_list', compact('products'));
-    }
 
     //đổ dl ra trang Home sau khi Login
     // public function getProduct_Login(Request $request){

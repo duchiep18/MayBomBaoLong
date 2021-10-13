@@ -834,21 +834,29 @@
 
 {{-- CKEditor --}}
 <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+<script src="{{asset('ckeditor/config.js')}}"></script>
+
 <script>
 
     var content = document.getElementById('content')
     CKEDITOR.replace('content',{
 	filebrowserBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
 	filebrowserUploadUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
-	filebrowserImageBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
-});
+	filebrowserImageBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+    allowedContent:true,
+    shiftEnterMode: CKEDITOR.ENTER_P,
+
+    });
 
     var description = document.getElementById('description')
     CKEDITOR.replace('description',{
 	filebrowserBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
 	filebrowserUploadUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=2&editor=ckeditor&akey=webBLTuanAnh&fldr=',
-	filebrowserImageBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr='
-});
+	filebrowserImageBrowseUrl : '{{url("responsive_filemanager")}}/filemanager/dialog.php?type=1&editor=ckeditor&akey=webBLTuanAnh&fldr=',
+    allowedContent:true,
+    shiftEnterMode: CKEDITOR.ENTER_P,
+
+    });
 
 </script>
 

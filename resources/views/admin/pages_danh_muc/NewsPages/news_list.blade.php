@@ -17,13 +17,18 @@
                 <div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding-left">
                     <ul class="dashboard-stat-list1">
                         <li class="all">
-                            <a href="#">Tất cả</a>
+                            <a href="#">Tất cả ()</a>
                             <span>|</span>
                         </li>
                         <li class="publish">
-                            <a href="#">Đã thêm</a>
+                            <a href="#">Đã xuất bản ()</a>
                             <span>|</span>
                         </li>
+                        <li class="publish">
+                            <a href="#">Bản nháp ()</a>
+                            <span>|</span>
+                        </li>
+
 
                     </ul>
                 </div>
@@ -44,19 +49,34 @@
 
                     <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
                         <select class="form-control show-tick">
-                            <option>Tất cả các ngày</option>
-                            <option>Tháng 10 năm 2021</option>
-                            <option>Tháng 11 năm 2021</option>
-                            <option>Tháng 12 năm 2021</option>
+                            <option value="0">--- Tất cả chuyên mục ---</option>
+                            @foreach($categories as $val1)
+                                @if($val1 -> category_parent==0)
+                                    <option value="{{$val1->id}}">{{$val1->news_categories_name}}  </option>
+                                @endif
+
+                                @foreach($categories as $val2)
+                                    @if($val2 -> category_parent == $val1 -> id )
+                                        <option value="{{$val2->id}}">--- {{$val2->news_categories_name}}</option>
+                                    @endif
+                                @endforeach
+                            @endforeach
                         </select>
                     </div>
+
                     <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
                         <select class="form-control show-tick">
-                            <option>Tất cả chuyên mục</option>
-                            <option>Chưa được phân loại</option>
-                            <option>Tin tức</option>
+                            <option value="">--- Lọc theo trạng thái ---</option>
                         </select>
                     </div>
+
+                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                        <select class="form-control show-tick">
+                            <option value="0">--- Tất cả các ngày ---</option>
+
+                        </select>
+                    </div>
+
 
                     <div style="display: inline-block;">
                         <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Lọc</button>

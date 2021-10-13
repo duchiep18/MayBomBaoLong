@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 //Admin Route
 //Route Admin Dashboard
+//Route Login, SignUp
+Route::get('BaoLong_admin', 'AuthController@geptFormLogin')->name('login.get');
+Route::post('login', 'AuthController@submitFormLogin')->name('login.submit');
+Route::get('register', 'AuthController@getFormRegister')->name('register.get');
+Route::post('register', 'AuthController@submitFormRegister')->name('register.submit');
+Route::post('logout', 'AuthController@logout')->name('logout');
+
 
 Route::middleware(['auth'])->group(function () {
 
@@ -106,27 +113,21 @@ Route::middleware(['auth'])->group(function () {
     // Route::get('homeLogin', 'ProductController@getProduct_Login');
 // });
 
+// CLIENT ROUTE
 
 //Route Home page Client
-Route::get('home', function() {
-    return view('client.page.home');
-});
 
-//Route Login, SignUp
-Route::get('BaoLong_admin', 'AuthController@geptFormLogin')->name('login.get');
-Route::post('login', 'AuthController@submitFormLogin')->name('login.submit');
-Route::get('register', 'AuthController@getFormRegister')->name('register.get');
-Route::post('register', 'AuthController@submitFormRegister')->name('register.submit');
-Route::post('logout', 'AuthController@logout')->name('logout');
 
 //Route get Product đến Home
-Route::get('home', 'AdminController@getDatatHome');
 
+Route::get('home', 'HomeController@getDatatHome');
+
+//Route danh mục sản phẩm trang chủ
+Route::get('/home/danh-muc-san-pham/{id}', 'HomeController@show_catPrd_home');
 
 //Route Shop
-Route::get('shop',function(){
-    return view('client.products.ShopProducts');
-});
+
+Route::get('shop', 'HomeController@getDatatShop');
 
 //Route cart
 Route::get('cart',function(){

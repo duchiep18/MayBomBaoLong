@@ -19,8 +19,11 @@ class NewPostController extends Controller
         if('$keywordnews'){
             $query -> where('title', 'like', "%{$keywordnews}%" );
         }
-      $news = $query->paginate(5);
-        return view('admin.pages_danh_muc.NewsPages.news_list', compact('news'));
+      $news = $query->paginate(10);
+
+      $categories = PostCategory::all();
+
+        return view('admin.pages_danh_muc.NewsPages.news_list', compact('news','categories'));
     }
 
 
@@ -31,18 +34,7 @@ class NewPostController extends Controller
         return view('admin.pages_danh_muc.NewsPages.createNews', compact('categories'));
     }
 
-      //tìm kiếm bài viết
-      public function search_news(Request $request)
-      {
-          $newsQuery = NewPost::query();
-          $keywordnews = $request->input('keywordnews');
-          if($keywordnews)
-          {
-              $newsQuery->where('title', 'like', "%{$keywordnews}%");
-          }
-          $new = $newsQuery->paginate(10);
-          return view('admin.pages_danh_muc.NewsPages.news_list', compact('new'));
-      }
+
 
     //tạo bai viết
     public function storeData(Request $request){

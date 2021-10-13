@@ -83,9 +83,9 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="margin-bottom: 50px; padding-left: 0px;">
                                 <div style="margin-top: -10px;">
-                                    <select class="form-control show-tick" name="type_cat">
-                                        <option value="0">Hiển thị</option>
-                                        <option value="1">Ẩn</option>
+                                    <select class="form-control show-tick" name="prd_cat_type">
+                                        <option value="Hiển thị">Hiển thị</option>
+                                        <option value="Ẩn">Ẩn</option>
                                     </select>
                                 </div>
                             </div>

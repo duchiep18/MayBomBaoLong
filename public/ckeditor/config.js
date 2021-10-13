@@ -4,7 +4,15 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
-	// config.uiColor = '#AADC6E';
+    {
+        // Define changes to default configuration here. For example:
+        // config.language = 'fr';
+        // config.uiColor = '#AADC6E';
+        config.enterMode = (2)
+        config.enterMode = CKEDITOR.ENTER_BR;
+        config.shiftEnterMode = CKEDITOR.ENTER_P;
+        config.allowedContent = true;
+        config.autoParagraph = false
+
+    };
 };

@@ -45,16 +45,5 @@ class AdminController extends Controller
     {
         return view('admin.pages_danh_muc.all_comments');
     }
-//    Đổ dl product ra home
-//đổ dl ra trang Home
-    public function getDatatHome(Request $request){
-        $query = Product::query();
-        $products = $query->limit(5)->get();
-
-        $categories_prd = ProductCategory::all();
-        // $product = products::paginate(4);
-        return view('client.page.home', compact('products','categories_prd'));
-
-    }
 
 }
