@@ -5,11 +5,11 @@
     <section>
         <div class="container-fluid">
             <div class="row" style="padding-bottom: 30px; padding-left: 60px;padding-right: 20px">
-                <div class="col-sm-9 padding-right" style="padding-right: 15px;">
+                <div class="col-sm-12 col-xs-12 col-lg-9 col-md-9 padding-right" style="padding-right: 15px;">
                     <div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc;  margin-bottom: 20px">
                         <h2 class="title pull-left top-item" style="text-align: center">Tất cả sản phẩm</h2>
                         @foreach($products as $product)
-                            <div class="col-sm-6 col-lg-2 col-xs-6 col-md-2" style="height:fit-content; margin: 10px 10px 0 30px; border: 8px;">
+                            <div class="col-sm-6 col-lg-2 col-xs-6 col-md-2 change-size" style="height:fit-content; margin: 10px 10px 0 50px; border: 8px;">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
@@ -33,7 +33,7 @@
                                         <p style="text-align: center; font-weight: bold;top: 50%; left: 50%;font-size: 18px">{{$product->products_name}}</p>
                                     </a>
                                     <br>
-                                    <a style="padding-bottom: 10px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" href="#" class="btn btn-default add-to-cart"><i class="fa fa-eye"></i>Chi tiết</a>
+                                    <a style="padding-bottom: 10px; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" href="{{route('detailPrdpage', $product->id)}}" class="btn btn-default add-to-cart"><i class="fa fa-eye"></i>Chi tiết</a>
                                 </div>
                             </div>
                         @endforeach

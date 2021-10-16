@@ -156,7 +156,7 @@
                 <div class ="col-xs-12 col-sm-12 hidden-lg hidden-md">
                     <div class="form-line">
                         <input type="text" class="form-control" style="background-color: white;margin-left: -15px;margin-top: 10px;">
-                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin:6px 0 10px -15px;">Tìm kiếm bài viết</button>
+                        <button type="button" name="keywordnews" value="{{request()->input('keywordnews')}}" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin:6px 0 10px -15px;">Tìm kiếm bài viết</button>
 
                     </div>
                 </div>

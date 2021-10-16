@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductCategory;
 use Session;
+use DB;
 
 
 class ProductController extends Controller
@@ -115,10 +116,13 @@ class ProductController extends Controller
 
         return redirect()->route('products.index');
     }
-    //get Form edit Từ Khóa
-//    public function getEditProductCategories(Request $request){
-//
-//        return view('admin.pages_danh_muc.ProductPages.keywords_products');
-//    }
+    public function productDetail($id){
+        $prdDetail = Product::find($id);
+        $query = Product::query();
+        $products_new = $query->orderby('id','desc')->limit(10)->get();
+        $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
+        $products = $query->orderby('id','desc')->paginate(6);
 
+        return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products'));
+    }
 }

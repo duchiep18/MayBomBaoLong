@@ -4,8 +4,7 @@
 
     <section class="content">
         <div class="container-fluid">
-            <h2 style="text-align:center">Thêm chuyên mục bài viết</h1>
-
+            <h2 style="text-align:center">Thêm chuyên mục bài viết</h2>
                 {{-- Left Side --}}
                 <form action="" method="GET">
                     <div class="row">
@@ -38,7 +37,7 @@
                                      <option value="0"> --------- Danh mục cha ---------</option>
                                      @foreach($categories as $val1)
                                          @if($val1 -> category_parent==0)
-                                             <option value="{{$val1->id}}">{{$val1->news_categories_name}}  </option>
+                                             <option value="{{$val1->id}}">{{$val1->news_categories_name}} </option>
                                          @endif
 
                                          @foreach($categories as $val2)

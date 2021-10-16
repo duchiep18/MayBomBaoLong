@@ -120,36 +120,34 @@ Route::middleware(['auth'])->group(function () {
 
 //Route get Product đến Home
 
-Route::get('home', 'HomeController@getDatatHome');
+Route::get('trang-chu', 'HomeController@getDatatHome')->name('homepage');
 
 //Route danh mục sản phẩm trang chủ
-Route::get('/home/danh-muc-san-pham/{id}', 'HomeController@show_catPrd_home');
-
+Route::get('danh-muc-san-pham/{id}', 'HomeController@showPrdByCatgr')->name('ProductsbyCatgr');
+//Route chi tiết sản phẩm
+Route::get('san-pham/{id}', 'ProductController@productDetail')->name('detailPrdpage');
 //Route Shop
+Route::get('cua-hang', 'HomeController@getDatatShop')->name('storepage');
 
-Route::get('shop', 'HomeController@getDatatShop');
+Route::get('tin-tuc', 'HomeController@getDataPosts')->name('newspage');
 
-//Route cart
-Route::get('cart',function(){
-    return view('client.cart-payment.cart');
-});
-
-Route::get('checkout',function(){
+Route::get('muc-yeu-thich',function(){
     return view('client.cart-payment.checkout');
 
 });
-Route::get('contact_us',function(){
+Route::get('contact',function(){
     return view('client.page.contactus');
 });
 
-Route::get('introduce',function(){
-    return view('client.page.introduce');
-});
+Route::get('gioi-thieu', 'HomeController@getDataIntroduce')->name('introducepage');
 
 //Route tính toán đại số ở đây
 Route::get('/calculator','CalculatorController@getFormCalculator');
 Route::post('/calculator','CalculatorController@storeDataFormCalculate')->name('calculator.calculate');
-
+//Route cart
+//Route::get('gio-hang',function(){
+//    return view('client.cart-payment.cart');
+//});
 //=======================================================//
 
 
@@ -182,13 +180,7 @@ Route::get('fake-profile', function(){
 
 });
 //Route demo quan hệ 1-1
-Route::get('relationship/one-to-one', function(){
-    $user = \App\Models\User::find(1);
 
-    echo "Username: {$user->username} <br> ";
-    echo "Địa chỉ: {$user->profile->address} <br> ";
-
-});
 
 //demo và các thứ muốn thử
 Route::get('/posts', function () {

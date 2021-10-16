@@ -185,6 +185,36 @@
         .bottom-item:hover {
             background: #999!important;
         }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #FE980F;
+        }
     </style>
 </head><!--/head-->
 
@@ -220,7 +250,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-xs-12 col-lg-4 col-md-4">
-                    <a href="index.html"><img src="/frontend/baolong_logo.jpg" class="center" alt="" /></a>
+                    <a href="{{route('homepage')}}"><img src="/frontend/baolong_logo.jpg" class="center" alt="" /></a>
                 </div>
                 <div class="col-sm-8 searchbar">
                     <div class="shop-menu">
@@ -257,7 +287,7 @@
     <div id="navbar1" class="header-bottom" style="padding-bottom: 5px; z-index: 1000; background-color: #ccc; padding-top: 15px;"><!--header-bottom-->
         <div class="container">
             <div class="row">
-                <div class="col-sm-9 col-lg-12 col-md-12 col-xs-9 paka">
+                <div class="col-sm-9 col-lg-12 col-md-12 col-xs-9">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -268,17 +298,19 @@
                     </div>
                     <div class="mainmenu pull-left ">
                         <ul class="nav navbar-nav collapse navbar-collapse">
-                            <li><a href="home">Trang chủ</a></li>
-                            <li><a href="introduce">Giới thiệu</a></li>
-                            <li><a href="shop">Cửa hàng</a></li>
-                            <li class="dropdown"><a href="#">Tin tức<i class="fa fa-angle-down"></i></a>
+                            <li><a href="{{route('homepage')}}">Trang chủ</a></li>
+                            <li><a href="{{route('introducepage')}}">Giới thiệu</a></li>
+                            <li><a href="{{route('storepage')}}">Cửa hàng</a></li>
+                            <li class="dropdown"><a href="{{route('newspage')}}">Tin tức<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
-                                    <li><a href="techad.html">Tư vấn kỹ thuật</a></li>
-                                    <li><a href="manual.html">Hướng dẫn sử dụng</a></li>
-                                    <li><a href="news.html">Tin tức xã hội</a></li>
+                                    @foreach($all_categories_post as $val2)
+                                        @if($val2 -> category_parent == 11)
+                                            <li><a href="techad.html">{{$val2->news_categories_name}}</a>
+                                        @endif
+                                    @endforeach
                                 </ul>
                             </li>
-                            <li><a href="contact_us">Liên hệ</a></li>
+                            <li><a href="{{route('homepage')}}">Liên hệ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -330,16 +362,16 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-3" style="padding-left: 40px">
+            <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3" style="padding-left: 40px">
                 <div class="left-sidebar">
                     <div class="leftbox" style="background-color: #FE980F;">
                         <h2 class="title">Danh mục sản phẩm</h2>
                         <div class="panel-group category-products" id="cat_prd"><!--category-productsr-->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    @foreach($categories_prd as $category_prd)
+                                    @foreach($all_categories_prd as $category_prd)
                                         <h3 class="panel-title cat" style="margin: 20px 0px 20px 0px;font-weight: bold;">
-                                            <a data-toggle="collapse"  href="#" style="font-size:18px;">
+                                            <a href="{{route('ProductsbyCatgr', $category_prd->id)}}" style="font-size:18px;">
                                                 {{$category_prd -> product_categories_name}}
                                             </a>
                                         </h3>
@@ -351,21 +383,20 @@
                         </div><!--/category-products-->
                     </div>
 
-
                     <div class="leftbox" style="background-color: #FE980F;">
                         <div class="brands_products"><!--brands_products-->
                             <h2 class="title">Sản phẩm mới</h2>
                             <div class="brands-name">
                                 <ul class="nav nav-pills nav-stacked">
                                     @foreach($products_new as $product_new)
-                                        <li style="padding: 20px 0px 0px 0px; ">
+                                        <li style="padding: 15px 0px 15px 0px; border-bottom: 1px solid #ccc;">
                                             <div class="container">
-                                                <a class="media-left" href="#">
-                                                    <div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 ">
+                                                <a class="media-left" href="{{route('detailPrdpage', $product_new->id)}}">
+                                                    <div class="col-md-12 col-lg-2 col-xs-4 col-sm-4 ">
                                                         <img src="{{url('responsive_filemanager/source')}}/{{$product_new->image_product}}" style="width: 100px; height: 100px;">
                                                     </div>
-                                                    <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10 media-body"  >
-                                                        <h5 style="margin: 25px 0px 0px 0px; font-weight: bold">{{$product_new -> products_name}}</h5>
+                                                    <div class="col-md-12 col-lg-10 col-xs-8 col-sm-8 media-body"  >
+                                                        <h5 style="margin: 35px 0px 0px 0px; font-weight: bold; transition: .3s ease-in;">{{$product_new -> products_name}}</h5>
                                                     </div>
                                                 </a>
                                             </div>
@@ -390,121 +421,6 @@
 </div>
 
 <footer id="footer"><!--Footer-->
-    <div class="footer-top">
-        <div class="container" style="width: 100%;">
-            <div class="row" style="background-color: white; border: 1px solid #ccc; border-radius: 5px; margin: 20px 0 0 100px; float: right">
-                <h2 class="title pull-left top-item">Danh mục bài viết</h2>
-                <div class="col-sm-8 col-lg-8 col-xs-8 col-md-8">
-                    <div class="col-sm-3 col-xs-3 col-lg-3 col-md-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="images/home/iframe1.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 col-xs-3 col-lg-3 col-md-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="images/home/iframe2.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 col-xs-3 col-lg-3 col-md-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="images/home/iframe3.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 col-xs-3 col-lg-3 col-md-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="images/home/iframe4.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-4 col-lg-4 col-md-4">
-                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="images/home/iframe4.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="images/home/iframe4.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
-                                    <img src="images/home/iframe4.png" alt="" />
-                                </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
-                                </div>
-                            </a>
-                            <p>Circle of Hands</p>
-                            <h2>24 DEC 2014</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="footer-widget">
         <div class="container">
             <div class="row">
@@ -569,6 +485,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="{{asset('frontend/js/html5shiv.js')}}"></script>
 <script src="{{asset('frontend/js/respond.min.js')}}"></script>
+<script src="{{asset('frontend/tab.js')}}"></script>
 </body>
 
 </html>

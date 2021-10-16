@@ -4,7 +4,7 @@
 
 <section class="content">
         <div class="container-fluid">
-            <h2 style="text-align:center">Thêm danh mục sản phẩm</h1>
+            <h2 style="text-align:center">Thêm danh mục sản phẩm</h2>
 
                     {{-- Left Side --}}
                 <form action="" method="GET">
@@ -17,11 +17,12 @@
                         </div>
                     </div>
                 </form>
-                    <div class="row clearfix">
-                        <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <div class="row clearfix">
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                             <form action="{{route('products.storeCategories')}}" method="POST" role="form">
                                 @csrf
                                 @method('post')
+
                             <p><b>Thêm danh mục</b></p>
                             <p><small>Tên danh mục</small></p>
                             <input type="text" name="prd_cat_name" class="form-control" id="name" onkeyup="ChangeToSlug();"  style="background-color: white;margin-top: -10px;">
@@ -68,7 +69,7 @@
                         </div>
 
                         {{-- Right Side --}}
-                        <div class ="col-md-12 col-lg-12 col-md-7 col-lg-7" >
+                        <div class ="col-xs-12 col-sm-12 col-md-7 col-lg-7" >
                             <div class="card" style="margin-top: 50px;">
                                 <div class="header">
                                     <ul class="header-dropdown m-r--5">

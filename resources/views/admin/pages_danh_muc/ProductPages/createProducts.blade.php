@@ -63,7 +63,7 @@
                                 <input type="text" name="price" class="form-control" style="background-color: white;margin-top: -10px;">
                             </div>
                             <br>
-                            <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5" style="padding-left:50px" >
+                            <div class ="col-xs-12 col-sm-12 col-md-5 col-lg-5" style="padding-left:0px" >
                                 <p>Giá khuyến mãi:</p>
                                 <input type="text" name="price_sale" class="form-control" style="background-color: white;margin-top: -10px;">
                             </div>
