@@ -28,11 +28,48 @@
                             <a href="#">Bản nháp ()</a>
                             <span>|</span>
                         </li>
-
-
                     </ul>
                 </div>
+            </div>
+
+            <div class="row clearfix">
                 <form action="" method="GET" >
+                <div class="col-md-6 col-lg-6 hidden-xs hidden-sm nopadding-left">
+                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                        <select name="postbyCategories_id" class="form-control show-tick">
+                            <option value="">--------- Tất cả bài viết ---------</option>
+                            @foreach($categories as $val1)
+                                @if($val1 -> category_parent==0)
+                                    <option  {{request()->input('postbyCategories_id') == $val1->id ? 'selected':''}} value="{{$val1->id}}">{{$val1->news_categories_name}}  </option>
+                                @endif
+                                @foreach($categories as $val2)
+                                    @if($val2 -> category_parent == $val1 -> id )
+                                        <option {{request()->input('postbyCategories_id') == $val2->id ? 'selected': ''}} value="{{$val2->id}}">--- {{$val2->news_categories_name}}</option>
+                                    @endif
+                                @endforeach
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                        <select name="postbyStatus" class="form-control show-tick">
+                            <option value="">--- Lọc theo trạng thái ---</option>
+                            <option {{request()->input('postbyStatus') == "Đăng ngay" ? 'selected': ''}} value="Đăng ngay">Đăng ngay</option>
+                            <option {{request()->input('postbyStatus') == "Chờ duyệt" ? 'selected': ''}} value="Chờ duyệt">Chờ duyệt</option>
+
+                        </select>
+                    </div>
+
+{{--                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">--}}
+{{--                        <select name="postbyDate" class="form-control show-tick">--}}
+{{--                            <option value="">--- Tất cả các ngày ---</option>--}}
+{{--                            @foreach($allselectDate as $allDate)--}}
+{{--                            <option value="">{{$allDate -> created_at}}</option>--}}
+{{--                            @endforeach--}}
+{{--                        </select>--}}
+{{--                    </div>--}}
+
+                </div>
                     <div class="row">
                         <div class ="col-md-6 col-lg-6 hidden-xs hidden-sm">
                             <div class="form-line">
@@ -42,46 +79,6 @@
                         </div>
                     </div>
                 </form>
-            </div>
-
-            <div class="row clearfix">
-                <div class="col-md-12 col-lg-12 hidden-xs hidden-sm nopadding-left">
-
-                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
-                        <select class="form-control show-tick">
-                            <option value="0">--- Tất cả chuyên mục ---</option>
-                            @foreach($categories as $val1)
-                                @if($val1 -> category_parent==0)
-                                    <option value="{{$val1->id}}">{{$val1->news_categories_name}}  </option>
-                                @endif
-
-                                @foreach($categories as $val2)
-                                    @if($val2 -> category_parent == $val1 -> id )
-                                        <option value="{{$val2->id}}">--- {{$val2->news_categories_name}}</option>
-                                    @endif
-                                @endforeach
-                            @endforeach
-                        </select>
-                    </div>
-
-                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
-                        <select class="form-control show-tick">
-                            <option value="">--- Lọc theo trạng thái ---</option>
-                        </select>
-                    </div>
-
-                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
-                        <select class="form-control show-tick">
-                            <option value="0">--- Tất cả các ngày ---</option>
-
-                        </select>
-                    </div>
-
-
-                    <div style="display: inline-block;">
-                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Lọc</button>
-                    </div>
-                </div>
             </div>
             <br><br>
             <div class="row clearfix">
@@ -101,7 +98,8 @@
                                     <th>Mô tả bài viết</th>
                                     <th>Thẻ</th>
                                     <th>Trạng thái</th>
-                                    <th>Thời gian</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Cập nhật</th>
 
                                 </tr>
                             </thead>
@@ -115,11 +113,11 @@
                                             {{$addnew->news_category->news_categories_name}}
                                         @endif
                                     </td>
-                                    <td> {{$addnew->description}} </td>
+                                    <td> {!! $addnew->description!!} </td>
                                     <td>{{$addnew->tags_post}}</td>
                                     <td> {{$addnew->status}} </td>
-                                    <td> {{$addnew->created_at}} </td>
-                                    <td> {{$addnew->updated_at}} </td>
+                                    <td> {{$addnew->created_at->format('d-m-Y')}} </td>
+                                    <td> {{$addnew->updated_at->format('d-m-Y')}} </td>
 
                                     <td>
                                         <a href="{{route('news.edit', $addnew->id)}}" class="btn btn-primary">Sửa</a>
@@ -142,7 +140,6 @@
                     <div style="display: inline-block;max-width: fit-content">
                         <select class="form-control show-tick">
                             <option>Hành động</option>
-                            <option>Chỉnh sửa</option>
                             <option>Bỏ vào thùng rác</option>
                         </select>
                     </div>

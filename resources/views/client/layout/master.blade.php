@@ -305,7 +305,7 @@
                                 <ul role="menu" class="sub-menu">
                                     @foreach($all_categories_post as $val2)
                                         @if($val2 -> category_parent == 11)
-                                            <li><a href="techad.html">{{$val2->news_categories_name}}</a>
+                                            <li><a href="{{route('PostsbyCatgr',$val2->id)}}">{{$val2->news_categories_name}}</a>
                                         @endif
                                     @endforeach
                                 </ul>

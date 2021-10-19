@@ -150,9 +150,16 @@
                                             <div style="margin:0 10px 10px 10px;">
                                                 <br>
                                                 <select name="category_news_id" class="form-control show-tick">
-                                                    <option value="category_id">-- Chọn loại tin tức --</option>
-                                                    @foreach($categories as $category)
-                                                        <option value="{{$category->id}}">{{$category->news_categories_name}}</option>
+                                                    @foreach($categories as $val1)
+                                                        <option value="">------ Chọn chuyên mục ------</option>
+                                                        @if($val1 -> category_parent==0)
+                                                            <option  {{request()->input('postbyCategories_id') == $val1->id ? 'selected':''}} value="{{$val1->id}}">{{$val1->news_categories_name}}  </option>
+                                                        @endif
+                                                        @foreach($categories as $val2)
+                                                            @if($val2 -> category_parent == $val1 -> id )
+                                                                <option {{request()->input('postbyCategories_id') == $val2->id ? 'selected': ''}} value="{{$val2->id}}">--- {{$val2->news_categories_name}}</option>
+                                                            @endif
+                                                        @endforeach
                                                     @endforeach
                                                 </select>
                                             </div>

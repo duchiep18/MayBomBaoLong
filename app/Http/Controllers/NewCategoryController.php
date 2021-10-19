@@ -77,11 +77,6 @@ class NewCategoryController extends Controller
         }
 
 
-    public function news($id){
-            $category_news = PostCategory::find($id);
-            $news = $category_news->news()->paginate(5) ;
-            return view('categories_news_and_products.categories_news', compact('news'));
-        }
 
 
 }

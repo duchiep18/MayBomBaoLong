@@ -6,31 +6,45 @@ use Session;
 use Illuminate\Http\Request;
 use App\Models\NewPost;
 use App\Models\PostCategory;
-
-
+use Carbon\Carbon;
+use DB;
+use App\Models\Product;
 class NewPostController extends Controller
 {
     //Get tới trag Post List, phân trang quản lý tin tức
     public function getNews(Request $request){
-        $keywordnews = $request->input('keywordnews');
-
         $query =NewPost::query();
+
+        $keywordnews = $request->input('keywordnews');
+        $postbyCatgr = $request->input('postbyCategories_id');
+        $postbyStatus = $request->input('postbyStatus');
+
 
         if('$keywordnews'){
             $query -> where('title', 'like', "%{$keywordnews}%" );
         }
-      $news = $query->paginate(10);
+        if('$postbyCatgr'){
+            $query -> where('category_news_id', 'like',  "%{$postbyCatgr}%");
+        }
+        if('$postbyStatus'){
+            $query -> where('status', 'like',  "%{$postbyStatus}%" );
+        }
 
-      $categories = PostCategory::all();
 
-        return view('admin.pages_danh_muc.NewsPages.news_list', compact('news','categories'));
+        $query->latest('id')->get();
+        $news = $query->paginate(10);
+
+        $categories = PostCategory::orderby('id','desc')->get();
+        $allselectDate = DB::table('news_post')->whereMonth('created_at','')->get();
+        return view('admin.pages_danh_muc.NewsPages.news_list', compact('news','categories','allselectDate'));
     }
 
 
     //Chuyền categories đến trag Create Post
     public function create()
     {
-        $categories = PostCategory::all();
+        $query = PostCategory::query();
+        $categories = $query->orderBy('id','desc')->get();
         return view('admin.pages_danh_muc.NewsPages.createNews', compact('categories'));
     }
 
@@ -95,6 +109,15 @@ class NewPostController extends Controller
         $newdelete = NewPost::find($id);
         $newdelete->delete();
         return redirect()->route('news.index');
+    }
+    public function postsDetail($id){
+        $postDetail = NewPost::find($id);
+        $query = Product::query();
+        $products_new = $query->orderby('id','desc')->limit(10)->get();
+        $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
+        $all_categories_post = PostCategory::all();
+
+        return view('client.page.PostDetail', compact('postDetail','products_new','all_categories_prd','all_categories_post'));
     }
 
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PostCategory;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductCategory;
@@ -122,7 +123,8 @@ class ProductController extends Controller
         $products_new = $query->orderby('id','desc')->limit(10)->get();
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
         $products = $query->orderby('id','desc')->paginate(6);
+        $all_categories_post = PostCategory::all();
 
-        return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products'));
+        return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products','all_categories_post'));
     }
 }

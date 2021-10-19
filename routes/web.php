@@ -125,12 +125,16 @@ Route::get('trang-chu', 'HomeController@getDatatHome')->name('homepage');
 //Route danh mục sản phẩm trang chủ
 Route::get('danh-muc-san-pham/{id}', 'HomeController@showPrdByCatgr')->name('ProductsbyCatgr');
 //Route chi tiết sản phẩm
-Route::get('san-pham/{id}', 'ProductController@productDetail')->name('detailPrdpage');
+Route::get('cua-hang/san-pham/{id}', 'ProductController@productDetail')->name('detailPrdpage');
 //Route Shop
 Route::get('cua-hang', 'HomeController@getDatatShop')->name('storepage');
-
+//Route get trang tin tức
 Route::get('tin-tuc', 'HomeController@getDataPosts')->name('newspage');
-
+//Route đổ ra bài viết theo danh mục
+Route::get('tin-tuc/chuyen-muc/{id}', 'HomeController@showPostByCatgr')->name('PostsbyCatgr');
+//Route đổ ra chi tiết bài viết
+Route::get('tin-tuc/chuyen-muc/bai-viet/{id}', 'NewPostController@postsDetail')->name('detailPostpage');
+//Route get trag list yêu thích
 Route::get('muc-yeu-thich',function(){
     return view('client.cart-payment.checkout');
 

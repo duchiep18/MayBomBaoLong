@@ -49,7 +49,7 @@ class HomeController extends Controller
         $products_new = $query->orderby('id','desc')->limit(10)->get();
 
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
-         $all_categories_post = PostCategory::all();
+        $all_categories_post = PostCategory::all();
 
      return view('client.products.ShopProducts', compact('products', 'products_new', 'all_categories_prd','all_categories_post'));
     }
@@ -78,6 +78,18 @@ class HomeController extends Controller
         $all_categories_post = PostCategory::all();
 
         return view('client.page.allPosts', compact( 'all_posts_home','products_new','all_categories_prd','all_categories_post'));
+    }
+    public function showPostByCatgr($id){
+        $category_posts = PostCategory::find($id);
+        $posts_by_catgr = $category_posts->posts()->paginate(20);
+
+        $all_posts_home = NewPost::where('status', 'Đăng ngay')->orderby('id', 'desc')->get();
+        $query = Product::query();
+        $products_new = $query->orderby('id','desc')->limit(10)->get();
+        $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
+        $all_categories_post = PostCategory::all();
+        return view('category.show_catPosts_home', compact('posts_by_catgr', 'all_posts_home','products_new','category_posts','all_categories_prd','all_categories_post'));
+
     }
 
 }

@@ -5,7 +5,7 @@
     <div class="content" style="background-color: #F0F0E9;">
         <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12 padding-right" style="padding-right: 15px;padding-left: 40px">
                 <div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc;  margin-bottom: 20px">
-                    <h2 class="title pull-left top-item">{{$category_prd->product_categories_name}}</h2>
+                    <h2 class="title pull-left top-item"> Sản phẩm {{$category_prd->product_categories_name}}</h2>
                     @foreach($products_by_catgr as $product_by_catgr)
                         @if($product_by_catgr->categories_prd_id == $category_prd->id)
                             <div class="col-sm-6 col-lg-2 col-xs-6 col-md-2 change-size" style="height:fit-content; margin: 10px 10px 0 50px; border: 8px;">
