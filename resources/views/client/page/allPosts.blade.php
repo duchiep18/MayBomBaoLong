@@ -9,7 +9,7 @@
                     <div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc; padding-bottom: 15px;"><!--Sản phẩm nổi bật-->
                         <h2 class="title text-center">Tất cả bài viết</h2>
                         @foreach($all_posts_home as $all_post)
-                            @if($all_post->id != 16 )
+                            @if($all_post->id != 16)
                                 <div style="margin-bottom: 30px;">
                                     <h2 class="title pull-left top-item"><a href="exampleNews.html" class="papa" style="color: white">{{$all_post->title}}</a></h2>
                                     <div >

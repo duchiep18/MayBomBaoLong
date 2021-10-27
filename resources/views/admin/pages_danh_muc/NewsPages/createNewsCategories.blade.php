@@ -73,6 +73,7 @@
 
                     {{-- Right Side --}}
                     <div class ="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+
                         <div class="card" style="margin-top: 110px;">
                             <div class="header" style="margin-left: 0px">
                                 <ul class="header-dropdown m-r--5">

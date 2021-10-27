@@ -37,54 +37,58 @@
 
                             </ul>
                         </div>
-                        <form action="" method="GET">
-                        <div class="row">
-                            <div class ="col-md-6 col-lg-6 hidden-xs hidden-sm">
-                                <div class="form-line">
-                                    <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right;">Tìm các sản phẩm</button>
-                                    <input type="text" name="keywordprd" value="{{request()->input('keywordprd')}}" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
-                                </div>
-                            </div>
-                        </div>
-                        </form>
+
                     </div>
 
                     <div class="row clearfix">
-                        <div class="col-md-12 col-lg-12 hidden-xs hidden-sm nopadding-left">
-
-                            <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
-                                <select class="form-control show-tick">
-                                    <option value="0"> --- Tất cả danh mục ---</option>
-                                    @foreach($categories_prd as $val1)
-                                        @if($val1 -> category_parent==0)
-                                            <option value="{{$val1->id}}"> {{$val1->product_categories_name}}  </option>
-                                        @endif
-                                        @foreach($categories_prd as $val2)
-                                            @if($val2 -> category_parent == $val1 -> id )
-                                                <option value="{{$val2->id}}">--- {{$val2->product_categories_name}}</option>
+                        <form action="" method="GET" >
+                            <div class="col-md-6 col-lg-6 hidden-xs hidden-sm nopadding-left">
+                                <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                                    <select name="PrdbyCat" class="form-control show-tick">
+                                        <option value="0"> --- Tất cả danh mục ---</option>
+                                        @foreach($categories_prd as $val1)
+                                            @if($val1 -> category_parent==0)
+                                                <option {{request()->input('PrdbyCat') == $val1->id ? 'selected':''}} value="{{$val1->id}}"> {{$val1->product_categories_name}}  </option>
                                             @endif
+                                            @foreach($categories_prd as $val2)
+                                                @if($val2 -> category_parent == $val1 -> id )
+                                                    <option {{request()->input('PrdbyCat') == $val1->id ? 'selected':''}} value="{{$val2->id}}">--- {{$val2->product_categories_name}}</option>
+                                                @endif
+                                            @endforeach
                                         @endforeach
-                                    @endforeach
-                                </select>
+                                    </select>
+                                </div>
+
+                                <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
+                                    <select name="PrdbyStatus" class="form-control show-tick">
+                                        <option value="">--- Lọc theo trạng thái ---</option>
+                                        <option {{request()->input('PrdbyStatus') == "Còn hàng" ? 'selected': ''}} value="Còn hàng">Còn hàng</option>
+                                        <option {{request()->input('PrdbyStatus') == "Hết hàng" ? 'selected': ''}} value="Hết hàng">Hết hàng</option>
+
+                                    </select>
+                                </div>
+
+                                {{--                    <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">--}}
+                                {{--                        <select name="postbyDate" class="form-control show-tick">--}}
+                                {{--                            <option value="">--- Tất cả các ngày ---</option>--}}
+                                {{--                            @foreach($allselectDate as $allDate)--}}
+                                {{--                            <option value="">{{$allDate -> created_at}}</option>--}}
+                                {{--                            @endforeach--}}
+                                {{--                        </select>--}}
+                                {{--                    </div>--}}
+
                             </div>
 
-                            <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
-                                <select class="form-control show-tick">
-                                    <option value="">--- Lọc theo trạng thái ---</option>
-                                </select>
+                            <div class="row">
+                                <div class ="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                                    <div class="form-line">
+                                        <button type="submit" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin: 0 0 10px 10px;float:right;">Tìm các sản phẩm</button>
+                                        <input type="text" name="keywordprd" value="{{request()->input('keywordprd')}}" class="form-control" style="width: 40%; display: inline; float: right; background-color: white;">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div style="display: inline-block;max-width: fit-content; margin-left: 10px;">
-                                <select class="form-control show-tick">
-                                    <option value="0">--- Tất cả các ngày ---</option>
-
-                                </select>
-                            </div>
-
-                            <div style="display: inline-block;">
-                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Lọc</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                     <br><br>
                     <div class="row clearfix">
@@ -98,8 +102,12 @@
                                 <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
                                     <thead>
                                         <tr>
-                                            <th><input type="checkbox" id="all-check" class="filled-in" onclick="myFunction(this)"/>
-                                                <label for="all-check"></label></th>
+                                            <th>
+{{--                                                <input type="checkbox" name="all_check" id="all_check" class="filled-in checkbox"/>--}}
+{{--                                                <label for="all_check" class="select"></label>--}}
+{{--                                                <label for="all_check" class="unselect" ></label>--}}
+                                                ID
+                                            </th>
                                             <th> <i class="material-icons col-amber">image</i> </th>
                                             <th>Tên sản phẩm</th>
                                             <th>Tình trạng</th>
@@ -111,8 +119,11 @@
                                     </thead>
                                     @foreach ($products as $product)
                                         <tr>
-                                            <th scope="row"><input type="checkbox" id="checkprd" class="filled-in"/>
-                                                <label for="checkprd"></label></th>
+                                            <th scope="row">
+{{--                                                <input type="checkbox" name="check_prd" id="{{$product->id}}" class="filled-in checkbox"/>--}}
+{{--                                                <label for="{{$product->id}}"></label>--}}
+                                                {{$product->id}}
+                                            </th>
                                             <td>
                                                 <div class="media">
                                                     <a class="media-left" href="#">
@@ -146,20 +157,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row clearfix">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopadding-left">
-                            <div style="display: inline-block;max-width: fit-content">
-                                <select class="form-control show-tick">
-                                    <option>Hành động</option>
-                                    <option>Chỉnh sửa</option>
-                                    <option>Bỏ vào thùng rác</option>
-                                </select>
-                            </div>
-                            <div style="display: inline-block;">
-                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Áp dụng</button>
-                            </div>
-                        </div>
-                    </div>
+{{--                    <div class="row clearfix">--}}
+{{--                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopadding-left">--}}
+{{--                            <div style="display: inline-block;max-width: fit-content">--}}
+{{--                                <select class="form-control show-tick">--}}
+{{--                                    <option>Hành động</option>--}}
+{{--                                    <option value="1">Bỏ vào thùng rác</option>--}}
+{{--                                </select>--}}
+{{--                            </div>--}}
+{{--                            <div style="display: inline-block;">--}}
+{{--                                <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Áp dụng</button>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     <div class="row clearfix">
                         <div class ="col-xs-12 col-sm-12 hidden-lg hidden-md">
@@ -189,15 +199,27 @@
                     });
                 })
         </script>
-        <script>
-            function myFunction(x) {
-                if(x.checked == true) {
-                    document.getElementById("checkprd").checked = true;
-                } else {
-                    document.getElementById("checkprd").checked = false;
-                }
-            }
-        </script>
+{{--        All checkbox--}}
+{{--        <script type="text/javascript">--}}
+{{--            var checkAll = document.querySelector('#all_check')--}}
+{{--            var checkBoxes = document.querySelectorAll('.checkbox')--}}
+{{--            var selected = document.querySelector('.select')--}}
+{{--            var unselected = document.querySelector('.unselect')--}}
+
+{{--            checkAll.onclick = () => {--}}
+{{--                checkBoxes.forEach(checkBox =>{--}}
+{{--                    if(checkAll.checked == true){--}}
+{{--                        checkBox.checked = true--}}
+{{--                        selected.style.display = 'block'--}}
+{{--                        unselected.style.display = 'block'--}}
+{{--                    }else {--}}
+{{--                        checkBox.checked = false--}}
+{{--                        selected.style.display = 'block'--}}
+{{--                        unselected.style.display = 'block'--}}
+{{--                    }--}}
+{{--                })--}}
+{{--            }--}}
+{{--        </script>--}}
 
     </section>
 

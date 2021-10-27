@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ImageGallery;
 use App\Models\PostCategory;
 use Illuminate\Http\Request;
 use App\Models\Product;
@@ -13,11 +14,21 @@ use DB;
 class ProductController extends Controller
 {
      public function getProduct_admin(Request $request){
-         $keywordproducts = $request->input('keywordprd');
          $query = Product::query();
+         $keywordproducts = $request->input('keywordprd');
+         $prdbyCat = $request->input('PrdbyCat');
+         $prdbyStatus = $request->input('PrdbyStatus');
+
          if($keywordproducts) {
              $query->where('products_name','like', "%{$keywordproducts}%");
          }
+         if($prdbyCat) {
+             $query->where('categories_prd_id','like', "%{$prdbyCat}%");
+         }
+         if($prdbyStatus) {
+             $query->where('status','like', "%{$prdbyStatus}%");
+         }
+         $query->latest('id')->get();
          $products = $query->paginate(10);
          $categories_prd = ProductCategory::all();
 
@@ -124,7 +135,11 @@ class ProductController extends Controller
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
         $products = $query->orderby('id','desc')->paginate(6);
         $all_categories_post = PostCategory::all();
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
 
-        return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products','all_categories_post'));
+        return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products','all_categories_post','all_SL_BN_home'));
+    }
+    public function load_comment(Request $request){
+
     }
 }

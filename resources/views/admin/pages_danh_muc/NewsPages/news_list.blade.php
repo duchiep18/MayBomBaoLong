@@ -105,6 +105,7 @@
                             </thead>
                             <tbody>
                             @foreach ($news as $addnew)
+
                                 <tr>
                                     <td> {{$addnew->id}} </td>
                                     <td><a href=""> {{$addnew->title}} </a></td>
@@ -135,19 +136,19 @@
                 </div>
             </div>
 
-            <div class="row clearfix">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopadding-left">
-                    <div style="display: inline-block;max-width: fit-content">
-                        <select class="form-control show-tick">
-                            <option>Hành động</option>
-                            <option>Bỏ vào thùng rác</option>
-                        </select>
-                    </div>
-                    <div style="display: inline-block;">
-                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Áp dụng</button>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="row clearfix">--}}
+{{--                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopadding-left">--}}
+{{--                    <div style="display: inline-block;max-width: fit-content">--}}
+{{--                        <select class="form-control show-tick">--}}
+{{--                            <option>Hành động</option>--}}
+{{--                            <option>Bỏ vào thùng rác</option>--}}
+{{--                        </select>--}}
+{{--                    </div>--}}
+{{--                    <div style="display: inline-block;">--}}
+{{--                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:2px">Áp dụng</button>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
             <div class="row clearfix">
                 <div class ="col-xs-12 col-sm-12 hidden-lg hidden-md">

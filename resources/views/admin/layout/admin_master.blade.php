@@ -125,7 +125,7 @@
             <div class="navbar-header">
                 <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="#" class="bars"></a>
-                <a class="navbar-brand" href="#">Máy bơm Bảo Long - Quản lý trang Web</a>
+                <a class="navbar-brand" href="home_admin'">Máy bơm Bảo Long - Quản lý trang Web</a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -381,9 +381,19 @@
                                 <a href="{{route('add_gallery')}}" alt="">
                                     <span>Thư viện</span>
                                 </a>
-
                             </li>
-                                                   </ul>
+                            <li>
+                                <a href="{{route('getImgMng')}}" alt="">
+                                    <span>Thêm ảnh slide-banner</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{route('manage_slide_banner')}}" alt="">
+                                    <span>Quản lý ảnh slide-banner</span>
+                                </a>
+                            </li>
+                        </ul>
+
                     </li>
                     <li>
                         <a href="#" class="menu-toggle">

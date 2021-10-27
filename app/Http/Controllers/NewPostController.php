@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ImageGallery;
 use Session;
 use Illuminate\Http\Request;
 use App\Models\NewPost;
@@ -19,10 +20,10 @@ class NewPostController extends Controller
         $postbyCatgr = $request->input('postbyCategories_id');
         $postbyStatus = $request->input('postbyStatus');
 
-
         if('$keywordnews'){
             $query -> where('title', 'like', "%{$keywordnews}%" );
         }
+
         if('$postbyCatgr'){
             $query -> where('category_news_id', 'like',  "%{$postbyCatgr}%");
         }
@@ -30,10 +31,8 @@ class NewPostController extends Controller
             $query -> where('status', 'like',  "%{$postbyStatus}%" );
         }
 
-
         $query->latest('id')->get();
         $news = $query->paginate(10);
-
         $categories = PostCategory::orderby('id','desc')->get();
         $allselectDate = DB::table('news_post')->whereMonth('created_at','')->get();
         return view('admin.pages_danh_muc.NewsPages.news_list', compact('news','categories','allselectDate'));
@@ -116,8 +115,9 @@ class NewPostController extends Controller
         $products_new = $query->orderby('id','desc')->limit(10)->get();
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
         $all_categories_post = PostCategory::all();
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
 
-        return view('client.page.PostDetail', compact('postDetail','products_new','all_categories_prd','all_categories_post'));
+        return view('client.page.PostDetail', compact('postDetail','products_new','all_categories_prd','all_categories_post','all_SL_BN_home'));
     }
 
 }

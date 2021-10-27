@@ -20,6 +20,4 @@ select * from users;
 
 select * from pages_of_web;
 
-
-
-
+select * from table_comments

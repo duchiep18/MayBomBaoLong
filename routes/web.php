@@ -67,11 +67,11 @@ Route::middleware(['auth'])->group(function () {
     //Route xóa news categories
     Route::delete('/news.catgr/{id}', 'NewCategoryController@destroy')->name('news.catgr.destroy');
     //route nhóm các bài viết và sản phẩm có cùng category
-    Route::get('categories/{id}/news','NewCategoryController@news');});
+    Route::get('categories/{id}/news','NewCategoryController@news');
 
 
 
-//Route Product
+    //Route Product
 
     Route::get ('/products.index', 'ProductController@getProduct_admin')->name('products.index');
 
@@ -100,19 +100,15 @@ Route::middleware(['auth'])->group(function () {
     //Route xóa news categories
     Route::delete('/prd.catgr/{id}', 'ProductCategoryController@destroy')->name('products.catgr.destroy');
 
-
-
+    //Route quản lý ảnh
+    Route::get('them-anh-slide-banner', 'ImageController@getInsertImg')->name('getImgMng');
+    Route::post('luu-slide-banner', 'ImageController@storetImg')->name('insertImg');
+    Route::get('quan-ly-slide-banner', 'ImageController@slidebannerIndex')->name('manage_slide_banner');
+    Route::get('slide-banner/{id}/chinh-sua', 'ImageController@editImg')->name('edit_slide_banner');
+    Route::put('cap-nhat-slide-banner/{id}', 'ImageController@updateImg')->name('update_slide_banner');
+    Route::delete('xoa-slide-banner/{id}', 'ImageController@destroyImg')->name('delete_slide_banner');
+});
 //End Route Admin
-//===============================================//
-//Middleware phân quyền cho các Route
-// Route::middleware(['auth'])->group(function () {
-
-    // Route::get('homeLogin', function() {
-    //     return view('client.page.homeLogin');
-    // });
-    // Route::get('homeLogin', 'ProductController@getProduct_Login');
-// });
-
 // CLIENT ROUTE
 
 //Route Home page Client
@@ -124,10 +120,12 @@ Route::get('trang-chu', 'HomeController@getDatatHome')->name('homepage');
 
 //Route danh mục sản phẩm trang chủ
 Route::get('danh-muc-san-pham/{id}', 'HomeController@showPrdByCatgr')->name('ProductsbyCatgr');
-//Route chi tiết sản phẩm
-Route::get('cua-hang/san-pham/{id}', 'ProductController@productDetail')->name('detailPrdpage');
 //Route Shop
 Route::get('cua-hang', 'HomeController@getDatatShop')->name('storepage');
+//Route chi tiết sản phẩm
+Route::get('cua-hang/san-pham/{id}', 'ProductController@productDetail')->name('detailPrdpage');
+//Route comment
+Route::post('load-comment', 'ProductController@load_comment');
 //Route get trang tin tức
 Route::get('tin-tuc', 'HomeController@getDataPosts')->name('newspage');
 //Route đổ ra bài viết theo danh mục
@@ -137,11 +135,9 @@ Route::get('tin-tuc/chuyen-muc/bai-viet/{id}', 'NewPostController@postsDetail')-
 //Route get trag list yêu thích
 Route::get('muc-yeu-thich',function(){
     return view('client.cart-payment.checkout');
+});
 
-});
-Route::get('contact',function(){
-    return view('client.page.contactus');
-});
+Route::get('lien-he','HomeController@getDatatContact')->name('contactPage');
 
 Route::get('gioi-thieu', 'HomeController@getDataIntroduce')->name('introducepage');
 

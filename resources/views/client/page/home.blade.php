@@ -47,6 +47,7 @@
                                     <h2 class="title pull-left top-item">Danh mục bài viết</h2>
                                     <div class="col-sm-9 col-lg-8 col-xs-12 col-md-8">
                                     @foreach($all_posts_home as $post_home)
+                                        @if($post_home->id != 16)
                                         <div class="col-sm-6 col-xs-6 col-lg-3 col-md-3">
                                             <div class=" text-center">
                                                 <a href="#">
@@ -58,6 +59,7 @@
                                                 <p>{!! $post_home-> description !!} </p>
                                             </div>
                                         </div>
+                                        @endif
                                     @endforeach
                                     </div>
                                     <div class="col-sm-3 col-xs-12 col-lg-4 col-md-4">

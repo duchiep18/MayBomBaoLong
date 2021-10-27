@@ -38,7 +38,6 @@ class AuthController extends Controller
     }
 
     public function submitFormRegister(Request $request) {
-
             $request->validate([
             'email' => 'required|email|unique:users,email',
             'username' => 'required|unique:users,username',

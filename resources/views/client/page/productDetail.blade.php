@@ -45,38 +45,70 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-right" style="padding-right: 15px; margin-top: 30px;">
                                     <div class="features_items" style="background-color: white; border-radius: 5px; border: 1px solid #ccc;"><!--Sản phẩm nổi bật-->
                                         <div class="tab">
-                                            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Mô tả</button>
-                                            <button class="tablinks" onclick="openCity(event, 'Paris')">Đánh giá</button>
+                                            <button class="tablinks" onclick="openCity(event, 'thongsokythuat')" id="defaultOpen">Mô tả</button>
+                                            <button class="tablinks" onclick="openCity(event, 'comments')">Đánh giá</button>
                                         </div>
 
                                         <!-- Tab content -->
-                                        <div id="London" class="tabcontent">
+                                        <div id="thongsokythuat" class="tabcontent">
                                             <h3 style="color:#FE980F">Thông số kỹ thuật</h3>
                                             <p>
                                                 {!! $prdDetail->products_content !!}
                                             </p>
                                         </div>
 
-                                        <div id="Paris" class="tabcontent">
+                                        <div id="comments" class="tabcontent">
                                             <h3 style="color:#FE980F">Đánh giá</h3>
-                                            <p>Chưa có đánh giá nào.</p>
-                                            <p>Hãy là người đầu tiên nhận xét “Bảng giá máy thổi khí Taiko Kikai Nhật Bản”</p>
+                                            <div class="col-sm-12">
+                                                <ul>
+                                                    <li style="padding-left: 0;">
+                                                        <a style="padding-right: 80px;" href=""><i class="fa fa-user"></i></a>
+                                                        <a style="padding-right: 80px;" href=""><i class="fa fa-clock-o"></i></a>
+                                                        <a style="padding-right: 80px;" href=""><i class="fa fa-calendar-o"></i></a>
+                                                    </li>
+                                                </ul>
+                                                <form action="">
+                                                    @csrf
+                                                    <div id="comment_show"></div>
+                                                    <div class="row style-comment">
+                                                        <div class="col-md-2" style="padding-top: 5px; padding-left: 50px;">
+                                                            <input type="hidden" name="comment_prd_id" class="comment_prd_id" value="{{$prdDetail->id}}">
+                                                            <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="{{asset('/responsive_filemanager/source/ava comment1.jpg')}}" alt="">
+                                                        </div>
+                                                        <div class="col-md-10" style="padding-top: 5px;padding-left: 0px;">
+                                                            <p style="color: green">@Name</p>
+                                                            <p>WordPress Manager
+                                                            Quản lý website WordPress tiện lợi hơn bao giờ hết với công cụ WordPress Manager được tích hợp sẵn trên tất cả dịch vụ Web Hosting tại AZDIGI.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <style type="text/css">
+                                                    .style-comment{
+                                                        border: 1px solid #0D0A0A;
+                                                        border-radius: 5px;
+                                                        background: #8ba7ba;
+                                                    }
+                                                </style>
+                                            </div>
+                                            <p>Hãy viết đánh giá của bạn
                                             <p>Thư điện tử của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</p>
-                                            <p><strong>Nhận xét của bạn *</strong></p>
-                                            <textarea id="comment" name="comment" rows="4" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+                                            <p><strong>Nhận xét của bạn: </strong></p>
                                             <div style="margin-top: 15px;"></div>
-                                            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4" style="padding-left: 0px;">
+                                            <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6" style="padding-left: 0px;">
                                                 <p><strong>Tên *</strong></p>
                                                 <textarea id="nameU" name="nameU" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
                                             </div>
-                                            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                                                <p><strong>Thư điện tử *</strong></p>
+                                            <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+                                                <p><strong>Email *</strong></p>
                                                 <textarea id="mail" name="mail" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
                                             </div>
-                                            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                                                <p><strong>Trang web *</strong></p>
-                                                <textarea id="web" name="web" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+
+                                            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12" style="padding-left: 0px;margin-top: 15px;">
+                                                <p><strong>Bình luận</strong></p>
+                                                <textarea id="comment" name="comment" rows="4" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
                                             </div>
+
                                             <br>
                                             <button class="btn btn-rounded btn-sm my-0 ml-sm-2" type="submit" style="background-color: #FE980F; margin: 15px 15px 15px 0px;">Gửi đi</button>
                                         </div>

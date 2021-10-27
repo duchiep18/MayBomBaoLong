@@ -7,6 +7,7 @@ use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 use App\Models\NewPost;
 use App\Models\PostCategory;
+use App\Models\ImageGallery;
 use Session;
 use DB;
 
@@ -22,7 +23,10 @@ class HomeController extends Controller
         $all_categories_post = PostCategory::all();
 
         $posts = DB::table('news_post')-> where('id', '16')->get();
-        return view('client.page.introduce', compact('products_new', 'all_categories_prd','posts','all_categories_post'));
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
+
+
+        return view('client.page.introduce', compact('products_new', 'all_categories_prd','posts','all_categories_post','all_SL_BN_home'));
     }
 //đổ dl sản phẩm và danh mục sản phẩm ra trang Home
 
@@ -39,7 +43,9 @@ class HomeController extends Controller
 
         $all_posts_home = NewPost::where('status', 'Đăng ngay')->orderby('id', 'desc')->get();
 
-        return view('client.page.home', compact('products_by_category', 'products_new', 'all_categories_prd','all_posts_home','all_categories_post'));
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
+
+        return view('client.page.home', compact('products_by_category', 'products_new', 'all_categories_prd','all_posts_home','all_categories_post','all_SL_BN_home'));
     }
  public function getDatatShop(Request $request){
         $query = Product::query();
@@ -50,8 +56,9 @@ class HomeController extends Controller
 
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
         $all_categories_post = PostCategory::all();
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
 
-     return view('client.products.ShopProducts', compact('products', 'products_new', 'all_categories_prd','all_categories_post'));
+     return view('client.products.ShopProducts', compact('products', 'products_new', 'all_categories_prd','all_categories_post','all_SL_BN_home'));
     }
 
 
@@ -65,8 +72,9 @@ class HomeController extends Controller
         $products_new = $query->orderby('id','desc')->limit(10)->get();
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
         $all_categories_post = PostCategory::all();
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
 
-        return view('category.show_catPrd_home', compact('products_by_catgr', 'all_posts_home','products_new','category_prd','all_categories_prd','all_categories_post'));
+        return view('category.show_catPrd_home', compact('products_by_catgr', 'all_posts_home','products_new','category_prd','all_categories_prd','all_categories_post','all_SL_BN_home'));
     }
 //Lấy ra sản phẩm theo danh mục sản phẩm trang Tin tức
     public function getDataPosts(){
@@ -76,8 +84,9 @@ class HomeController extends Controller
         $products_new = $query->orderby('id','desc')->limit(10)->get();
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
         $all_categories_post = PostCategory::all();
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
 
-        return view('client.page.allPosts', compact( 'all_posts_home','products_new','all_categories_prd','all_categories_post'));
+        return view('client.page.allPosts', compact( 'all_posts_home','products_new','all_categories_prd','all_categories_post','all_SL_BN_home'));
     }
     public function showPostByCatgr($id){
         $category_posts = PostCategory::find($id);
@@ -88,8 +97,24 @@ class HomeController extends Controller
         $products_new = $query->orderby('id','desc')->limit(10)->get();
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
         $all_categories_post = PostCategory::all();
-        return view('category.show_catPosts_home', compact('posts_by_catgr', 'all_posts_home','products_new','category_posts','all_categories_prd','all_categories_post'));
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
 
+        return view('category.show_catPosts_home', compact('posts_by_catgr', 'all_posts_home','products_new','category_posts','all_categories_prd','all_categories_post','all_SL_BN_home'));
+    }
+    public function getDatatContact(Request $request){
+        $query = Product::query();
+
+
+
+        $products_new = $query->orderby('id','desc')->limit(10)->get();
+
+        $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
+
+        $all_categories_post = PostCategory::all();
+
+        $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
+
+        return view('client.page.contactus', compact( 'products_new', 'all_categories_prd','all_categories_post','all_SL_BN_home'));
     }
 
 }

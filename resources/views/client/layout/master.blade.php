@@ -226,8 +226,8 @@
                 <div class="col-sm-6">
                     <div class="contactinfo">
                         <ul class="nav nav-pills">
-                            <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i> 02053.876.755</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> </a></li>
                         </ul>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            <li><a href="{{route('homepage')}}">Liên hệ</a></li>
+                            <li><a href="{{route('contactPage')}}">Liên hệ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -332,19 +332,21 @@
                         </ol>
 
                         <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="col-sm-6">
-                                    <h1><span>E</span>-SHOPPER</h1>
-                                    <h2>Free E-Commerce Template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                    <button type="button" class="btn btn-default get">Get it now</button>
-                                </div>
-                                <div class="col-sm-6">
-                                    <img src="frontend/images/home/girl1.jpg" class="girl img-responsive" alt="" />
-                                    <img src="frontend/images/home/pricing.png"  class="pricing" alt="" />
-                                </div>
-                            </div>
-
+                            @php
+                                $i = 0;
+                            @endphp
+                            @foreach($all_SL_BN_home as $slider)
+                                @php
+                                    $i++;
+                                @endphp
+                            @if($slider->type == 0)
+                                    <div class="item {{$i == 1 ? 'active': ''}}">
+                                        <div class="col-sm-12">
+                                            <img src="{{$slider->url}}" style="width: 100%; height:400px;" class="img img-responsive">
+                                        </div>
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
 
                         <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
@@ -407,10 +409,13 @@
                         </div><!--/brands_products-->
                     </div>
 
-
-                    <div class="shipping text-center"><!--shipping-->
-                        <img src="frontend/images/home/shipping.jpg" alt="" />
-                    </div><!--/shipping-->
+                    @foreach($all_SL_BN_home as $banner)
+                        @if($banner->type == 1)
+                        <div class="shipping text-center"><!--shipping-->
+                            <img src="{{$banner->url}}" style="width: 100%; height: 300px;">
+                        </div><!--/shipping-->
+                        @endif
+                    @endforeach
                 </div>
             </div>
 
@@ -486,6 +491,22 @@
 <script src="{{asset('frontend/js/html5shiv.js')}}"></script>
 <script src="{{asset('frontend/js/respond.min.js')}}"></script>
 <script src="{{asset('frontend/tab.js')}}"></script>
+<script type="text/javascript">
+    $(document).ready(function (){
+        var product_id = $('.comment_prd_id').val();
+        var _token = $('input[name = "_token"]').val();
+        function load_comment(){
+            $.ajax({
+                url:"{{url('/load-comment')}} ",
+                method:"POST",
+                data:{product_id:product_id, _token:_token},
+                success:function (data){
+                    $('#comment_show').html(data);
+                }
+            });
+        }
+    });
+</script>
 </body>
 
 </html>
