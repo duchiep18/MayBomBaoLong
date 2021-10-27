@@ -20,4 +20,6 @@ select * from users;
 
 select * from pages_of_web;
 
-select * from table_comments
+select * from table_comments;
+
+insert into table_comments(id, comment, comment_name, comment_date, cmt_product_id) values ('3','Sản phẩm rất tệ','@Khachhang','27.10.2021','12');

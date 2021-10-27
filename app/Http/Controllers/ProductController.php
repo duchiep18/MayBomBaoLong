@@ -7,6 +7,7 @@ use App\Models\PostCategory;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductCategory;
+use App\Models\Comment;
 use Session;
 use DB;
 
@@ -140,6 +141,26 @@ class ProductController extends Controller
         return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products','all_categories_post','all_SL_BN_home'));
     }
     public function load_comment(Request $request){
+        $product_id = $request->product_id;
+        $comments_prd = Comment::where('cmt_product_id',$product_id)->get();
+        $output = '';
+        foreach ($comments_prd as $comment_prd){
+            $output.= '
+                       <div class="row style-comment">
+                           <div class="col-md-2" style="padding-top: 5px; padding-left: 50px;">
+                               <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="'.url('public/responsive_filemanager/source/ava comment1.jpg').'" alt="">
+                           </div>
+                           <div class="col-md-10" style="padding-top: 5px;padding-left: 0px;">
+                               <p style="color: green">'.$comment_prd->comment_name.'</p>
+                               <p>
+                               '.$comment_prd->comment.'
+                               </p>
+                           </div>
+                       </div>
+                       <p></p>
 
+            ';
+        }
+        echo $output;
     }
 }

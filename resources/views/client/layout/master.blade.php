@@ -493,11 +493,14 @@
 <script src="{{asset('frontend/tab.js')}}"></script>
 <script type="text/javascript">
     $(document).ready(function (){
-        var product_id = $('.comment_prd_id').val();
-        var _token = $('input[name = "_token"]').val();
+
+        load_comment();
+
         function load_comment(){
+            var product_id = $('.comment_prd_id').val();
+            var _token = $('input[name = "_token"]').val();
             $.ajax({
-                url:"{{url('/load-comment')}} ",
+                url:"{{url('/load-comment')}}",
                 method:"POST",
                 data:{product_id:product_id, _token:_token},
                 success:function (data){
