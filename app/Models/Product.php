@@ -12,4 +12,8 @@ class Product extends Model
     public function products_category() {
         return $this->belongsTo('App\Models\ProductCategory', 'categories_prd_id', 'id');
     }
+    public function comments(){
+        return $this->hasMany('App\Models\Comment', 'cmt_product_id', 'id');
+    }
+
 }

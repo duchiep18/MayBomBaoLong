@@ -80,6 +80,7 @@ class HomeController extends Controller
     public function getDataPosts(){
 
         $all_posts_home = NewPost::where('status', 'Đăng ngay')->orderby('id', 'desc')->get();
+
         $query = Product::query();
         $products_new = $query->orderby('id','desc')->limit(10)->get();
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();

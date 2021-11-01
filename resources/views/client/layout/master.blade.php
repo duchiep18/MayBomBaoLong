@@ -491,25 +491,25 @@
 <script src="{{asset('frontend/js/html5shiv.js')}}"></script>
 <script src="{{asset('frontend/js/respond.min.js')}}"></script>
 <script src="{{asset('frontend/tab.js')}}"></script>
-<script type="text/javascript">
-    $(document).ready(function (){
+{{--<script type="text/javascript">--}}
+{{--    $(document).ready(function (){--}}
 
-        load_comment();
+{{--        load_comment();--}}
 
-        function load_comment(){
-            var product_id = $('.comment_prd_id').val();
-            var _token = $('input[name = "_token"]').val();
-            $.ajax({
-                url:"{{url('/load-comment')}}",
-                method:"POST",
-                data:{product_id:product_id, _token:_token},
-                success:function (data){
-                    $('#comment_show').html(data);
-                }
-            });
-        }
-    });
-</script>
+{{--        function load_comment(){--}}
+{{--            var product_id = $('.comment_prd_id').val();--}}
+{{--            var _token = $('input[name = "_token"]').val();--}}
+{{--            $.ajax({--}}
+{{--                url:"{{url('/load-comment')}}",--}}
+{{--                method:"POST",--}}
+{{--                data:{product_id:product_id, _token:_token},--}}
+{{--                success:function (data){--}}
+{{--                    $('#comment_show').html(data);--}}
+{{--                }--}}
+{{--            });--}}
+{{--        }--}}
+{{--    });--}}
+{{--</script>--}}
 </body>
 
 </html>

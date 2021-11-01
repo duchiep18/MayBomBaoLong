@@ -484,7 +484,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="all_comments">
+                        <a href="{{route('all_comments')}}">
                             <i class="material-icons">chat_bubble</i>
                             <span>Phản hồi - Bình luận</span>
                         </a>

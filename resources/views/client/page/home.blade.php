@@ -39,7 +39,7 @@
                                 @endforeach
                             <br><br>
                         </div>
-                        <h2 class="title text-center bottom-item" style="margin: -20px 0 20px 0;"><a href="#"><small style="color: black;">Xem tất cả</small></a></h2>
+                        <h2 class="title text-center bottom-item" style="margin: -20px 0 20px 0;"><a href="{{route('ProductsbyCatgr', $category_prd->id)}}"><small style="color: black;">Xem tất cả</small></a></h2>
                     @endforeach
                         <div class="footer-top">
                             <div class="container" style="width: 100%;">
@@ -52,7 +52,14 @@
                                             <div class=" text-center">
                                                 <a href="#">
                                                     <div class="">
-                                                        <img src="{{url('responsive_filemanager/source')}}/{{$post_home->image_post}}" style="width: 100px; height: 100px;">
+                                                        <!--<img src="{{url('responsive_filemanager/source')}}/{{$post_home->image_post}}" style="width: 100px; height: 100px;">-->
+                                                        @if($post_home->image_post)
+                                                            <img src="{{url('responsive_filemanager/source')}}/{{$post_home->image_post}}" style="width: 150px; height: 150px;">
+
+                                                        @else
+
+                                                            <img src="/responsive_filemanager/source/default-placeholder.png" style="width: 150px; height: 150px;">
+                                                        @endif
                                                     </div>
                                                 </a>
                                                 <h4><bold>{{$post_home->title}}</bold></h4>

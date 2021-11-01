@@ -74,34 +74,47 @@
                                                         background: #8ba7ba;
                                                     }
                                                 </style>
-                                                <form action="" method="POST">
-                                                    @csrf
-                                                    <input type="hidden" name="comment_prd_id" class="comment_prd_id" value="{{$prdDetail->id}}">
-                                                    <div id="comment_show"></div>
-                                                </form>
+                                                <div class="row style-comment">
+                                                    <div class="col-md-2" style="padding-top: 5px; padding-left: 50px;">
+                                                        <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="{{url('responsive_filemanager/source/ava comment.jpg')}}" alt="">
+                                                    </div>
+                                                    <div class="col-md-10" style="padding-top: 5px;padding-left: 0px;">
+                                                        <p style="color: green">'.$comment_prd->comment_name.'</p>
+                                                        <p>
+                                                            '.$comment_prd->comment.'
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p></p>
 
                                             </div>
                                             <p>Hãy viết đánh giá của bạn
                                             <p>Thư điện tử của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</p>
                                             <p><strong>Nhận xét của bạn: </strong></p>
-                                            <form action="">
+                                            <form action="{{route('cmtbyProduct',$prdDetail->id)}}" method="POST">
+                                                @csrf
+                                                @method('post')
                                                 <div style="margin-top: 15px;"></div>
                                                 <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6" style="padding-left: 0px;">
                                                     <p><strong>Tên *</strong></p>
-                                                    <textarea id="nameU" name="nameU" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
-                                                </div>
-                                                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-                                                    <p><strong>Email *</strong></p>
-                                                    <textarea id="mail" name="mail" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+                                                    <textarea id="nameU" name="comment_name" rows="1" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+                                                @error('comment_name')
+                                                <p class="text-danger">{{$message}}</p>
+                                                @enderror
                                                 </div>
 
                                                 <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12" style="padding-left: 0px;margin-top: 15px;">
                                                     <p><strong>Bình luận</strong></p>
                                                     <textarea id="comment" name="comment" rows="4" cols="50" style="border:1px solid #9E9E9E; border-radius: 5px;"></textarea>
+                                                @error('comment')
+                                                <p class="text-danger">{{$message}}</p>
+                                                @enderror
                                                 </div>
 
+                                                <input type="hidden" name="cmt_status" id="comment_stt" value="1">
+                                                <input type="hidden" name="cmt_product_id" id="comment_prd_id" value="{{$prdDetail->id}}">
                                                 <br>
-                                                <button class="btn btn-rounded btn-sm my-0 ml-sm-2" type="submit" style="background-color: #FE980F; margin: 15px 15px 15px 0px;">Gửi đi</button>
+                                                <button class="btn btn-rounded btn-sm my-0 ml-sm-2" type="submit" style="background-color: #FE980F; margin: 15px 15px 15px 0px;">Gửi bình luận</button>
                                             </form>
                                         </div>
                                     </div><!--Giới thiệu-->

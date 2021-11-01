@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 //Admin Route
 //Route Admin Dashboard
 //Route Login, SignUp
-Route::get('BaoLong_admin', 'AuthController@geptFormLogin')->name('login.get');
+Route::get('baoLong_admin', 'AuthController@geptFormLogin')->name('login.get');
 Route::post('login', 'AuthController@submitFormLogin')->name('login.submit');
 Route::get('register', 'AuthController@getFormRegister')->name('register.get');
 Route::post('register', 'AuthController@submitFormRegister')->name('register.submit');
@@ -39,7 +39,7 @@ Route::middleware(['auth'])->group(function () {
     // Route đơn hàng
     Route::get('all_orders', 'AdminController@getAllOrders')->name('all_orders');
     // Route phản hồi bình luận
-    Route::get('all_comments', 'AdminController@getAllComments')->name('all_comments');
+    Route::get('all_comments', 'CommentController@manageComments')->name('all_comments');
 
 
     //route Tin tức
@@ -125,7 +125,7 @@ Route::get('cua-hang', 'HomeController@getDatatShop')->name('storepage');
 //Route chi tiết sản phẩm
 Route::get('cua-hang/san-pham/{id}', 'ProductController@productDetail')->name('detailPrdpage');
 //Route comment
-Route::post('load-comment', 'ProductController@load_comment');
+Route::post('san-pham/{id}/binh-luan', 'CommentController@insertComment')->name('cmtbyProduct');
 //Route get trang tin tức
 Route::get('tin-tuc', 'HomeController@getDataPosts')->name('newspage');
 //Route đổ ra bài viết theo danh mục

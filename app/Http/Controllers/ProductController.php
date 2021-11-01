@@ -140,27 +140,20 @@ class ProductController extends Controller
 
         return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products','all_categories_post','all_SL_BN_home'));
     }
-    public function load_comment(Request $request){
-        $product_id = $request->product_id;
-        $comments_prd = Comment::where('cmt_product_id',$product_id)->get();
-        $output = '';
-        foreach ($comments_prd as $comment_prd){
-            $output.= '
-                       <div class="row style-comment">
-                           <div class="col-md-2" style="padding-top: 5px; padding-left: 50px;">
-                               <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="'.url('public/responsive_filemanager/source/ava comment1.jpg').'" alt="">
-                           </div>
-                           <div class="col-md-10" style="padding-top: 5px;padding-left: 0px;">
-                               <p style="color: green">'.$comment_prd->comment_name.'</p>
-                               <p>
-                               '.$comment_prd->comment.'
-                               </p>
-                           </div>
-                       </div>
-                       <p></p>
+    public function insertComment($id, Request $request){
+         $prdDetail = Product::find($id);
+         $cmt_name = $request->input('comment_name');
+         $comment = $request->input('comment');
+         $cmt_status = $request->input('cmt_status');
+         $cmt_product_id = $prdDetail;
 
-            ';
-        }
-        echo $output;
+         $cmt_prd = new Comment;
+         $cmt_prd->comment_name = $cmt_name;
+         $cmt_prd->comment = $comment;
+         $cmt_prd->comment_status = $cmt_status;
+         $cmt_prd->cmt_product_id = $cmt_product_id;
+         $cmt_prd->save();
+
+         return view('admin.all_comments');
     }
 }

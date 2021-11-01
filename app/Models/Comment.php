@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     protected $fillable = [
-        'comment', 'comment_name', 'comment_date', 'cmt_product_id'
+        'comment_name','comment','comment_status','cmt_product_id'
     ];
     protected $primaryKey = 'id';
-    protected $table = 'table_comments';
+    protected $table = 'comments';
 }

@@ -4,9 +4,9 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header" style="margin-left: -15px;">
-                <h2 style="padding-left: 0px; display: inline-block">Bình luận</h2>
+                <h2 style="padding-left: 0; display: inline-block">Bình luận</h2>
             </div>
-            
+
             <div class="row clearfix">
                 <div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding-left">
                     <ul class="dashboard-stat-list1">
@@ -73,7 +73,7 @@
                 <div class="card" style="margin-top: 20px;">
                     <div class="header">
                         <ul class="header-dropdown m-r--5">
-                            
+
                         </ul>
                     </div>
                     <div class="body table-responsive" style="border: 1px solid #9E9E9E;">
@@ -81,27 +81,40 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Tác giả</th>
+                                    <th>Người bình luận</th>
                                     <th>Bình luận</th>
-                                    <th>Trả lời cho</th>
+                                    <th>Thuộc sản phẩm</th>
+                                    <th>Trạng thái</th>
                                     <th>Đã đăng vào</th>
                                     <th></th>
                                 </tr>
                             </thead>
+                            <form action="" method="POST">
+
                             <tbody>
+                                @foreach($allcomments as $comment)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td><a href="#">Mr.Robot</a></td>
-                                    <td>none</td>
-                                    <td>none</td>
-                                    <td>none</td>
+                                    <th scope="row">{{$comment->id}}</th>
+                                    <td style="color: green">@.{{$comment->comment_name}}</td>
                                     <td>
-                                        <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Sửa</button>
-                                        <br>
+                                        {{$comment->comment}}
+                                        <br><textarea class="form-control" name="" id="" rows="5"></textarea>
+                                        <br> <button >Trả lời bình luận</button>
+                                    </td>
+                                    <td><a href="">{{$comment->cmt_product_id}}</a></td>
+                                    @if($comment->comment_status == 1)
+                                    <td>Bình luận chờ duyệt</td>
+                                    @endif
+                                    <td>{{$comment->created_at}}</td>
+                                    <td>
+                                        <button type="button" class="btn bg-green btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Duyệt bình luận</button>
+
                                         <button type="button" class="btn bg-red btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Xóa</button>
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
+                            </form>
                         </table>
                     </div>
                 </div>
@@ -129,7 +142,7 @@
                     <div class="form-line">
                         <input type="text" class="form-control" style="background-color: white;margin-left: -15px;margin-top: 10px;">
                         <button type="button" class="btn bg-blue btn-lg waves-effect" style="border-radius: 5px; margin:6px 0 10px -15px;">Tìm kiếm phản hồi</button>
-                        
+
                     </div>
                 </div>
             </div>
@@ -141,7 +154,7 @@
     </section>
         <!-- Latest compiled and minified CSS & JS -->
         <script src="//code.jquery.com/jquery.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script>
                 $(document).ready(function () {
                     $('.btn-delete').click(function () {
