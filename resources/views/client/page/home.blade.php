@@ -57,8 +57,7 @@
                                                             <img src="{{url('responsive_filemanager/source')}}/{{$post_home->image_post}}" style="width: 150px; height: 150px;">
 
                                                         @else
-
-                                                            <img src="/responsive_filemanager/source/default-placeholder.png" style="width: 150px; height: 150px;">
+                                                            <img src="/responsive_filemanager/source/imgdefault.jpg" style="width: 150px; height: 150px;">
                                                         @endif
                                                     </div>
                                                 </a>

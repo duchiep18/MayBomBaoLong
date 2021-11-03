@@ -131,6 +131,7 @@ class ProductController extends Controller
     }
     public function productDetail($id){
         $prdDetail = Product::find($id);
+        $cmt_by_prd = $prdDetail->comments()->get();
         $query = Product::query();
         $products_new = $query->orderby('id','desc')->limit(10)->get();
         $all_categories_prd = DB::table('products_categories')->where('product_categories_type','Hiển thị')->orderBy('id','asc')->get();
@@ -138,22 +139,7 @@ class ProductController extends Controller
         $all_categories_post = PostCategory::all();
         $all_SL_BN_home = ImageGallery::orderby('id','desc')->get();
 
-        return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products','all_categories_post','all_SL_BN_home'));
+        return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_prd','products','all_categories_post','all_SL_BN_home','cmt_by_prd'));
     }
-    public function insertComment($id, Request $request){
-         $prdDetail = Product::find($id);
-         $cmt_name = $request->input('comment_name');
-         $comment = $request->input('comment');
-         $cmt_status = $request->input('cmt_status');
-         $cmt_product_id = $prdDetail;
 
-         $cmt_prd = new Comment;
-         $cmt_prd->comment_name = $cmt_name;
-         $cmt_prd->comment = $comment;
-         $cmt_prd->comment_status = $cmt_status;
-         $cmt_prd->cmt_product_id = $cmt_product_id;
-         $cmt_prd->save();
-
-         return view('admin.all_comments');
-    }
 }

@@ -74,17 +74,22 @@
                                                         background: #8ba7ba;
                                                     }
                                                 </style>
-                                                <div class="row style-comment">
-                                                    <div class="col-md-2" style="padding-top: 5px; padding-left: 50px;">
-                                                        <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="{{url('responsive_filemanager/source/ava comment.jpg')}}" alt="">
-                                                    </div>
-                                                    <div class="col-md-10" style="padding-top: 5px;padding-left: 0px;">
-                                                        <p style="color: green">'.$comment_prd->comment_name.'</p>
-                                                        <p>
-                                                            '.$comment_prd->comment.'
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                @foreach($cmt_by_prd as $comment_prd)
+                                                    @if($comment_prd->comment_status==0 && $comment_prd->cmt_product_id == $prdDetail->id)
+                                                        <div class="row style-comment">
+                                                            <div class="col-md-2" style="padding-top: 5px; padding-left: 50px;">
+                                                                <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="{{url('responsive_filemanager/source/ava comment.jpg')}}" alt="">
+                                                            </div>
+                                                            <div class="col-md-10" style="padding-top: 5px;padding-left: 0px; margin-bottom: 10px;">
+                                                                <p style="color: green">{{'@'.$comment_prd->comment_name}}</p>
+                                                                <p>
+                                                                    {{$comment_prd->comment}}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                    @endif
+                                                @endforeach
                                                 <p></p>
 
                                             </div>
@@ -110,7 +115,6 @@
                                                 <p class="text-danger">{{$message}}</p>
                                                 @enderror
                                                 </div>
-
                                                 <input type="hidden" name="cmt_status" id="comment_stt" value="1">
                                                 <input type="hidden" name="cmt_product_id" id="comment_prd_id" value="{{$prdDetail->id}}">
                                                 <br>

@@ -51,8 +51,31 @@ class CommentController extends Controller
             ->with('message', 'Bình luận thành công ! Chờ duyệt');
     }
     public function manageComments(){
-        $allcomments = Comment::all();
-
+        $query = Comment::query();
+        $allcomments = $query->paginate(25);
         return view('admin.pages_danh_muc.all_comments', compact('allcomments'));
+    }
+    public function allow_comment(Request $request){
+        $data = $request->all();
+        $comment = Comment::find($data['comment_id']);
+        $comment->comment_status = $data['comment_status'];
+        $comment->save();
+    }
+    public function showCmtbyPrd($id){
+        $prdDetail = Product::find($id);
+        $cmt_by_prd = $prdDetail->comment()->paginate(25);
+
+        return view('client.page.productDetail', compact('cmt_by_prd','prdDetail'));
+    }
+    public function reply_comment(Request $request){
+        $data = $request->all();
+        $rep_cmt = new Comment();
+        $rep_cmt->comment = $data['rep_comment'];
+        $rep_cmt->comment_parent_id = $data['comment_id'];
+        $rep_cmt->cmt_product_id = $data['comment_product_id'];
+        $rep_cmt->comment_status = 0;
+        $rep_cmt->comment_name = 'Công ty TNHH Bảo Long';
+        $rep_cmt->save();
+
     }
 }

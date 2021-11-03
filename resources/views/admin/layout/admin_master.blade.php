@@ -7,6 +7,9 @@
     <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
 
     <!-- Favicon-->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
@@ -867,7 +870,58 @@
     shiftEnterMode: CKEDITOR.ENTER_P,
 
     });
+</script>
+<script type="text/javascript">
+    $(document).on("click", '.comment_duyet_btn',function(e){
+            e.preventDefault();
+            var comment_status = $(this).data('comment_status');
+            var comment_id = $(this).data('comment_id');
+            var comment_product_id = $(this).attr('id');
+            if(comment_status==0){
+                var alert = 'Duyệt bình luận thành công';
+            }else {
+                var alert = 'Bỏ duyệt bình luận thành công';
+            }
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url:"{{url('/duyet-comment')}}",
+                method:"POST",
+                data:{comment_status:comment_status,comment_id:comment_id,comment_product_id:comment_product_id},
+                success: function (data) {
+                    location.reload();
+                    $('#notify_comment').html('<span class="text text-alert">'+alert+'</span>');
+                },
+            });
+    });
+    $(document).on("click", '.btn-reply-comment',function(e){
+            e.preventDefault();
+            var comment_id = $(this).data('comment_id');
+            var rep_comment = $('.reply_comment_'+comment_id).val();
+            var comment_product_id = $(this).data('product_id');
 
+            // alert(rep_comment);
+            // alert(comment_id);
+            // alert(comment_product_id);
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url:"{{url('/reply-comment')}}",
+                method:"POST",
+                data:{rep_comment:rep_comment,comment_id:comment_id,comment_product_id:comment_product_id},
+                success: function (data) {
+                    $('.reply_comment_'+comment_id).val('');
+                    $('#notify_comment').html('<span class="text text-alert">Trả lời bình luận thành công</span>');
+                },
+            });
+    });
 </script>
 
 <script src="{{asset('admin-frontend/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js')}}"></script>

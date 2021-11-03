@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 //Admin Route
 //Route Admin Dashboard
 //Route Login, SignUp
-Route::get('baoLong_admin', 'AuthController@geptFormLogin')->name('login.get');
+Route::get('baolong_admin', 'AuthController@geptFormLogin')->name('login.get');
 Route::post('login', 'AuthController@submitFormLogin')->name('login.submit');
 Route::get('register', 'AuthController@getFormRegister')->name('register.get');
 Route::post('register', 'AuthController@submitFormRegister')->name('register.submit');
@@ -107,6 +107,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('slide-banner/{id}/chinh-sua', 'ImageController@editImg')->name('edit_slide_banner');
     Route::put('cap-nhat-slide-banner/{id}', 'ImageController@updateImg')->name('update_slide_banner');
     Route::delete('xoa-slide-banner/{id}', 'ImageController@destroyImg')->name('delete_slide_banner');
+    //Route duyệt COmment
+    Route::post('/duyet-comment','CommentController@allow_comment');
+    //Route trả lời bình luận
+    Route::post('/reply-comment','CommentController@reply_comment');
+
 });
 //End Route Admin
 // CLIENT ROUTE

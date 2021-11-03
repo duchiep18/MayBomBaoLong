@@ -7,6 +7,8 @@
     <meta name="author" content="">
     <title>Trang chủ | Bảo Long</title>
     <!-- Google Fonts -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
@@ -491,25 +493,25 @@
 <script src="{{asset('frontend/js/html5shiv.js')}}"></script>
 <script src="{{asset('frontend/js/respond.min.js')}}"></script>
 <script src="{{asset('frontend/tab.js')}}"></script>
-{{--<script type="text/javascript">--}}
-{{--    $(document).ready(function (){--}}
+<script type="text/javascript">
+    $(document).ready(function (){
 
-{{--        load_comment();--}}
+        load_comment();
 
-{{--        function load_comment(){--}}
-{{--            var product_id = $('.comment_prd_id').val();--}}
-{{--            var _token = $('input[name = "_token"]').val();--}}
-{{--            $.ajax({--}}
-{{--                url:"{{url('/load-comment')}}",--}}
-{{--                method:"POST",--}}
-{{--                data:{product_id:product_id, _token:_token},--}}
-{{--                success:function (data){--}}
-{{--                    $('#comment_show').html(data);--}}
-{{--                }--}}
-{{--            });--}}
-{{--        }--}}
-{{--    });--}}
-{{--</script>--}}
+        function load_comment(){
+            var product_id = $('.comment_prd_id').val();
+            var _token = $('input[name = "_token"]').val();
+            $.ajax({
+                url:"{{url('/load-comment')}}",
+                method:"POST",
+                data:{product_id:product_id, _token:_token},
+                success:function (data){
+                    $('#comment_show').html(data);
+                }
+            });
+        }
+    });
+</script>
 </body>
 
 </html>

@@ -4,9 +4,9 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header" style="margin-left: -15px;">
-                <h2 style="padding-left: 0; display: inline-block">Bình luận</h2>
+                <h1 style="padding-left: 0; display: inline-block">Quản lý bình luận</h1>
             </div>
-
+            <div id="notify_comment" style="color: green; font-weight: bold; font-size: 18"></div>
             <div class="row clearfix">
                 <div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6 nopadding-left">
                     <ul class="dashboard-stat-list1">
@@ -80,7 +80,7 @@
                         <table class="table table-bordered table-striped" style="margin-bottom: 0px;">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    <th></th>
                                     <th>Người bình luận</th>
                                     <th>Bình luận</th>
                                     <th>Thuộc sản phẩm</th>
@@ -94,22 +94,32 @@
                             <tbody>
                                 @foreach($allcomments as $comment)
                                 <tr>
-                                    <th scope="row">{{$comment->id}}</th>
-                                    <td style="color: green">@.{{$comment->comment_name}}</td>
                                     <td>
-                                        {{$comment->comment}}
-                                        <br><textarea class="form-control" name="" id="" rows="5"></textarea>
-                                        <br> <button >Trả lời bình luận</button>
+                                    @if($comment-> comment_status == 1)
+                                        <input type="button" data-comment_status="0" data-comment_id="{{$comment->id}}" id="{{$comment->cmt_product_id}}" class="btn btn-success btn-xs comment_duyet_btn" value="Duyệt">
+                                    @else
+                                        <input type="button" data-comment_status="1" data-comment_id="{{$comment->id}}" id="{{$comment->cmt_product_id}}" class="btn btn-danger btn-xs comment_duyet_btn" value="Bỏ Duyệt">
+                                    @endif
+                                    </td>
+                                    <td style="color: goldenrod">{{'@'.$comment->comment_name}}</td>
+
+                                    <td>
+                                        {{$comment->comment }}
+                                        <br>
+                                        @if($comment->comment_status == 0)
+                                        <br><textarea class="form-control reply_comment_{{$comment->id}}" name="reply_comment" id="" rows="5" cols="3" style="resize: none"></textarea>
+                                        <br> <button class="btn btn-default btn-xs btn-reply-comment" data-product_id="{{$comment->cmt_product_id}}" data-comment_id="{{$comment->id}}"> Trả lời bình luận</button>
+                                        @endif
                                     </td>
                                     <td><a href="">{{$comment->cmt_product_id}}</a></td>
                                     @if($comment->comment_status == 1)
-                                    <td>Bình luận chờ duyệt</td>
+                                        <td style="color: red">Bình luận chờ duyệt</td>
+                                    @else
+                                        <td style="color:green">Đã duyệt</td>
                                     @endif
                                     <td>{{$comment->created_at}}</td>
                                     <td>
-                                        <button type="button" class="btn bg-green btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Duyệt bình luận</button>
-
-                                        <button type="button" class="btn bg-red btn-lg waves-effect" style="border-radius: 5px; margin-left:35px">Xóa</button>
+                                        <button type="button" class="btn bg-red btn-sm waves-effect" style="border-radius: 5px; margin-left:35px">Xóa</button>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -148,24 +158,28 @@
             </div>
 
             <div style="text-align:center">
-				{{-- {{$news->appends($_GET)}}       --}}
+				 {{$allcomments->appends($_GET)}}
              </div>
         </div>
+
     </section>
         <!-- Latest compiled and minified CSS & JS -->
         <script src="//code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script>
-                $(document).ready(function () {
-                    $('.btn-delete').click(function () {
-                        event.preventDefault();
-                        let isDelete = confirm('Sếp có muốn xóa bài viết này hay không?');
-                        if (isDelete) {
-                             $(this).parents('form').submit();
-                        }
-                    });
-                })
-         </script>
+
         {{-- // Bootstrap 3 --}}
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $('.btn-delete').click(function () {
+                    event.preventDefault();
+                    let isDelete = confirm('Sếp có muốn xóa bài viết này hay không?');
+                    if (isDelete) {
+                        $(this).parents('form').submit();
+                    }
+                });
+            })
+        </script>
+
+
 @stop
