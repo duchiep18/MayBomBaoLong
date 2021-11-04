@@ -45,6 +45,7 @@ class CommentController extends Controller
         $cmt_prd->comment = $comment;
         $cmt_prd->comment_status = $cmt_status;
         $cmt_prd->cmt_product_id = $cmt_product_id;
+        $cmt_prd->comment_parent_id = 0;
         $cmt_prd->save();
 
         return view('client.page.productDetail', compact('prdDetail','products_new','all_categories_post','all_categories_prd','all_SL_BN_home','products'))
@@ -76,6 +77,14 @@ class CommentController extends Controller
         $rep_cmt->comment_status = 0;
         $rep_cmt->comment_name = 'Công ty TNHH Bảo Long';
         $rep_cmt->save();
+
+    }
+    public function destroy($id){
+        $cmtDel = Comment::find($id);
+        $cmtDel->delete();
+        $query = Comment::query();
+        $allcomments = $query->paginate(25);
+        return view('admin.pages_danh_muc.all_comments',compact('allcomments'));
 
     }
 }

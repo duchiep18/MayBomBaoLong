@@ -26,4 +26,3 @@ select * from customer_orders;
 
 select * from comments;
 
-delete from comments;

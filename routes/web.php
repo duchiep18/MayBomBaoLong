@@ -111,6 +111,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/duyet-comment','CommentController@allow_comment');
     //Route trả lời bình luận
     Route::post('/reply-comment','CommentController@reply_comment');
+    //Route xóa cmt
+    Route::delete('/xoa-comment/{id}', 'CommentController@destroy')->name('delete_cmt');
 
 });
 //End Route Admin

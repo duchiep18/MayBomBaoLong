@@ -75,18 +75,36 @@
                                                     }
                                                 </style>
                                                 @foreach($cmt_by_prd as $comment_prd)
-                                                    @if($comment_prd->comment_status==0 && $comment_prd->cmt_product_id == $prdDetail->id)
+                                                    @if($comment_prd->comment_status==0 && $comment_prd->cmt_product_id == $prdDetail->id )
                                                         <div class="row style-comment">
-                                                            <div class="col-md-2" style="padding-top: 5px; padding-left: 50px;">
-                                                                <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="{{url('responsive_filemanager/source/ava comment.jpg')}}" alt="">
+                                                            <div class="col-md-2" style="padding: 20px 50px;">
+                                                                <img class="img img-responsive img-thumbnail" width="50px" height="50px" src="{{url('responsive_filemanager/source/ava comment1.jpg')}}" alt="">
                                                             </div>
                                                             <div class="col-md-10" style="padding-top: 5px;padding-left: 0px; margin-bottom: 10px;">
                                                                 <p style="color: green">{{'@'.$comment_prd->comment_name}}</p>
-                                                                <p>
+                                                                <p style="color: black">{{$comment_prd->created_at->format('H:i:s d/m/Y')}}</p>
                                                                     {{$comment_prd->comment}}
                                                                 </p>
                                                             </div>
                                                         </div>
+
+                                                        @foreach($cmt_by_prd as $comment_rep)
+                                                            @if($comment_rep->comment_parent_id == $comment_prd->id)
+                                                                <div class="row style-comment" style="margin: 15px 40px;">
+                                                                    <div class="col-md-2" style="padding: 20px 50px;">
+                                                                        <img class="img img-responsive img-thumbnail" width="40px" height="40px" src="{{url('responsive_filemanager/source/admin ava.jpg')}}" alt="">
+                                                                    </div>
+                                                                    <div class="col-md-10" style="padding-top: 5px;padding-left: 0px; margin-bottom: 10px;">
+                                                                        <p style="color: blue">@Admin</p>
+                                                                        <p style="color: black">{{$comment_prd->created_at->format('H:i:s d/m/Y')}}</p>
+
+                                                                        <p>
+                                                                            {{$comment_prd->comment}}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            @endif
+                                                        @endforeach
                                                         <br>
                                                     @endif
                                                 @endforeach

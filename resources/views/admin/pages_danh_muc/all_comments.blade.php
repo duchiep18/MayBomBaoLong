@@ -94,33 +94,48 @@
                             <tbody>
                                 @foreach($allcomments as $comment)
                                 <tr>
-                                    <td>
-                                    @if($comment-> comment_status == 1)
-                                        <input type="button" data-comment_status="0" data-comment_id="{{$comment->id}}" id="{{$comment->cmt_product_id}}" class="btn btn-success btn-xs comment_duyet_btn" value="Duyệt">
-                                    @else
-                                        <input type="button" data-comment_status="1" data-comment_id="{{$comment->id}}" id="{{$comment->cmt_product_id}}" class="btn btn-danger btn-xs comment_duyet_btn" value="Bỏ Duyệt">
-                                    @endif
-                                    </td>
-                                    <td style="color: goldenrod">{{'@'.$comment->comment_name}}</td>
-
-                                    <td>
-                                        {{$comment->comment }}
-                                        <br>
-                                        @if($comment->comment_status == 0)
-                                        <br><textarea class="form-control reply_comment_{{$comment->id}}" name="reply_comment" id="" rows="5" cols="3" style="resize: none"></textarea>
-                                        <br> <button class="btn btn-default btn-xs btn-reply-comment" data-product_id="{{$comment->cmt_product_id}}" data-comment_id="{{$comment->id}}"> Trả lời bình luận</button>
+                                    @if($comment->comment_parent_id == 0 )
+                                        <td>
+                                        @if($comment-> comment_status == 1)
+                                            <input type="button" data-comment_status="0" data-comment_id="{{$comment->id}}" id="{{$comment->cmt_product_id}}" class="btn btn-success btn-xs comment_duyet_btn" value="Duyệt">
+                                        @else
+                                            <input type="button" data-comment_status="1" data-comment_id="{{$comment->id}}" id="{{$comment->cmt_product_id}}" class="btn btn-danger btn-xs comment_duyet_btn" value="Bỏ Duyệt">
                                         @endif
-                                    </td>
-                                    <td><a href="">{{$comment->cmt_product_id}}</a></td>
-                                    @if($comment->comment_status == 1)
-                                        <td style="color: red">Bình luận chờ duyệt</td>
-                                    @else
-                                        <td style="color:green">Đã duyệt</td>
+                                        </td>
+                                        <td style="color: goldenrod">{{'@'.$comment->comment_name}}</td>
+
+                                        <td>
+                                            <p>{{$comment->comment}}</p>
+
+                                            <p style="font-weight: bold;padding-left: 10px;color: green">Bình luận đã trả lời:</p>
+                                            <ul>
+                                                @foreach($allcomments as $comment_reply)
+                                                    @if($comment_reply->comment_parent_id == $comment->id)
+                                                        <li>{{$comment_reply->comment}}</li>
+                                                    @endif
+                                                @endforeach
+                                            </ul>
+
+                                            @if($comment->comment_status == 0)
+                                            <br><textarea class="form-control reply_comment_{{$comment->id}}" name="reply_comment" id="" rows="5" cols="3" style="resize: none"></textarea>
+                                            <br> <button class="btn btn-default btn-xs btn-reply-comment" data-product_id="{{$comment->cmt_product_id}}" data-comment_id="{{$comment->id}}"> Trả lời bình luận</button>
+                                            @endif
+                                        </td>
+                                        <td><a href="">{{$comment->cmt_product_id}}</a></td>
+                                        @if($comment->comment_status == 1)
+                                            <td style="color: red">Bình luận chờ duyệt</td>
+                                        @else
+                                            <td style="color:green">Đã duyệt</td>
+                                        @endif
+                                        <td>{{$comment->created_at}}</td>
+                                        <td>
+                                            <form action="{{route('delete_cmt',$comment->id)}}" method="POST">
+                                                @csrf
+                                                @method('delete')
+                                                    <button type="submit" class="btn bg-red btn-sm waves-effect btn-delete-cmt" style="border-radius: 5px; margin-left:35px">Xóa</button>
+                                            </form>
+                                        </td>
                                     @endif
-                                    <td>{{$comment->created_at}}</td>
-                                    <td>
-                                        <button type="button" class="btn bg-red btn-sm waves-effect" style="border-radius: 5px; margin-left:35px">Xóa</button>
-                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -171,8 +186,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script>
             $(document).ready(function () {
-                $('.btn-delete').click(function () {
-                    event.preventDefault();
+                $('.btn-delete-cmt').click(function (e) {
+                    e.preventDefault();
                     let isDelete = confirm('Sếp có muốn xóa bài viết này hay không?');
                     if (isDelete) {
                         $(this).parents('form').submit();
