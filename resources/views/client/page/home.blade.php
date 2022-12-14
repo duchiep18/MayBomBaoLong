@@ -11,7 +11,7 @@
                         <h3 class="modtitle"><span>Hot Deals</span></h3>
                         <div class="modcontent">
                             <div id="so_deals_14513931681482050581"
-                                class="so-deal modcontent products-list grid clearfixbutton-type1 style2">
+                                 class="so-deal modcontent products-list grid clearfixbutton-type1 style2">
                                 <div class="extraslider-inner product-layout deal-slider">
                                     <div class="product-thumb transition product-item-container">
                                         <div class="left-block">
@@ -20,11 +20,11 @@
                                                     <span class="label label-sale">Sale</span>
                                                     <a class="lt-image" href="product.html" target="_self">
                                                         <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                         <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/e12.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/e12.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                     </a>
                                                     <div class="item-time">
                                                         <div class="item-timer">
@@ -37,11 +37,16 @@
                                         <div class="right-block">
                                             <div class="caption">
                                                 <div class="rating">
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
                                                 </div>
                                                 <h4><a href="product.html" target="_self" title="Juren tima chuk..">Elivers
                                                         chukalen..</a></h4>
@@ -61,11 +66,11 @@
                                                     <span class="label label-new">New</span>
                                                     <a class="lt-image" href="product.html" target="_self">
                                                         <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/5.png') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/5.png') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                         <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/1.png') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/1.png') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                     </a>
                                                     <div class="item-time">
                                                         <div class="item-timer">
@@ -78,9 +83,12 @@
                                         <div class="right-block">
                                             <div class="caption">
                                                 <div class="rating">
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
-                                                    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
+                                                    <span class="fa fa-stack"><i
+                                                            class="fa fa-star fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i
                                                             class="fa fa-star-o fa-stack-2x"></i></span>
                                                     <span class="fa fa-stack"><i
@@ -104,11 +112,11 @@
                                                     <span class="label label-new">New</span>
                                                     <a class="lt-image" href="product.html" target="_self">
                                                         <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                         <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                     </a>
                                                     <div class="item-time">
                                                         <div class="item-timer">
@@ -150,11 +158,11 @@
 
                                                     <a class="lt-image" href="product.html" target="_self">
                                                         <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/e13.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/e13.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                         <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/e14.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/e14.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                     </a>
 
                                                     <div class="item-time">
@@ -197,11 +205,11 @@
 
                                                     <a class="lt-image" href="product.html" target="_self">
                                                         <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                         <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                            data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
-                                                            alt="Apple Cinema 30" title="Juren tima chuk" />
+                                                             data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
+                                                             alt="Apple Cinema 30" title="Juren tima chuk"/>
                                                     </a>
 
                                                     <div class="item-time">
@@ -258,13 +266,13 @@
                                                 <div class="item-image">
                                                     <div class="item-img-info">
                                                         <a href="product.html" class="lt-image" target="_self"
-                                                            title="Bikum masen dumas">
+                                                           title="Bikum masen dumas">
                                                             <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/e12.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/e12.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                             <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -305,13 +313,13 @@
                                                 <div class="item-image">
                                                     <div class="item-img-info">
                                                         <a href="product.html" class="lt-image" target="_self"
-                                                            title="Bikum masen dumas">
+                                                           title="Bikum masen dumas">
                                                             <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/e4.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/e4.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                             <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/e4_2.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/e4_2.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -352,13 +360,13 @@
                                                 <div class="item-image">
                                                     <div class="item-img-info">
                                                         <a href="product.html" class="lt-image" target="_self"
-                                                            title="Bikum masen dumas">
+                                                           title="Bikum masen dumas">
                                                             <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/e13.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/e13.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                             <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/e14.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/e14.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -402,13 +410,13 @@
                                                 <div class="item-image">
                                                     <div class="item-img-info">
                                                         <a href="product.html" class="lt-image" target="_self"
-                                                            title="Bikum masen dumas">
+                                                           title="Bikum masen dumas">
                                                             <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/1.png') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/1.png') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                             <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/2.png') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/2.png') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -449,13 +457,13 @@
                                                 <div class="item-image">
                                                     <div class="item-img-info">
                                                         <a href="product.html" class="lt-image" target="_self"
-                                                            title="Bikum masen dumas">
+                                                           title="Bikum masen dumas">
                                                             <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/j1.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/j1.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                             <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/j2.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/j2.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -497,13 +505,13 @@
                                                 <div class="item-image">
                                                     <div class="item-img-info">
                                                         <a href="product.html" class="lt-image" target="_self"
-                                                            title="Bikum masen dumas">
+                                                           title="Bikum masen dumas">
                                                             <img class="lazyload img-1 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/34.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/34.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                             <img class="lazyload img-2 img-responsive" data-sizes="auto"
-                                                                data-src="{{ asset('frontend/haian/image/demo/shop/product/35.jpg') }}"
-                                                                alt="Apple Cinema 30" title="Apple Cinema 30&quot;" />
+                                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/35.jpg') }}"
+                                                                 alt="Apple Cinema 30" title="Apple Cinema 30&quot;"/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -569,13 +577,14 @@
                 <div id="so_super_category_1" class="so-sp-cat first-load">
                     <div class="spcat-wrap ">
                         <div class="spcat-tabs-container" data-delay="300" data-duration="600" data-effect="flip"
-                            data-ajaxurl="#" data-modid="155">
+                             data-ajaxurl="#" data-modid="155">
                             <!--Begin Tabs-->
                             <div class="spcat-tabs-wrap">
                                 <span class="spcat-tab-selected"> Rating </span>
                                 <span class="spcat-tab-arrow">▼</span>
                                 <ul class="spcat-tabs cf">
-                                    <li class="spcat-tab  tab-sel tab-loaded" data-active-content=".items-category-sales"
+                                    <li class="spcat-tab  tab-sel tab-loaded"
+                                        data-active-content=".items-category-sales"
                                         data-field_order="sales">
                                         <span class="spcat-tab-label">Sale</span>
                                     </li>
@@ -602,13 +611,14 @@
                         <div class="main-left">
                             <div class="banner-post-text">
                                 <a href="#" title="banner"> <img class="lazyload img-responsive" data-sizes="auto"
-                                        data-src="{{ asset('frontend/haian/image/demo/banner/s22.jpg') }}"
-                                        alt="banner"> </a>
+                                                                 data-src="{{ asset('frontend/haian/image/demo/banner/s22.jpg') }}"
+                                                                 alt="banner"> </a>
                             </div>
                             <div class="hot-category">
                                 <div class="category-wrap-cat">
                                     <div class="title-imageslider  sp-cat-title-parent">
-                                        Hot Categories </div>
+                                        Hot Categories
+                                    </div>
 
                                     <div id="cat_slider_3" class="slider">
                                         <div class="cat_slider_inner so_category_type_default">
@@ -672,32 +682,37 @@
                         <div class="main-right">
                             <div class="banner-pre-text">
                                 <a href="#" title="banner"> <img class="lazyload img-responsive" data-sizes="auto"
-                                        data-src="{{ asset('frontend/haian/image/demo/banner/t22.jpg') }}"
-                                        alt="banner"></a>
+                                                                 data-src="{{ asset('frontend/haian/image/demo/banner/t22.jpg') }}"
+                                                                 alt="banner"></a>
                             </div>
 
                             <div class="spcat-items-container products-list grid show-pre show-row">
                                 <!--Begin Items-->
 
-                                <div class="spcat-items spcat-items-loaded items-category-sales product-layout spcat-items-selected"
+                                <div
+                                    class="spcat-items spcat-items-loaded items-category-sales product-layout spcat-items-selected"
                                     data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -720,7 +735,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Verty nolen laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -732,39 +747,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i class="fa fa-search"></i>
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i class="fa fa-search"></i>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -787,7 +806,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -799,41 +818,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i class="fa fa-search"></i>
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i class="fa fa-search"></i>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -856,7 +877,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -869,39 +890,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i class="fa fa-search"></i>
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i class="fa fa-search"></i>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -923,7 +946,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -935,39 +958,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i class="fa fa-search"></i>
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i class="fa fa-search"></i>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -990,7 +1017,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1002,41 +1029,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i class="fa fa-search"></i>
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i class="fa fa-search"></i>
                                                         </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -1059,7 +1088,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -1071,20 +1100,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i class="fa fa-search"></i>
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i class="fa fa-search"></i>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1094,25 +1124,29 @@
                                 </div>
 
                                 <div class="spcat-items spcat-items-loaded items-category-p_sort_order product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -1135,7 +1169,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1147,41 +1181,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1204,7 +1240,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Verty nolen laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -1216,41 +1252,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -1273,7 +1311,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -1286,39 +1324,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1340,7 +1380,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1352,41 +1392,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -1409,7 +1451,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1421,41 +1463,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -1478,7 +1522,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -1490,20 +1534,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -1512,24 +1557,26 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-rating product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1551,7 +1598,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1563,37 +1610,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
-                                                                    <img src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
+                                                                   title="Verty nolen max..">
+                                                                    <img
+                                                                        src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
                                                                         alt="Apple Cinema 30" title="Verty nolen laben"
-                                                                        class="img-1 img-responsive" />
-                                                                    <img src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                        class="img-1 img-responsive"/>
+                                                                    <img
+                                                                        src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
                                                                         alt="Apple Cinema 30" title="Verty nolen laben"
-                                                                        class="img-2 img-responsive" />
+                                                                        class="img-2 img-responsive"/>
                                                                 </a>
                                                             </div>
 
@@ -1616,7 +1667,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1628,41 +1679,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1685,7 +1738,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Verty nolen laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -1697,42 +1750,44 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -1755,7 +1810,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1767,41 +1822,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -1824,7 +1881,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -1836,41 +1893,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -1893,7 +1952,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -1906,20 +1965,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -1928,26 +1988,28 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-p_quantity product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -1970,7 +2032,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -1982,41 +2044,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -2039,7 +2103,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -2051,41 +2115,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -2108,7 +2174,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Verty nolen laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -2120,41 +2186,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -2177,7 +2245,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -2190,39 +2258,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -2244,7 +2314,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -2256,42 +2326,44 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -2314,7 +2386,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -2326,20 +2398,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -2348,26 +2421,28 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-p_price product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b5.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -2390,7 +2465,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Verty nolen laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -2402,41 +2477,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -2459,7 +2536,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -2471,41 +2548,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b9.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -2528,7 +2607,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -2540,39 +2619,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -2594,7 +2675,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -2606,41 +2687,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b15.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -2663,7 +2746,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -2675,41 +2758,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/b7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -2732,7 +2817,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -2745,20 +2830,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -2779,8 +2865,9 @@
             <div class="module banner">
                 <div class="banners">
                     <div><a title="Static Image" href="#"><img class="lazyload img-responsive"
-                                data-sizes="auto" data-src="{{ asset('frontend/haian/image/demo/banner/m5.jpg') }}"
-                                alt="Static Image"></a></div>
+                                                               data-sizes="auto"
+                                                               data-src="{{ asset('frontend/haian/image/demo/banner/m5.jpg') }}"
+                                                               alt="Static Image"></a></div>
                 </div>
             </div>
             <!-- End Banner -->
@@ -2801,7 +2888,7 @@
                 <div id="so_super_category_2" class="so-sp-cat first-load">
                     <div class="spcat-wrap ">
                         <div class="spcat-tabs-container" data-delay="300" data-duration="600" data-effect="flip"
-                            data-ajaxurl="#" data-modid="155">
+                             data-ajaxurl="#" data-modid="155">
                             <!--Begin Tabs-->
                             <div class="spcat-tabs-wrap">
                                 <span class="spcat-tab-selected"> Rating </span>
@@ -2840,7 +2927,8 @@
                             <div class="hot-category">
                                 <div class="category-wrap-cat">
                                     <div class="title-imageslider  sp-cat-title-parent">
-                                        Hot Categories </div>
+                                        Hot Categories
+                                    </div>
 
                                     <div id="cat_slider_2" class="slider">
                                         <div class="cat_slider_inner so_category_type_default">
@@ -2903,32 +2991,35 @@
                         <div class="main-right">
                             <div class="banner-pre-text">
                                 <a href="#" title="banner"> <img class="lazyload img-responsive"
-                                        data-sizes="auto"
-                                        data-src="{{ asset('frontend/haian/image/demo/banner/t21.jpg') }}"
-                                        alt="banner"></a>
+                                                                 data-sizes="auto"
+                                                                 data-src="{{ asset('frontend/haian/image/demo/banner/t21.jpg') }}"
+                                                                 alt="banner"></a>
                             </div>
 
                             <div class="spcat-items-container products-list grid show-pre show-row">
                                 <!--Begin Items-->
-                                <div class="spcat-items spcat-items-loaded items-category-rating product-layout spcat-items-selected"
+                                <div
+                                    class="spcat-items spcat-items-loaded items-category-rating product-layout spcat-items-selected"
                                     data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -2950,7 +3041,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Meagi Gemdcu inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -2962,41 +3053,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -3019,7 +3112,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lampac Sende cuisei </a>
                                                             </h4>
                                                             <p class="price">
@@ -3031,41 +3124,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3088,7 +3183,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Punerty bolen Regaben </a>
                                                             </h4>
                                                             <p class="price">
@@ -3100,41 +3195,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -3157,7 +3254,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -3169,41 +3266,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -3226,7 +3325,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -3238,41 +3337,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -3295,7 +3396,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -3308,20 +3409,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -3330,26 +3432,28 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-p_date_added product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -3372,7 +3476,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -3385,41 +3489,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -3442,7 +3548,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -3454,41 +3560,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -3511,7 +3619,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lampac Sende cuisei </a>
                                                             </h4>
                                                             <p class="price">
@@ -3523,41 +3631,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3580,7 +3690,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Punerty bolen Regaben </a>
                                                             </h4>
                                                             <p class="price">
@@ -3592,42 +3702,44 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -3650,7 +3762,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -3662,39 +3774,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3716,7 +3830,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Meagi Gemdcu inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -3728,20 +3842,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -3750,26 +3865,28 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-sales product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -3792,7 +3909,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -3804,39 +3921,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3858,7 +3977,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Meagi Gemdcu inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -3870,41 +3989,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -3927,7 +4048,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lampac Sende cuisei </a>
                                                             </h4>
                                                             <p class="price">
@@ -3939,41 +4060,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3996,7 +4119,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Punerty bolen Regaben </a>
                                                             </h4>
                                                             <p class="price">
@@ -4008,42 +4131,44 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -4066,7 +4191,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -4079,41 +4204,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -4136,7 +4263,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -4148,20 +4275,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -4170,26 +4298,28 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-p_quantity product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -4212,7 +4342,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -4224,39 +4354,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -4278,7 +4410,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Meagi Gemdcu inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -4290,41 +4422,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -4347,7 +4481,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lampac Sende cuisei </a>
                                                             </h4>
                                                             <p class="price">
@@ -4359,20 +4493,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -4380,22 +4515,23 @@
 
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -4418,7 +4554,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -4430,41 +4566,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -4487,7 +4625,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -4500,41 +4638,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -4557,7 +4697,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Punerty bolen Regaben </a>
                                                             </h4>
                                                             <p class="price">
@@ -4569,20 +4709,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -4591,26 +4732,28 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-p_price product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/23.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e2.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -4633,7 +4776,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -4646,39 +4789,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/t3.jpg') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -4700,7 +4845,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Meagi Gemdcu inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -4712,41 +4857,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/19.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -4769,7 +4916,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lampac Sende cuisei </a>
                                                             </h4>
                                                             <p class="price">
@@ -4781,42 +4928,44 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/15.png') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -4839,7 +4988,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -4851,41 +5000,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/4.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -4908,7 +5059,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -4920,42 +5071,44 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e7.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e6.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -4978,7 +5131,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Punerty bolen Regaben </a>
                                                             </h4>
                                                             <p class="price">
@@ -4990,20 +5143,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -5024,8 +5178,9 @@
             <div class="module banner">
                 <div class="banners">
                     <div><a title="Static Image" href="#"><img class="lazyload img-responsive"
-                                data-sizes="auto" data-src="{{ asset('frontend/haian/image/demo/banner/m7.jpg') }}"
-                                alt="Static Image"></a></div>
+                                                               data-sizes="auto"
+                                                               data-src="{{ asset('frontend/haian/image/demo/banner/m7.jpg') }}"
+                                                               alt="Static Image"></a></div>
                 </div>
             </div>
             <!-- End Banner -->
@@ -5046,7 +5201,7 @@
                 <div id="so_super_category_3" class="so-sp-cat first-load">
                     <div class="spcat-wrap ">
                         <div class="spcat-tabs-container" data-delay="300" data-duration="600" data-effect="flip"
-                            data-ajaxurl="#" data-modid="155">
+                             data-ajaxurl="#" data-modid="155">
                             <!--Begin Tabs-->
                             <div class="spcat-tabs-wrap">
                                 <span class="spcat-tab-selected"> Rating </span>
@@ -5079,14 +5234,15 @@
                         <div class="main-left">
                             <div class="banner-post-text">
                                 <a href="#" title="banner"> <img class="lazyload img-responsive"
-                                        data-sizes="auto"
-                                        data-src="{{ asset('frontend/haian/image/demo/banner/s23.jpg') }}"
-                                        alt="banner"> </a>
+                                                                 data-sizes="auto"
+                                                                 data-src="{{ asset('frontend/haian/image/demo/banner/s23.jpg') }}"
+                                                                 alt="banner"> </a>
                             </div>
                             <div class="hot-category">
                                 <div class="category-wrap-cat">
                                     <div class="title-imageslider  sp-cat-title-parent">
-                                        Hot Categories </div>
+                                        Hot Categories
+                                    </div>
 
                                     <div id="cat_slider_1" class="slider">
                                         <div class="cat_slider_inner so_category_type_default">
@@ -5156,27 +5312,30 @@
 
                             <div class="spcat-items-container products-list grid show-pre show-row">
                                 <!--Begin Items-->
-                                <div class="spcat-items spcat-items-loaded items-category-p_price product-layout spcat-items-selected"
+                                <div
+                                    class="spcat-items spcat-items-loaded items-category-p_price product-layout spcat-items-selected"
                                     data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -5199,7 +5358,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Maolen Verty laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -5211,41 +5370,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -5268,7 +5429,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -5280,41 +5441,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -5337,7 +5500,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -5349,39 +5512,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -5403,7 +5568,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -5415,41 +5580,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -5472,7 +5639,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -5484,41 +5651,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -5541,7 +5710,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -5554,20 +5723,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -5576,24 +5746,26 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-sales product-layout "
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -5615,7 +5787,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -5627,41 +5799,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -5684,7 +5858,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -5696,41 +5870,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -5753,7 +5929,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -5765,42 +5941,44 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -5823,7 +6001,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -5835,41 +6013,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -5892,7 +6072,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -5905,41 +6085,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -5962,7 +6144,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Maolen Verty laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -5974,20 +6156,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -5996,26 +6179,28 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-p_sort_order product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -6038,7 +6223,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -6050,41 +6235,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -6107,7 +6294,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -6120,41 +6307,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -6177,7 +6366,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Maolen Verty laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -6189,41 +6378,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -6246,7 +6437,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -6258,41 +6449,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -6315,7 +6508,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -6327,39 +6520,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -6381,7 +6576,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -6393,20 +6588,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -6416,27 +6612,29 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-rating product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
 
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -6459,7 +6657,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -6471,41 +6669,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -6528,7 +6728,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -6540,39 +6740,41 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -6594,7 +6796,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -6606,41 +6808,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -6663,7 +6867,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -6675,41 +6879,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -6732,7 +6938,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -6745,41 +6951,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -6802,7 +7010,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Maolen Verty laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -6814,20 +7022,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -6836,24 +7045,26 @@
                                     </div>
                                 </div>
                                 <div class="spcat-items spcat-items-loaded items-category-p_quantity product-layout"
-                                    data-total="9">
-                                    <div class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
+                                     data-total="9">
+                                    <div
+                                        class="spcat-items-inner spcat00-4 spcat01-4 spcat02-3 spcat03-2 spcat04-1 flip">
                                         <div class="ltabs-items-inner ltabs-slider ">
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
-                                                                        alt="Apple Cinema 30" title="Emdcu meagi" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/m16.png') }}"
+                                                                         alt="Apple Cinema 30" title="Emdcu meagi"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -6875,7 +7086,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Emdcu meagi"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Emdcu meagi inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -6887,41 +7098,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Duidem rerum facilis">
+                                                                   title="Duidem rerum facilis">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Duidem rerum facilis" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Duidem rerum facilis"/>
                                                                 </a>
                                                             </div>
 
@@ -6944,7 +7157,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Duidem rerum facilis"
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Duidem rerum facilis </a>
                                                             </h4>
                                                             <p class="price">
@@ -6956,41 +7169,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Lande sincut inste">
+                                                                   title="Lande sincut inste">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Lande sincut inste" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Lande sincut inste"/>
                                                                 </a>
                                                             </div>
 
@@ -7013,7 +7228,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Lande sincut inste </a>
                                                             </h4>
                                                             <p class="price">
@@ -7026,41 +7241,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e10.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/e11.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -7083,7 +7300,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Maolen Verty laben </a>
                                                             </h4>
                                                             <p class="price">
@@ -7095,41 +7312,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f13.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f14.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -7152,7 +7371,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -7164,41 +7383,43 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="ltabs-item ">
-                                                <div class="item-inner product-thumb product-item-container transition ">
+                                                <div
+                                                    class="item-inner product-thumb product-item-container transition ">
                                                     <div class="left-block">
                                                         <div class="product-image-container">
                                                             <div class="image">
                                                                 <a class="lt-image" href="product.html" target="_self"
-                                                                    title="Verty nolen max..">
+                                                                   title="Verty nolen max..">
                                                                     <img class="lazyload img-1 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f17.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                     <img class="lazyload img-2 img-responsive"
-                                                                        data-sizes="auto"
-                                                                        data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
-                                                                        alt="Apple Cinema 30"
-                                                                        title="Verty nolen laben" />
+                                                                         data-sizes="auto"
+                                                                         data-src="{{ asset('frontend/haian/image/demo/shop/product/f18.jpg') }}"
+                                                                         alt="Apple Cinema 30"
+                                                                         title="Verty nolen laben"/>
                                                                 </a>
                                                             </div>
 
@@ -7221,7 +7442,7 @@
                                                             </div>
                                                             <h4>
                                                                 <a href="product.html" title="Verty nolen max.."
-                                                                    target="_self">
+                                                                   target="_self">
                                                                     Sende cuisei inges </a>
                                                             </h4>
                                                             <p class="price">
@@ -7233,20 +7454,21 @@
                                                     </div>
                                                     <div class="button-group">
                                                         <button class="wishlist btn-button" type="button"
-                                                            data-toggle="tooltip" title="Add to Wish List"
-                                                            onclick="wishlist.add('42');"><i
+                                                                data-toggle="tooltip" title="Add to Wish List"
+                                                                onclick="wishlist.add('42');"><i
                                                                 class="fa fa-heart"></i></button>
                                                         <button class="addToCart" type="button" data-toggle="tooltip"
-                                                            title="Add to Cart" onclick="cart.add('42', '1');"><i
+                                                                title="Add to Cart" onclick="cart.add('42', '1');"><i
                                                                 class="fa fa-shopping-cart"></i> <span
                                                                 class="hidden-xs"></span></button>
                                                         <button class="compare" type="button" data-toggle="tooltip"
-                                                            title="Compare this Product" onclick="compare.add('42');"><i
+                                                                title="Compare this Product"
+                                                                onclick="compare.add('42');"><i
                                                                 class="fa fa-exchange"></i></button>
                                                         <a class="quickview iframe-link visible-lg btn-button"
-                                                            data-toggle="tooltip" title=""
-                                                            data-fancybox-type="iframe" href="quickview.html"
-                                                            data-original-title="Quickview"> <i
+                                                           data-toggle="tooltip" title=""
+                                                           data-fancybox-type="iframe" href="quickview.html"
+                                                           data-original-title="Quickview"> <i
                                                                 class="fa fa-search"></i> </a>
                                                     </div>
                                                 </div>
@@ -7283,7 +7505,7 @@
                                         <div class="media-content">
                                             <h4 class="media-heading">
                                                 <a href="blog-detail.html" title="Ac tincidunt Suspendisse malesuada"
-                                                    target="_blank">Pellentse tincidunt Suspendis malesu</a>
+                                                   target="_blank">Pellentse tincidunt Suspendis malesu</a>
                                             </h4>
                                             <div class="description">
                                                 Commodo laoreet semper tincidunt lorem Vestibulum nunc at In
@@ -7303,8 +7525,8 @@
                                         <div class="media-content">
                                             <h4 class="media-heading">
                                                 <a href="blog-detail.html"
-                                                    title="Biten demonstraverunt lector legere legunt saepius"
-                                                    target="_blank">Biten demonst raverunt lector legere </a>
+                                                   title="Biten demonstraverunt lector legere legunt saepius"
+                                                   target="_blank">Biten demonst raverunt lector legere </a>
                                             </h4>
                                             <div class="description">
                                                 Commodo laoreet semper tincidunt lorem Vestibulum nunc at In
@@ -7326,7 +7548,7 @@
                                     <div class="image"><a href="product.html"><img
                                                 class="lazyload img-1 img-responsive" data-sizes="auto"
                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/b1.jpg') }}"
-                                                title="Duidem rerum facilis" alt="Apple Cinema 30" /></a></div>
+                                                title="Duidem rerum facilis" alt="Apple Cinema 30"/></a></div>
                                     <div class="caption">
                                         <div class="rating">
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -7349,7 +7571,7 @@
                                     <div class="image"><a href="product.html"><img
                                                 class="lazyload img-1 img-responsive" data-sizes="auto"
                                                 data-src="{{ asset('frontend/haian/image/demo/shop/product/b2.png') }}"
-                                                title="Duidem rerum facilis" alt="Apple Cinema 30" /></a></div>
+                                                title="Duidem rerum facilis" alt="Apple Cinema 30"/></a></div>
                                     <div class="caption">
                                         <div class="rating">
                                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
@@ -7379,13 +7601,14 @@
                         <div class="slider-clients-say">
                             <div class="block_content">
                                 <div class="image"><img class="lazyload img-responsive" data-sizes="auto"
-                                        data-src="{{ asset('frontend/haian/image/demo/cms/clients_say.png') }}"
-                                        alt="">
+                                                        data-src="{{ asset('frontend/haian/image/demo/cms/clients_say.png') }}"
+                                                        alt="">
                                 </div>
                                 <div class="block-info">
                                     <div class="text">"Aliquam ut tellus dignissim, cursus erat ultricies tellus
                                         cursus erat ultricies tellus.. Nulla tempus sollicitudin mauris cursus
-                                        dictum. Commodo laoreet semper lorem."</div>
+                                        dictum. Commodo laoreet semper lorem."
+                                    </div>
                                     <div class="info">
                                         <div class="author">- BonBon Supper</div>
                                     </div>
@@ -7393,13 +7616,14 @@
                             </div>
                             <div class="block_content">
                                 <div class="image"><img class="lazyload img-responsive" data-sizes="auto"
-                                        data-src="{{ asset('frontend/haian/image/demo/cms/clients_say.png') }}"
-                                        alt="">
+                                                        data-src="{{ asset('frontend/haian/image/demo/cms/clients_say.png') }}"
+                                                        alt="">
                                 </div>
                                 <div class="block-info">
                                     <div class="text">"Dignissim ut tellus Aliquam, cursus erat ultricies tellus
                                         cursus erat ultricies tellus.. Nulla tempus sollicitudin mauris cursus
-                                        dictum. Commodo laoreet semper lorem."</div>
+                                        dictum. Commodo laoreet semper lorem."
+                                    </div>
                                     <div class="info">
                                         <div class="author">- Aliquam Tellus</div>
                                     </div>
@@ -7419,43 +7643,43 @@
                     <div class="item-manu">
                         <a href="#" title="Link">
                             <img class="lazyload img-responsive" data-sizes="auto"
-                                data-src="{{ asset('frontend/haian/image/demo/brands/2.jpg') }}" alt="img">
+                                 data-src="{{ asset('frontend/haian/image/demo/brands/2.jpg') }}" alt="img">
                         </a>
                     </div>
                     <div class="item-manu">
                         <a href="#" title="Link">
                             <img class="lazyload img-responsive" data-sizes="auto"
-                                data-src="{{ asset('frontend/haian/image/demo/brands/3.jpg') }}" alt="img">
+                                 data-src="{{ asset('frontend/haian/image/demo/brands/3.jpg') }}" alt="img">
                         </a>
                     </div>
                     <div class="item-manu">
                         <a href="#" title="Link">
                             <img class="lazyload img-responsive" data-sizes="auto"
-                                data-src="{{ asset('frontend/haian/image/demo/brands/4.jpg') }}" alt="img">
+                                 data-src="{{ asset('frontend/haian/image/demo/brands/4.jpg') }}" alt="img">
                         </a>
                     </div>
                     <div class="item-manu">
                         <a href="#" title="Link">
                             <img class="lazyload img-responsive" data-sizes="auto"
-                                data-src="{{ asset('frontend/haian/image/demo/brands/5.jpg') }}" alt="img">
+                                 data-src="{{ asset('frontend/haian/image/demo/brands/5.jpg') }}" alt="img">
                         </a>
                     </div>
                     <div class="item-manu">
                         <a href="#" title="Link">
                             <img class="lazyload img-responsive" data-sizes="auto"
-                                data-src="{{ asset('frontend/haian/image/demo/brands/2.jpg') }}" alt="img">
+                                 data-src="{{ asset('frontend/haian/image/demo/brands/2.jpg') }}" alt="img">
                         </a>
                     </div>
                     <div class="item-manu">
                         <a href="#" title="Link">
                             <img class="lazyload img-responsive" data-sizes="auto"
-                                data-src="{{ asset('frontend/haian/image/demo/brands/3.jpg') }}" alt="img">
+                                 data-src="{{ asset('frontend/haian/image/demo/brands/3.jpg') }}" alt="img">
                         </a>
                     </div>
                     <div class="item-manu">
                         <a href="#" title="Link">
                             <img class="lazyload img-responsive" data-sizes="auto"
-                                data-src="{{ asset('frontend/haian/image/demo/brands/9.jpg') }}" alt="img">
+                                 data-src="{{ asset('frontend/haian/image/demo/brands/9.jpg') }}" alt="img">
                         </a>
                     </div>
                 </div>
